@@ -1,0 +1,997 @@
+.body {
+    width: 100vw;
+    min-height: 200px;
+    margin-bottom: 100px;
+}
+
+.body > div:not(.body-usage-bg, .body-summary-container) {
+    margin-bottom: 0 !important;
+    margin-top: clamp(60px, 5.27vw, 100px) !important;
+}
+
+.body-calcite-desc-container {
+    width: 90%;
+    min-height: 320px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.body-calcite-desc-image {
+    width: 430px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-calcite-desc-image > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.body-calcite-desc-titles {
+    width: 45%;
+    height: 80%;
+}
+
+.body-calcite-desc-titles__p1 {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: clamp(20px, 1.05vw, 35px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.body-calcite-desc-titles__p2 {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: clamp(13px, 0.79vw, 15px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 23.8px */
+    letter-spacing: 1.02px;
+}
+
+.body-calcite-desc-titles__p2 > span {
+    color: #057309;
+}
+
+.body-properties-container {
+    width: 95%;
+    height: 600px;
+    border-radius: 50px;
+    margin: 70px auto;
+    background: url('../../../assets/product/vitaland/properties/product-vitaland-properties-bg.png') no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    overflow: hidden;
+}
+
+.properties_bg {
+    background: rgba(243, 255, 230, 0.90);
+    width: 100%;
+    height: 100%;
+    padding: clamp(60px, 5.27vw, 100px) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.properties__p {
+    color: #000;
+    text-align: center;
+    -webkit-text-stroke-width: 0.20000000298023224;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.00);
+    font-family: Comfortaa;
+    font-size: clamp(16px, 1.05vw, 35px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.properties-about-text {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.properties-about-text__p {
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: clamp(17px, 2.03vw, 40px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-wrap: nowrap;
+}
+
+.properties-about-text__p1 {
+    color: #136900;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: clamp(6px, 1.05vw, 20px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-wrap: nowrap;
+    text-transform: uppercase;
+}
+
+.properties__p1 {
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: clamp(10px, 1.26vw, 24px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.properties-about {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.body-composition-container {
+    width: 90%;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 90px auto;
+    position: relative;
+}
+
+.composition-title {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.composition-image {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.composition-image__img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.composition-title__p {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: clamp(20px, 1.05vw, 35px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: clamp(60px, 5.27vw, 100px);
+}
+
+.composition-title__p1 {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 23.8px */
+    letter-spacing: 1.02px;
+    margin-bottom: 35px;
+}
+
+.composition-title__p1 > span {
+    color: #057309;
+}
+
+.composition-title__a {
+    display: inline-block;
+    height: 39px;
+    width: 175px;
+    border-radius: 4px;
+    background: #97C06B;
+}
+
+.body-benefits-container {
+    width: 90%;
+    min-height: 320px;
+    margin: 0 auto;
+}
+
+.benefits__p {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: clamp(20px, 1.05vw, 35px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: clamp(60px, 5.27vw, 100px);
+}
+
+.benefits-items {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.benefits-items-item {
+    width: 19%;
+    height: clamp(285px, 21.09vw, 400px);
+    border-radius: 29px;
+    background: #0A3600;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.benefits-items-item > .img-wrap {
+    height: 60%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits-items-item > p {
+    width: 80%;
+}
+
+.benefits-items-item__p {
+    height: 34px;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 0.20000000298023224;
+    -webkit-text-stroke-color: #FFF;
+    font-family: Comfortaa;
+    font-size: clamp(14px, 0.9vw, 17px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 23.8px */
+    text-transform: uppercase;
+}
+
+.benefits-items-item__p1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: clamp(10px, 0.89vw, 17px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 23.8px */
+    letter-spacing: -0.34px;
+    margin-bottom: 4%;
+}
+
+.benefits-items-item__img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.body-usage-bg {
+    width: 100vw;
+    background: url('../../../assets/product/calcite/history/product-calcite-history-bg.png') no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+    margin-top: 70px;
+}
+
+.body-usage-container {
+    width: 100%;
+    min-height: 300px;
+    background: rgba(10, 54, 0, 0.9);
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.body-usage__p {
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: clamp(20px, 1.05vw, 35px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.body-usage-items {
+    width: 90%;
+    min-height: 400px;
+    margin: 70px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.usage-items-item {
+    min-height: 380px;
+    width: clamp(145px, 14.79vw, 290px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(25px, 2.90vw, 55px);
+    margin-bottom: 30px;
+}
+
+.summary-text ul {
+    padding-left: 18px;
+}
+
+.usage-item-rectangle {
+    min-width: clamp(140px, 12.59vw, 240px);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(15px, 2.90vw, 55px);
+}
+
+.usage-item__p1 {
+    color: #FFF;
+    text-align: center;
+    -webkit-text-stroke-width: 0.20000000298023224;
+    -webkit-text-stroke-color: #FFF;
+    font-family: Comfortaa;
+    font-size: clamp(20px, 1.22vw, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+}
+
+.p10 {
+    max-width: 100%;
+    max-height: 100%;
+    background-size: contain;
+}
+
+.usage-item__p {
+    color: #FFF;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: clamp(12px, 0.86vw, 17px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 23.8px */
+    letter-spacing: 1.02px;
+}
+
+.usage-value__p {
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: clamp(20px, 1.05vw, 35px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.usage-value-items {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.value-items-item {
+    width: clamp(160px, 10.6vw, 208px);
+    max-height: 100%;
+    border-radius: 21px;
+    background: rgba(151, 192, 107, 0.40);
+    padding: 45px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-item__p {
+    color: #FFF;
+    text-align: center;
+    -webkit-text-stroke-width: 0.20000000298023224;
+    -webkit-text-stroke-color: #FFF;
+    font-family: Comfortaa;
+    font-size: clamp(14px, 0.91vw, 18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 173%; /* 31.14px */
+    width: 90%;
+}
+
+.h-40 {
+    height: 40%;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.h-60 {
+    height: 60%;
+}
+
+.h-70 {
+    height: 70%;
+}
+
+.h-80 {
+    height: 80%;
+}
+
+
+.final-item {
+    border-radius: 21px;
+    background: #97C06B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.final-item p {
+    color: #000;
+    text-align: center;
+    -webkit-text-stroke-width: 0.4000000059604645;
+    -webkit-text-stroke-color: #000;
+    font-family: Comfortaa;
+    font-size: clamp(17px, 1.01vw, 20px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 173%; /* 34.6px */
+    width: 90%;
+}
+
+.body-summary-container {
+    width: 90%;
+    min-height: 320px;
+    margin: 0 auto;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.summary-image {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-warp {
+    width: clamp(390px, 24.12vw, 473px);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #0A3600;
+    overflow: hidden;
+}
+
+.summary-image__img {
+    width: 100%;
+    height: 100%;
+}
+
+.summary-text {
+    height: 80%;
+    width: 45%;
+}
+
+.summary-text span {
+    color: #057309;
+}
+
+.summary-text__p {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: clamp(20px, 1.05vw, 35px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: clamp(60px, 5.27vw, 100px);
+}
+
+.summary-text__p1 {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: clamp(13px, 0.86vw, 17px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1.02px;
+}
+
+.mgb-10 {
+    margin-bottom: 10px;
+}
+
+.mgb-15 {
+    margin-bottom: 15px;
+}
+
+.mgb-25 {
+    margin-bottom: 25px;
+}
+
+.p-li {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: clamp(13px, 0.86vw, 17px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 23.8px */
+    letter-spacing: 1.02px;
+    margin-bottom: 8px;
+}
+
+.p-li span {
+    color: #057309;
+}
+
+.body-documents-container {
+    width: 95%;
+    min-height: 400px;
+    border-radius: 50px;
+    background: rgba(243, 255, 230, 0.90);
+    margin: 70px auto;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.documents__p {
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: clamp(17px, 1.05vw, 35px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 60px;
+}
+
+.documents-buttons {
+    width: clamp(200px, 27.34vw, 350px);
+    height: 344px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.documents-buttons__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    -webkit-text-stroke-width: 0.20000000298023224;
+    -webkit-text-stroke-color: #FFF;
+    font-family: Comfortaa;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%;
+    height: 45px;
+    border-radius: 4px;
+    border: none;
+    background: #0A3600;
+    cursor: pointer;
+}
+
+.documents-buttons__btn:hover {
+    background: #97C06B;
+}
+
+.body-sertificate {
+    width: 100vw;
+    min-height: 480px;
+    background: url('../../../assets/product/vitaland/sertificate/product_vitaland_sertificate.png') no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.body-sertificate-bg {
+    width: 100%;
+    min-height: 480px;
+    background: rgba(28, 53, 28, 0.82);
+    display: flex;
+    align-items: center;
+}
+
+.body-sertificate-items {
+    width: 90%;
+    height: 100%;
+    margin: auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.body-sertificate-items-item {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-sertificate-items-item img {
+    width: 100%;
+    height: 145px;
+}
+
+.body-products {
+    width: 90%;
+    min-height: 300px;
+    margin: clamp(30px, 5.27vw, 100px) auto;
+    margin-bottom: 180px;
+}
+
+.body-products__p {
+    text-align: center;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: clamp(20px, 1.05vw, 35px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: clamp(60px, 5.27vw, 100px);
+}
+
+.body-products-items {
+    width: 100%;
+    min-height: 430px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 60px;
+
+}
+
+.body-products-items-item {
+    width: clamp(200px, 25.31vw, 285px);
+    height: clamp(390px, 29.95vw, 530px);
+    border-radius: 33px;
+    background: rgba(151, 192, 107, 0.25);
+    padding: 0 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: end;
+    gap: clamp(10px, 1.15vw, 20px);
+    transition: .3s;
+}
+
+.product-image-wrap {
+    width: 100%;
+    max-height: 200px;
+}
+
+.product-item__img {
+    width: 65%;
+    margin-left: 8.5%;
+    transition: width .3s, margin-left .3s;
+}
+
+.products-item-centered {
+    max-width: 220px;
+    height: 55%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products-item-centered__p1 {
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: clamp(11px, 1.10vw, 21px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: 1.68px;
+    margin-bottom: 7px;
+}
+
+.products-item-centered__p2 {
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: clamp(8px, 0.58vw, 11px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 18.2px */
+    letter-spacing: 0.78px;
+}
+
+.link_arrow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: clamp(10px, 1.58vw, 30px);
+}
+
+.link_arrow__a {
+    width: clamp(35px, 3.16vw, 60px);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #FFFFFF94;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #136900;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: clamp(9px, 0.84vw, 16px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.body-products-items-item:hover {
+    background: #0A3600;
+}
+
+.body-products-items-item:hover p {
+    color: white;
+}
+
+.body-products-items-item:hover a {
+    color: white;
+}
+
+.body-products-items-item:hover img {
+    width: 66.5%;
+}
+
+@media(min-width: 1423px) {
+    .body-products {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1423px) {
+    .body-calcite-desc-container, .usage-items-item {
+        max-width: 1280px;
+    }
+
+    .body-properties-container {
+        max-width: 1280px;
+    }
+
+    .body-composition-container, .body-summary-container, .body-documents-container, .body-usage-items {
+        max-width: 1280px;
+    }
+
+    .body-benefits-container, .body-sertificate-items, .body-products {
+        max-width: 1280px;
+    }
+
+    .body-usage-image {
+        max-width: 1280px;
+    }
+}
+
+
+@media (max-width: 952px) {
+    .body-usage-items {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 20px;
+        justify-items: center;
+    }
+
+    .body-calcite-desc-titles {
+        width: 50%;
+    }
+
+    .body-sertificate {
+        width: 100vw;
+        min-height: 280px;
+        background: url('../../../assets/product/vitaland/sertificate/product_vitaland_sertificate.png') no-repeat;
+        background-size: cover;
+        background-position-y: center;
+    }
+    
+    .body-sertificate-bg {
+        width: 100%;
+        min-height: 280px;
+        background: rgba(28, 53, 28, 0.82);
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 870px) {
+
+    .body-summary-container {
+        width: 95%;
+    }
+
+    .summary-text {
+        width: 100%;
+    }
+
+    .summary-image {
+        width: 100%;
+        height: 185px;
+        margin: 10px auto;
+    }
+
+    .summary-image__img {
+        max-width: 100%;
+        height: 100%;
+        width: unset;
+    }
+}
+
+@media (max-width: 1110px) {
+    .body-products-items {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px; 
+    }
+
+    .body-calcite-desc-container {
+        width: 100vw;
+        justify-content: end;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .body-calcite-desc-image {
+        position: absolute;
+        left: -170px;
+    }
+
+    .body-calcite-desc-titles {
+        width: calc(100% + 115px - 380px);
+        padding-right: 5%;
+    }
+
+    .benefits-items {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        grid-template-areas: 
+            "div1 div2 div3"
+            "div4 div4 div4"; 
+        grid-gap: 15px;
+        justify-items: center;
+    }
+
+    .benefits-items-item {
+        width: 100%;
+    }
+
+    .items-wrap-col2 {
+        width: calc((100% / 3 - (7.5px / 2)) * 2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        grid-area: div4;
+    }
+}
+
+@media (max-width: 676px) {
+    .benefits-items {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-areas: 
+            "div1 div2"
+            "div3 div4"
+            "div5 div5"; 
+        grid-gap: 15px;
+    }
+
+    .benefits-items-item:nth-child(odd) {
+        justify-self: end;
+    }
+
+    .benefits-items-item:nth-child(even) {
+        justify-self: start;
+    }
+
+    .benefits-items-item:nth-last-child(1) {
+        justify-self: center;
+        grid-area: div5;
+        width: calc(100% / 2 - (7.5px));
+    }
+}
+
+@media (max-width: 700px) {
+    .body-products-items {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-template-rows: unset;
+        grid-template-areas: unset;
+    }
+
+    .body-products-items-item:nth-last-child(1) {
+        grid-area: unset;
+    }
+
+    .body-composition-container {
+        width: 95vw;
+        flex-direction: column;
+    }
+
+    .composition-image {
+        position: relative;
+    }
+
+    .composition-title {
+        width: 100%;
+    }
+}
+
+@media (max-width: 572px) {
+    .body-calcite-desc-image {
+        display: none;
+    }
+
+    .body-calcite-desc-titles {
+        width: 95%;
+        padding-right: unset;
+    }
+
+    .body-calcite-desc-container {
+        justify-content: center;
+    }
+
+    .body-sertificate {
+        width: 100vw;
+        min-height: 180px;
+        background: url('../../../assets/product/vitaland/sertificate/product_vitaland_sertificate.png') no-repeat;
+        background-size: cover;
+        background-position-y: center;
+    }
+    
+    .body-sertificate-bg {
+        width: 100%;
+        min-height: 180px;
+        background: rgba(28, 53, 28, 0.82);
+        display: flex;
+        align-items: center;
+    }
+}

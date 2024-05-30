@@ -1,0 +1,53 @@
+<div class="menu-open-wrap">
+    <img src="../../../../assets/menu-icon/menu-line.svg" class="open-menu__img" alt="" (click)="open_menu()" [ngClass]="{'button_changes': !menu_opened}">
+</div>
+<div class="header-container-nav-urls" [ngClass]="{'menu_changes': menu_opened}">
+    <div class="menu">
+        <div class="menu-links" [ngClass]="{'menu_changes': menu_opened}" *ngIf="current_width > 480">
+            <a *ngIf="lang == 'en'" routerLink="/{{lang}}/" class="drop__a">Home</a>
+            <a *ngIf="lang == 'en'" routerLink="/{{lang}}/product/vitacalcite" class="drop__a">VitaCalcite</a>
+            <a *ngIf="lang == 'en'" routerLink="/{{lang}}/product/vitaland" class="drop__a">VitaLand</a>
+            <a *ngIf="lang == 'en'" routerLink="/{{lang}}/product/vitaxorb" class="drop__a">VitaXorb</a>
+            <a *ngIf="lang == 'en'" routerLink="/{{lang}}/product/vitayield" class="drop__a">VitaYield</a>
+            <a *ngIf="lang == 'en'" routerLink="/{{lang}}/technology" class="drop__a">Technology</a>
+            <a *ngIf="lang == 'en'" routerLink="/{{lang}}/about" class="drop__a">About</a>
+            <a *ngIf="lang == 'en'" routerLink="/{{lang}}/FAQ" class="drop__a">FAQ</a>
+            <a *ngIf="lang == 'en'" routerLink="/{{lang}}/contact" class="drop__a">Contact</a>           
+            
+            <a *ngIf="lang == 'cz'" routerLink="/{{lang}}/" class="drop__a">Domů</a>
+            <a *ngIf="lang == 'cz'" routerLink="/{{lang}}/product/vitacalcite" class="drop__a">VitaCalcite</a>
+            <a *ngIf="lang == 'cz'" routerLink="/{{lang}}/product/vitaland" class="drop__a">VitaLand</a>
+            <a *ngIf="lang == 'cz'" routerLink="/{{lang}}/product/vitaxorb" class="drop__a">VitaXorb</a>
+            <a *ngIf="lang == 'cz'" routerLink="/{{lang}}/product/vitayield" class="drop__a">VitaYield</a>
+            <a *ngIf="lang == 'cz'" routerLink="/{{lang}}/technology" class="drop__a">Technologie</a>
+            <a *ngIf="lang == 'cz'" routerLink="/{{lang}}/about" class="drop__a">O Nás</a>
+            <a *ngIf="lang == 'cz'" routerLink="/{{lang}}/FAQ" class="drop__a">FAQ</a>
+            <a *ngIf="lang == 'cz'" routerLink="/{{lang}}/contact" class="drop__a">Kontakt</a>   
+            <button (click)="reload('en')" class="" *ngIf="lang != 'en'">EN</button> 
+            <button (click)="reload('cz')"  class="" *ngIf="lang != 'cz'">CZ</button>
+        </div>
+        <div class="menu-links" [ngClass]="{'menu_changes': menu_opened, 'open_product_main_menu': menu_products}" *ngIf="current_width <= 480">
+            <button (click)="open_product()">Products <img src="../../../../assets/menu-icon/right-arrow-svgrepo-com.svg" alt=""></button>
+            <a *ngIf="lang == 'en'" routerLink="/{{lang}}/" class="drop__a">Home</a>
+            <a *ngIf="lang == 'en'" routerLink="/{{lang}}/technology" class="drop__a">Technology</a>
+            <a *ngIf="lang == 'en'" routerLink="/{{lang}}/about" class="drop__a">About</a>
+            <a *ngIf="lang == 'en'" routerLink="/{{lang}}/FAQ" class="drop__a">FAQ</a>
+            <a *ngIf="lang == 'en'" routerLink="/{{lang}}/contact" class="drop__a">Contact</a>    
+            
+            <a *ngIf="lang == 'cz'" routerLink="/{{lang}}/" class="drop__a">Domů</a>
+            <a *ngIf="lang == 'cz'" routerLink="/{{lang}}/technology" class="drop__a">Technologie</a>
+            <a *ngIf="lang == 'cz'" routerLink="/{{lang}}/about" class="drop__a">O Nás</a>
+            <a *ngIf="lang == 'cz'" routerLink="/{{lang}}/FAQ" class="drop__a">FAQ</a>
+            <a *ngIf="lang == 'cz'" routerLink="/{{lang}}/contact" class="drop__a">Kontakt</a>   
+            <button (click)="reload('en')" class="" *ngIf="lang != 'en'">EN</button> 
+            <button (click)="reload('cz')"  class="" *ngIf="lang != 'cz'">CZ</button>
+            <div class="menu-links-product" [ngClass]="{'menu_changes': menu_opened, 'products-links-pdt': !menu_opened, 'open_product': menu_products}">
+                <button (click)="open_product()"><img src="../../../../assets/menu-icon/right-arrow-svgrepo-com.svg" alt=""></button>
+                <a routerLink="/{{lang}}/product/vitacalcite" class="drop__a">VitaCalcite</a>
+                <a routerLink="/{{lang}}/product/vitaland" class="drop__a">VitaLand</a>
+                <a routerLink="/{{lang}}/product/vitaxorb" class="drop__a">VitaXorb</a>
+                <a routerLink="/{{lang}}/product/vitayield" class="drop__a">VitaYield</a>
+            </div>
+        </div>
+    </div>
+</div>

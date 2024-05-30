@@ -1,0 +1,544 @@
+<app-header product="yield" (id)="scrollFN($event)"></app-header>
+<div class="body" *ngIf="lang == 'en'">
+    <div class="body-yield-desc-container" id="description">
+        <div class="body-yield-desc-image">
+            <img src="../../../assets/product/yield/product_yield_body.png" #descImg alt="">
+        </div>
+        <div class="body-yield-desc-titles">
+            <p class="body-yield-desc-titles__p1">
+              DESCRIPTION
+            </p>
+            <p class="body-yield-desc-titles__p2">
+                Vita<span>YIELD</span> is a mineral bio stimulant that harnesses the power of natural ingredients to support inner plant processes for increased crop yield and quality. Derived exclusively from ground marine limestone without chemical ingredients, it is a pure natural product for growing organic quality crops for small-scale farmers and large producers alike.
+                <br>
+                <br>
+                Vita<span>YIELD</span> is deployed by foliar application as lime fertilizer containing trace elements to support the photosynthetic exchange and accelerate crop growth. It can be used on field crops, fruit and vegetables, flowers and ornamentals, all types of trees, and industrial as well as energy crops.
+            </p>
+        </div>
+    </div>
+    <div class="properties_bg">
+        <div class="body-properties-container" id="properties">
+            <p class="properties__p">
+                PHYSICAL PROPERTIES
+            </p>
+            <div class="properties-about">
+                <div class="properties-about-text">
+                    <p class="properties-about-text__p">
+                        34%
+                    </p>
+                    <p class="properties-about-text__p1">
+                        CALCIUM OXIDE
+                    </p>
+                </div>
+                <div class="properties-about-text">
+                    <p class="properties-about-text__p">
+                        15 ųm
+                    </p>
+                    <p class="properties-about-text__p1">
+                        PARTICLE SIZE
+                    </p>
+                </div>
+                <div class="properties-about-text">
+                    <p class="properties-about-text__p">
+                        6.0 - 8.0
+                    </p>
+                    <p class="properties-about-text__p1">
+                        PH VALUE
+                    </p>
+                </div>
+            </div>
+            <p class="properties__p1">
+                Content of risk substances does not exceed limits set forth by the EU.
+            </p>
+        </div>
+    </div>    
+    <div class="body-composition-container" id="composition">
+        <div class="composition-title">
+            <p class="composition-title__p">
+                COMPOSITION
+            </p>
+            <p class="composition-title__p1">
+                Vita<span>YIELD</span> consists of calcium carbonate, obtained by grinding natural deposits of limestone of marine origin, as well as other calcite related minerals which accelerate photosynthesis & plant growth dynamics. 
+                <br>
+                <br>
+                In the production process, the Vita<span>YIELD</span> particles are reduced to an average size of 15 ųm allowing it to effectively penetrate the target plant once sprayed across the leaf surface.
+            </p>
+        </div>
+        <div class="composition-image">
+            <img src="../../../assets/product/yield/product_yield_composition.png" #compose alt="" class="composition-image__img">
+        </div>
+    </div>
+    <div class="body-benefits-container" id="benefits">
+        <p class="benefits__p">
+            BENEFITS
+        </p>
+        <div class="benefits-items">
+            <div class="benefits-items-item" #benefit>
+                <p class="benefits-items-item__p">
+                    REINFORCES RESISTANCE TO SEVERE WEATHER
+                </p>
+                <div class="benefits-items-item-line"></div>
+                <p class="benefits-items-item__p1">
+                    Acts on the plant by reducing its water evaporation, securing enough plant juices to ripen naturally in spite of extreme weather conditions.
+                </p>
+                <div class="img-wrap">
+                    <img src="../../../assets/product/yield/benefits/benefits_img1.svg" alt="" class="benefits-items-item__img">
+                </div>
+            </div>
+            <div class="benefits-items-item" #benefit>
+                <p class="benefits-items-item__p">
+                    IMPROVES QUANTITY AND QUALITY OF HARVEST
+                </p>
+                <div class="benefits-items-item-line"></div>
+                <p class="benefits-items-item__p1">
+                    Positively influences the quality and nutritional value of each crop, the color and taste of its fruit; promotes robust root system and extends shelf life.
+                </p>
+                <div class="img-wrap">
+                    <img src="../../../assets/product/yield/benefits/benefits_img2.svg" alt="" class="benefits-items-item__img">
+                </div>
+            </div>
+            <div class="benefits-items-item" #benefit>
+                <p class="benefits-items-item__p">
+                    BOOSTS RESISTANCE TO PATHOGENS AND PESTS
+                </p>
+                <div class="benefits-items-item-line"></div>
+                <p class="benefits-items-item__p1">
+                    Enables quicker formation of protein chains, thereby enhancing the plant's ability to withstand disease and pest pressure.
+                </p>
+                <div class="img-wrap">
+                    <img src="../../../assets/product/yield/benefits/benefits_img3.svg" alt="" class="benefits-items-item__img">
+                </div>
+            </div>
+            <div class="benefits-items-item" #benefit>
+                <p class="benefits-items-item__p">
+                    PROMOTES EFFICIENT PHOTOSYNTHESIS
+                </p>
+                <div class="benefits-items-item-line"></div>
+                <p class="benefits-items-item__p1">
+                    VitaYIELD's mineral composition, acting on inner plant processes, accelerates photosynthesis and stimulates growth dynamics.
+                </p>
+                <div class="img-wrap">
+                    <img src="../../../assets/product/yield/benefits/benefits_img4.svg" alt="" class="benefits-items-item__img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-usage-bg" id="app">
+        <div class="body-usage-container">
+            <p class="body-usage__p">
+                APPLICATION  & USAGE
+            </p>
+            <p class="body-usage__p1">
+                Recommended dosing table:
+            </p>
+            <div class="body-usage-image">
+                <img src="../../../assets/product/yield/usage/product_yield_usage_table.png" alt="" class="usage-image__img">
+            </div>
+        </div>
+    </div>
+    <div class="body-summary-container" id="crops">
+        <div class="summary-image" *ngIf="current_width > 874">
+            <img src="../../../assets/product/yield/summary/product_yield_summary.png" #summaryImg alt="" class="summary-image__img">
+        </div>
+        <div class="summary-text">
+            <p class="summary-text__p">
+                CROP SUMMARY
+            </p>
+            <p class="summary-text__p1 mgb-15">
+                <span>Field crops</span> – wheat, oilseed rape, barley, soybeans, grain and silage corn, sunflower, potato, etc.
+            </p>
+            <div class="summary-image" *ngIf="current_width <= 874">
+                <img src="../../../assets/product/yield/summary/product_yield_summary.png" #summaryImg alt="" class="summary-image__img">
+            </div>
+            <p class="summary-text__p1 mgb-10">
+                <span>Fruit & vegetables</span>:
+            </p>
+            <ul>
+                <li>
+                    <p class="p-li">
+                        Root vegetables – parsley, carrot, celery, onion, garlic, etc. leaf vegetable – lettuce, spinach, cabbage, cauliflower, etc.
+                    </p>
+                </li>
+                <li>
+                    <p class="p-li">
+                        Fruit vegetables – tomato, pepper, cucumbers, etc.
+                    </p>
+                </li>
+                <li>
+                    <p class="p-li">
+                        Fruit trees – apple, pear, plum, peach, apricot, etc.
+                    </p>
+                </li>
+                <li>
+                    <p class="p-li">
+                        Small fruits – strawberry, raspberry, currant, blackberry, etc.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="body-documents-container" id="documents">
+        <p class="documents__p">
+            PRODUCT DOCUMENTS
+        </p>
+        <div class="documents-buttons">
+            <a target="_blank" href="../../../assets/product/yield/documents/YIELD_MSDS_EN.pdf"  class="documents-buttons__btn" (click)="sendSheet()">VitaYIELD DATASHEET</a>
+            <a target="_blank" href="../../../assets/product/yield/documents/yield_presenter.pdf" class="documents-buttons__btn" (click)="sendPresenter()">VitaYIELD PRESENTER</a>
+        </div>
+    </div>
+    <div class="body-sertificate">
+        <div class="body-sertificate-bg">
+            <div class="body-sertificate-items">
+                <div class="body-sertificate-items-item">
+                    <img src="../../../../assets/main-page/verdexagro_omri.svg" alt="">
+                    
+                </div>
+                <div class="body-sertificate-items-item">
+                    <img src="../../../../assets/main-page/verdexagro_fibl.svg" alt="">
+                    
+                </div>
+                <div class="body-sertificate-items-item">
+                    <img src="../../../../assets/main-page/verdexagro_ukzuz.svg" alt="">
+                    
+                </div>
+                <div class="body-sertificate-items-item">
+                    <img src="../../../../assets/main-page/verdexagro_demeter.svg" alt="">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-products">
+        <p class="body-products__p">
+            EXPLORE OUR OTHER PRODUCTS
+        </p>
+        <div class="body-products-items">
+            <div class="body-products-items-item" #product>
+                <div class="product-image-wrap">
+                    <img src="../../../../assets/main-page/body/white/product1_white.png" alt="" class="product-item__img">
+                </div>
+                <div class="products-item-centered">
+                    <p class="products-item-centered__p1">
+                        VitaCALCITE 
+                    </p>
+                    <p class="products-item-centered__p2">
+                        100% natural plant growth supplement based on foliar application. Provides essential plant support by efficient supply of calcium, silicon, and other trace elements.
+                    </p>
+                    <div class="link_arrow">
+                        <a routerLink="/{{lang}}/product/vitacalcite" class="link_arrow__a">
+                            ...                        
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="body-products-items-item" #product>
+                <div class="product-image-wrap">
+                    <img src="../../../../assets/main-page/body/white/product2_white.png" alt="" class="product-item__img">
+                </div>
+                <div class="products-item-centered">
+                    <p class="products-item-centered__p1">
+                        VitaLAND
+                    </p>
+                    <p class="products-item-centered__p2">
+                        100% natural soil conditioner developed as a long-term solution to improving water management, moisture regulation, nutrient uptake, and overall soil quality.
+                    </p>
+                    <div class="link_arrow">
+                        <a routerLink="/{{lang}}/product/vitaland" class="link_arrow__a">
+                            ...                        
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="body-products-items-item" #product>
+                <div class="product-image-wrap">
+                    <img src="../../../../assets/main-page/body/white/product3_white.png" alt="" class="product-item__img">
+                </div>
+                <div class="products-item-centered">
+                    <p class="products-item-centered__p1">
+                        VitaXORB
+                    </p>
+                    <p class="products-item-centered__p2">
+                        100% natural feed additive optimizes the animal immune system by acting on epithelial cells and probiotic bacteria, leading to higher production efficiency at lower costs. 
+                    </p>
+                    <div class="link_arrow">
+                        <a routerLink="/{{lang}}/product/vitaxorb" class="link_arrow__a">
+                            ...                        
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+<div class="body" *ngIf="lang == 'cz'">
+    <div class="body-yield-desc-container" id="description">
+        <div class="body-yield-desc-image">
+            <img src="../../../assets/product/yield/product_yield_body.png" #descImg alt="">
+        </div>
+        <div class="body-yield-desc-titles">
+            <p class="body-yield-desc-titles__p1">
+                POPIS
+            </p>
+            <p class="body-yield-desc-titles__p2">
+                Vita<span>YIELD</span> je minerální biostimulátor, který využívá sílu přírodních složek k podpoře vnitřních procesů v rostlinách za účelem zvýšení výnosů ze sklizně a kvality plodin. Získáváme jej výhradně z drceného mořského vápence bez chemických přísad. Jedná se tak o čistě přírodní produkt pro pěstování plodin v bio kvalitě určený jak drobným zemědělcům, tak velkým pěstitelům.
+                <br>
+                <br>
+                Vita<span>YIELD</span> se aplikuje na listy plodiny jako vápenaté hnojivo se stopovými prvky pro podporu fotosyntetické výměny a urychlení růstu plodin. Lze jej použít na polní plodiny, ovoce a zeleninu, květiny a okrasné rostliny, všechny druhy dřevin či průmyslové i energetické plodiny.
+            </p>
+        </div>
+    </div>
+    <div class="properties_bg">
+        <div class="body-properties-container" id="properties">
+            <p class="properties__p">
+                FYZIKÁLNĚ-CHEMICKÉ VLASTNOSTI
+            </p>
+            <div class="properties-about">
+                <div class="properties-about-text">
+                    <p class="properties-about-text__p">
+                        34%
+                    </p>
+                    <p class="properties-about-text__p1">
+                        oxid vápenatý (CaO)
+                    </p>
+                </div>
+                <div class="properties-about-text">
+                    <p class="properties-about-text__p">
+                        15 ųm
+                    </p>
+                    <p class="properties-about-text__p1">
+                        velikost částic
+                    </p>
+                </div>
+                <div class="properties-about-text">
+                    <p class="properties-about-text__p">
+                        6.0 - 8.0
+                    </p>
+                    <p class="properties-about-text__p1">
+                        hodnota pH
+                    </p>
+                </div>
+            </div>
+            <p class="properties__p1">
+                Obsah rizikových látek nepřekračuje limity stanovené EU.
+            </p>
+        </div>
+    </div>    
+    <div class="body-composition-container" id="composition">
+        <div class="composition-title">
+            <p class="composition-title__p">
+                SLOŽENÍ
+            </p>
+            <p class="composition-title__p1">
+                Vita<span>YIELD</span> se skládá z uhličitanu vápenatého, získaného mletím přírodních ložisek vápence mořského původu, a dalších minerálů příbuzných kalcitu, které urychlují fotosyntézu a dynamiku růstu rostlin.
+                <br>
+                <br>
+                Ve výrobním procesu jsou částice přípravku VitaYield zmenšeny na průměrnou velikost 15 pm, a tak účinně proniknout do cílové rostliny po postřiku povrchu listů.
+            </p>
+        </div>
+        <div class="composition-image">
+            <img src="../../../assets/product/yield/product_yield_composition.png" #compose alt="" class="composition-image__img">
+        </div>
+    </div>
+    <div class="body-benefits-container" id="benefits">
+        <p class="benefits__p">
+            VÝHODY
+        </p>
+        <div class="benefits-items">
+            <div class="benefits-items-item" #benefit>
+                <p class="benefits-items-item__p">
+                    POSILUJE ODOLNOST VŮČI NEPŘÍZNIVÉMU POČASÍ
+                </p>
+                <div class="benefits-items-item-line"></div>
+                <p class="benefits-items-item__p1">
+                    Působí na rostlinu tím, že snižuje odpařování vody, čímž uchovává dostatek rostlinných šťáv k přirozenému dozrávání navzdory extrémním klimatickým jevům
+                </p>
+                <div class="img-wrap">
+                    <img src="../../../assets/product/yield/benefits/benefits_img1.svg" alt="" class="benefits-items-item__img">
+                </div>
+            </div>
+            <div class="benefits-items-item" #benefit>
+                <p class="benefits-items-item__p">
+                    ZLEPŠUJE MNOŽSTVÍ A KVALITU SKLIZNĚ
+                </p>
+                <div class="benefits-items-item-line"></div>
+                <p class="benefits-items-item__p1">
+                    Pozitivně ovlivňuje kvalitu a nutriční hodnotu každé plodiny, barvu a chuť jejích plodů, dále podporuje růst robustnějšího kořenového systému a prodlužuje trvanlivost.
+                </p>
+                <div class="img-wrap">
+                    <img src="../../../assets/product/yield/benefits/benefits_img2.svg" alt="" class="benefits-items-item__img">
+                </div>
+            </div>
+            <div class="benefits-items-item" #benefit>
+                <p class="benefits-items-item__p">
+                    ZVYŠUJE ZDRAVOTNÍ STAV A ODOLNOST VŮČI PATOGENŮM A ŠKŮDCŮM
+                </p>
+                <div class="benefits-items-item-line"></div>
+                <p class="benefits-items-item__p1">
+                    Umožňuje rychlejší tvorbu řetězců bílkovin, čímž zvyšuje schopnost rostliny odolávat chorobám.
+                </p>
+                <div class="img-wrap">
+                    <img src="../../../assets/product/yield/benefits/benefits_img3.svg" alt="" class="benefits-items-item__img">
+                </div>
+            </div>
+            <div class="benefits-items-item" #benefit>
+                <p class="benefits-items-item__p">
+                    PODPORUJE RŮST A ÚČINNOU FOTOSYNTÉZU
+                </p>
+                <div class="benefits-items-item-line"></div>
+                <p class="benefits-items-item__p1">
+                    Minerální složení přípravku VitaYIELD působí na vnitřní procesy v rostlině, a tím urychluje fotosyntézu a stimuluje dynamiku růstu.
+                </p>
+                <div class="img-wrap">
+                    <img src="../../../assets/product/yield/benefits/benefits_img4.svg" alt="" class="benefits-items-item__img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-usage-bg" id="app">
+        <div class="body-usage-container">
+            <p class="body-usage__p">
+                APLIKACE A POUŽITÍ
+            </p>
+            <p class="body-usage__p1">
+                Doporučené Dávkování:
+            </p>
+            <div class="body-usage-image">
+                <img src="../../../assets/product/yield/usage/tablecz.svg" alt="" class="usage-image__img">
+            </div>
+        </div>
+    </div>
+    <div class="body-summary-container" id="crops">
+        <div class="summary-image" *ngIf="current_width > 874">
+            <img src="../../../assets/product/yield/summary/product_yield_summary.png" #summaryImg alt="" class="summary-image__img">
+        </div>
+        <div class="summary-text">
+            <p class="summary-text__p">
+                PŘEHLED VHODNÝCH PLODIN PRO APLIKACI
+            </p>
+            <p class="summary-text__p1 mgb-15">
+                <span>Polní plodiny</span>: pšenice, řepka, ječmen, sója, kukuřice na zrno a siláž, slunečnice, brambory atd.
+            </p>
+            <div class="summary-image" *ngIf="current_width <= 874">
+                <img src="../../../assets/product/yield/summary/product_yield_summary.png" #summaryImg alt="" class="summary-image__img">
+            </div>
+            <p class="summary-text__p1 mgb-10">
+                <span>Ovoce a Zelenina</span>:
+            </p>
+            <ul>
+                <li>
+                    <p class="p-li">
+                        Kořenová zelenina – petržel, mrkev, celer, cibule, česnek atd. Listová zelenina – salát, špenát, zelí, květák atd.
+                    </p>
+                </li>
+                <li>
+                    <p class="p-li">
+                        Ovocná zelenina – rajčata, paprika, okurky atd.
+                    </p>
+                </li>
+                <li>
+                    <p class="p-li">
+                        Ovocné stromy – jablka, hrušky, švestky, broskve, meruňky atd.
+                    </p>
+                </li>
+                <li>
+                    <p class="p-li">
+                        Drobné ovoce – jahody, maliny, rybíz, ostružiny atd.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="body-documents-container" id="documents">
+        <p class="documents__p">
+            DOKUMENTY K PRODUKTŮM
+        </p>
+        <div class="documents-buttons">
+            <a target="_blank" href="../../../assets/product/yield/documents/cz/VitaYIELD_datasheet_cz.pdf" class="documents-buttons__btn" (click)="sendSheet()">VitaYIELD produktový list</a>
+            <a target="_blank" href="../../../assets/product/yield/documents/cz/VitaYIELD_presenter_cz.pdf" class="documents-buttons__btn" (click)="sendPresenter()">VitaYIELD prezentace</a>
+        </div>
+    </div>
+    <div class="body-sertificate">
+        <div class="body-sertificate-bg">
+            <div class="body-sertificate-items">
+                <div class="body-sertificate-items-item">
+                    <img src="../../../../assets/main-page/verdexagro_omri.svg" alt="">
+                    
+                </div>
+                <div class="body-sertificate-items-item">
+                    <img src="../../../../assets/main-page/verdexagro_fibl.svg" alt="">
+                    
+                </div>
+                <div class="body-sertificate-items-item">
+                    <img src="../../../../assets/main-page/verdexagro_ukzuz.svg" alt="">
+                    
+                </div>
+                <div class="body-sertificate-items-item">
+                    <img src="../../../../assets/main-page/verdexagro_demeter.svg" alt="">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-products">
+        <p class="body-products__p">
+            PROZKOUMEJTE NAŠE DALŠÍ PRODUKTY
+        </p>
+        <div class="body-products-items">
+            <div class="body-products-items-item" #product>
+                <div class="product-image-wrap">
+                    <img src="../../../../assets/main-page/body/white/product1_white.png" alt="" class="product-item__img">
+                </div>
+                <div class="products-item-centered">
+                    <p class="products-item-centered__p1">
+                        VitaCALCITE 
+                    </p>
+                    <p class="products-item-centered__p2">
+                        100% přírodní doplněk pro růst rostlin na bázi listové aplikace. Dodává rostlinám nezbytnou podporu skrze efektivní přísun vápníku, křemíku a dalších stopových prvků.
+                    </p>
+                    <div class="link_arrow">
+                        <a routerLink="/{{lang}}/product/vitacalcite" class="link_arrow__a">
+                            ...                        
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="body-products-items-item" #product>
+                <div class="product-image-wrap">
+                    <img src="../../../../assets/main-page/body/white/product2_white.png" alt="" class="product-item__img">
+                </div>
+                <div class="products-item-centered">
+                    <p class="products-item-centered__p1">
+                        VitaLAND
+                    </p>
+                    <p class="products-item-centered__p2">
+                        100% přírodní půdní kondicionér vyvinutý pro dlouhodobézlepšování hospodaření s vodou, regulace vlhkosti, příjmu živin a celkové kvality půdy.
+                    </p>
+                    <div class="link_arrow">
+                        <a routerLink="/{{lang}}/product/vitaland" class="link_arrow__a">
+                            ...                        
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="body-products-items-item" #product>
+                <div class="product-image-wrap">
+                    <img src="../../../../assets/main-page/body/white/product3_white.png" alt="" class="product-item__img">
+                </div>
+                <div class="products-item-centered">
+                    <p class="products-item-centered__p1">
+                        VitaXORB
+                    </p>
+                    <p class="products-item-centered__p2">
+                        100% přírodní krmná přísada optimalizuje imunitní systém zvířat skrze působení na epitelové buňky a probiotické bakterie, což vede k vyšší efektivitě produkce při nižších nákladech.
+                    </p>
+                    <div class="link_arrow">
+                        <a routerLink="/{{lang}}/product/vitaxorb" class="link_arrow__a">
+                            ...                        
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+<app-footer></app-footer>

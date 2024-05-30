@@ -1,0 +1,806 @@
+<app-header (id)="scrollFN($event)"></app-header>
+<div class="body" *ngIf="lang == 'en'">
+    <div class="body-about-desc-container" id="description" *ngIf="current_width > 1175">
+        <div class="body-about-desc-image">
+            <img src="../../../../assets/about/body/about_body_man.png" #descImg alt="">
+        </div>
+        <div class="body-about-desc-titles">
+            <p class="body-about-desc-titles__p1">
+                PHILOSOPHY
+            </p>
+            <p class="body-about-desc-titles__p2">
+                At <span class="green">Verdex Agro</span>, we help our customers grow simultaneously with our products, each fine-tuned to yield the desirable stimulating and regulatory properties in relation to different farm conditions and varieties in cultivation of animals, plants, and soil. 
+                <br>
+                <br>
+                Customer satisfaction is at the forefront of our efforts, and thus we offer individualized consulting services in tandem with our bio stimulants to identify optimal cost-effective application timetable in order to generate higher yield volume and quality of produce. 
+                <br>
+                <br>
+                Our goal is to help modern farmers achieve greater efficiency and economic viability of agricultural production, sustainably for years to come.
+            </p>
+        </div>
+    </div>
+    <div class="body-about-desc-container" id="description" *ngIf="current_width <= 1175">
+        <div class="body-about-desc-titles">
+            <p class="body-about-desc-titles__p1">
+                PHILOSOPHY
+            </p>
+            <p class="body-about-desc-titles__p2">
+                At <span class="green">Verdex Agro</span>, we help our customers grow simultaneously with our products, each fine-tuned to yield the desirable stimulating and regulatory properties in relation to different farm conditions and varieties in cultivation of animals, plants, and soil. 
+                <br>
+                <br>
+                Customer satisfaction is at the forefront of our efforts, and thus we offer individualized consulting services in tandem with our bio stimulants to identify optimal cost-effective application timetable in order to generate higher yield volume and quality of produce. 
+            </p>    
+                <div class="body-about-desc-image">
+                    <img src="../../../../assets/about/body/about_body_man.png" #descImg alt="">
+                </div>
+            <p class="body-about-desc-titles__p2">
+                <br>
+                <br>
+                Our goal is to help modern farmers achieve greater efficiency and economic viability of agricultural production, sustainably for years to come.
+            </p>
+        </div>
+    </div>
+    <div class="body-values-container" id="values">
+        <div class="body-values">
+            <p class="body-values__p1">
+                OUR VALUES
+            </p>
+            <div class="body-values-items">
+                <div class="body-values-items-item">
+                    <img src="../../../../assets/about/body/icons/landicon1.png" #valueImg alt="">
+                    <p class="body-values-item__p1" #valueText>EFFICIENCY</p> 
+                    <p class="body-values-item__p2" #valueText>
+                        Adopting cutting edge state-of-the-art technology in product design and development to maximize the bio efficiency of agricultural output.
+                    </p>
+                </div>
+                <div class="body-values-items-item">
+                    <img src="../../../../assets/about/body/icons/landicon2.png" #valueImg alt="">                           
+                    <p class="body-values-item__p1" #valueText>SUSTAINABILITY</p> 
+                    <p class="body-values-item__p2" #valueText>
+                        Each of our products is derived from naturally occurring minerals in conscious effort to sustain a thriving environment for coming generations.
+                    </p>
+                </div>
+                <div class="body-values-items-item">
+                    <img src="../../../../assets/about/body/icons/landicon3.png" #valueImg alt="">                      
+                    <p class="body-values-item__p1" #valueText>ADVANTAGE</p> 
+                    <p class="body-values-item__p2" #valueText>
+                        Higher yields for the farmers, bigger returns for our partners, and good health for end consumers with our high-utility line of organic stimulants.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-history-container" id="history" #history *ngIf="current_width > 945">
+        <p class="body-history__p">COMPANY HISTORY</p>
+        <div class="body-history-title">
+            <div class="history-title-container1">
+                <p class="history-title-container__p" #history_titleDesctop>
+                    Business continuation with steadfast focus on furthering export activities and international presence spanning across the entire globe.
+                </p>
+                <p class="history-title-container__p" #history_titleDesctop>
+                    Verdex Agro s.r.o. continues to provide added value for the agricultural industry with international presence worldwide.
+                </p>
+            </div>
+            <div class="history-title-container2">
+                <div class="vertical-line"></div>
+                <p class="history-title-container2__p" #history_year>2021</p>
+                <p class="history-title-container2__p" #history_year>2022</p>
+                <p class="history-title-container2__p" #history_year>2023</p>               
+                <p class="history-title-container2__p" #history_year>2024</p>
+            </div>
+            <div class="history-title-container3">
+                <p class="history-title-container__p" #history_titleDesctop>
+                    Founded as an exclusive distributor and sister company under the umbrella of product manufacturer.
+                </p>
+                <p class="history-title-container__p" #history_titleDesctop>
+                    Becomes a part of the VERDEX AGRO s.r.o. consortium, conjoining scientific research background, economical prowess, and trade effectiveness.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="body-history-container" id="history" #history *ngIf="current_width <= 945">
+        <p class="body-history__p">COMPANY HISTORY</p>
+        <div class="body-history-title">
+            
+            <div class="history-title-container2">
+                <div class="history-title-rect">
+                    <div class="vertical-line"></div>
+                    <p class="history-title-container2__p" #history_year>2021</p>
+
+                    <p class="history-title-container2__p" #history_year>2022</p>
+                    
+                    <p class="history-title-container2__p" #history_year>2023</p>
+                    
+                    <p class="history-title-container2__p" #history_year>2024</p>
+                </div>
+                
+                <div class="history-title-text">
+                    <div class="history-title-container1">
+                        <p class="history-title-container__p" #history_titleMobile>
+                            Founded as an exclusive distributor and sister company under the umbrella of product manufacturer.
+                        </p>
+                    </div>
+                    <div class="history-title-container1">
+                        <p class="history-title-container__p" #history_titleMobile>
+                            Business continuation with steadfast focus on furthering export activities and international presence spanning across the entire globe.
+                        </p>
+                    </div>
+                    <div class="history-title-container1">
+                        <p class="history-title-container__p" #history_titleMobile>
+                            Becomes a part of the VERDEX AGRO s.r.o. consortium, conjoining scientific research background, economical prowess, and trade effectiveness.
+                        </p>
+                    </div>
+                    <div class="history-title-container1">
+                        <p class="history-title-container__p" #history_titleMobile>
+                            Verdex Agro s.r.o. continues to provide added value for the agricultural industry with international presence worldwide.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-team-container" id="team">
+        <p class="body-team__p">
+            MEET THE TEAM
+        </p>
+        <div class="body-team-items">
+            <div class="team-items-item">
+                <div class="item-image"></div>
+                <div class="team-item-contacts">
+                    <p class="team-item-contact__p1">Max Maksjakov</p>
+                    <p class="team-item-contact__p2">CHIEF EXECUTIVE OFFICER</p>
+                    <div class="contact-item">
+                        <div>
+                            <a href="https://www.linkedin.com/in/max-maksjakov/" target="_blank">
+                                <img src="../../../../assets/about/body/icons/linkedin_icon.png" alt="" class="contact-item__img">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:max@verderagro.cz">
+                                <img src="../../../../assets/about/body/icons/email_icon.png" alt="" class="contact-item__img">
+                            </a>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+            <div class="team-items-item">
+                <div class="item-image"></div>
+                <div class="team-item-contacts">
+                    <p class="team-item-contact__p1">Roman Kirschner</p>
+                    <p class="team-item-contact__p2">BUSINESS DEVELOPMENT MANAGER</p>
+                    <div class="contact-item">
+                        <div>
+                            <a href="mailto:roman@verdexagro.cz">
+                                <img src="../../../../assets/about/body/icons/email_icon.png" alt="" class="contact-item__img">
+                            </a>
+                        </div>    
+                        <div>
+                            <a href="tel:420606810061">
+                                <img src="../../../../assets/about/body/icons/phone_icon.png" alt="" class="contact-item__img">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/rom-kirschner15/" target="_blank">
+                                <img src="../../../../assets/about/body/icons/linkedin_icon.png" alt="" class="contact-item__img">
+                            </a>
+                        </div>                 
+                    </div>
+                </div>
+            </div>
+            <div class="team-items-item">
+                <div class="item-image"></div>
+                <div class="team-item-contacts">
+                    <p class="team-item-contact__p1">Klára Tvarožková</p>
+                    <p class="team-item-contact__p2">MARKETING MANAGER</p>
+                    <div class="contact-item">
+                        <div>
+                            <a href="https://www.linkedin.com/in/klára-tvarožková-29852b185/" target="_blank">
+                                <img src="../../../../assets/about/body/icons/linkedin_icon.png" alt="" class="contact-item__img">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:klara@verdexagro.cz">
+                                <img src="../../../../assets/about/body/icons/email_icon.png" alt="" class="contact-item__img">
+                            </a>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+            <div class="team-items-item">
+                <div class="item-image"></div>
+                <div class="team-item-contacts">
+                    <p class="team-item-contact__p1">Dmitry Romin</p>
+                    <p class="team-item-contact__p2">SALES EXECUTIVE</p>
+                    <div class="contact-item">
+                        <div>
+                            <a href="mailto:dmitry@verdexagro.cz">
+                                <img src="../../../../assets/about/body/icons/email_icon.png" alt="" class="contact-item__img">
+                            </a>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+            <div class="team-items-item">
+                <div class="item-image"></div>
+                <div class="team-item-contacts">
+                    <p class="team-item-contact__p1">Andrej Kahan</p>
+                    <p class="team-item-contact__p2">LEGAL ADVISOR</p>
+                    <div class="contact-item">
+                        <div>
+                            <a href="mailto:andrej@verdexagro.cz">
+                                <img src="../../../../assets/about/body/icons/email_icon.png" alt="" class="contact-item__img">
+                            </a>
+                        </div>               
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="body-sertificate">
+        <div class="body-sertificate-bg">
+            <div class="body-sertificate-items">
+                <div class="body-sertificate-items-item">
+                    <img src="../../../../assets/main-page/verdexagro_omri.svg" alt="">
+                    
+                </div>
+                <div class="body-sertificate-items-item">
+                    <img src="../../../../assets/main-page/verdexagro_fibl.svg" alt="">
+                    
+                </div>
+                <div class="body-sertificate-items-item">
+                    <img src="../../../../assets/main-page/verdexagro_ukzuz.svg" alt="">
+                    
+                </div>
+                <div class="body-sertificate-items-item">
+                    <img src="../../../../assets/main-page/verdexagro_demeter.svg" alt="">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-questions-container" *ngIf="current_width > 1100">
+        <div class="questions-title">
+            <p class="questions-title__p1">WHAT IS NEW?</p>
+            <a routerLink="/{{lang}}/blog" class="questions-title__p1">FIND OUT MORE <svg xmlns="http://www.w3.org/2000/svg" width="31" height="24" viewBox="0 0 31 24" fill="none">
+                <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5L2 10.5ZM30.0607 13.0607C30.6464 12.4749 30.6464 11.5251 30.0607 10.9393L20.5147 1.3934C19.9289 0.807613 18.9792 0.807613 18.3934 1.3934C17.8076 1.97919 17.8076 2.92893 18.3934 3.51472L26.8787 12L18.3934 20.4853C17.8076 21.0711 17.8076 22.0208 18.3934 22.6066C18.9792 23.1924 19.9289 23.1924 20.5147 22.6066L30.0607 13.0607ZM2 13.5L29 13.5L29 10.5L2 10.5L2 13.5Z" fill="#0A3600"/>
+              </svg></a>
+        </div>
+        <div class="questions-tables">
+            <div class="questions-tables-container">
+                <div class="table-container-big" #blogContainer>
+                    <p class="table-container-big__p1">ZEOLITE CLINOPTILOLITE MODUS OPERANDI</p>
+                    <p class="table-container-big__p2">Zeolite clinoptilolite sedimentary rock comes from a family of microporous, crystalline aluminosilicate minerals. Find out about how zeolite’s attributes yield positive impact on agriculture.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/zeolite" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-container-mini" #blogContainer>
+                    <p class="table-container-mini__p1">MINERAL NUTRITION IN PLANTS</p>
+                    <p class="table-container-mini__p2">Understanding the role of essential minerals in the growth and development of plants is pivotal to unlocking their full potential.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/nutrition" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="questions-tables-container">
+                <div class="table-container-mini" #blogContainer>
+                    <p class="table-container-mini__p1">IMPROVE SOIL QUALITY WITH VITALAND </p>
+                    <p class="table-container-mini__p2">Are you seeking a long-term solution to improving nutrient availability and the quality of your soil?</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/soil" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-container-big" #blogContainer>
+                    <p class="table-container-big__p1">WHY SHOULD FARMERS USE VITACALCITE</p>
+                    <p class="table-container-big__p2">With an effective solution in the form of VitaCALCITE plant booster at hand, you have all of your plants’ micronutrient needs covered. Discover how VitaCALCITE helps stimulate your plant production.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/vitacalcite" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="questions-tables-container">
+                <div class="table-container-big" #blogContainer>
+                    <p class="table-container-big__p1">THE IMPORTANCE OF CALCIUM</p>
+                    <p class="table-container-big__p2">Calcium is an essential nutrient that is indispensable for healthy plant growth and development. It is therefore imperative to be mindful of the risks posed by its deficiency.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/calcium" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-container-mini" #blogContainer>
+                    <p class="table-container-mini__p1">WHY ORGANIC AGRICULTURE?</p>
+                    <p class="table-container-mini__p2">Organic agriculture isn't just a trend; it's a transformation. Explore the key reasons behind this shift.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/agriculture" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="other-links-items" *ngIf="current_width <= 1100">
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../assets/blog/body-other-links/calcium.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                The importance of high utility calcium
+            </p>
+            <a routerLink="/{{lang}}/blog/calcium" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../../assets/blog/body-other-links/minerals.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                The importance of mineral nutrition in plants
+            </p>
+            <a routerLink="/{{lang}}/blog/nutrition" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../../assets/blog/body-other-links/calcite.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                Why should farmers use VitaCALCITE plant booster
+            </p>
+            <a routerLink="/{{lang}}/blog/vitacalcite" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../../assets/blog/body-other-links/zeolit.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                Zeolite clinoptilolite - Modus Operandi
+            </p>
+            <a routerLink="/{{lang}}/blog/zeolite" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <div class="links-image-wrap">
+                <img src="../../../../assets/blog/body-other-links/consider_organic.svg" alt="" class="links-item__img">
+            </div>
+            <p class="links-item__p">
+                Why should you consider organic agriculture
+            </p>
+            <a routerLink="/{{lang}}/blog/agriculture" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="body" *ngIf="lang == 'cz'">
+    <div class="body-about-desc-container" id="description" *ngIf="current_width > 1175">
+        <div class="body-about-desc-image">
+            <img src="../../../../assets/about/body/about_body_man.png" #descImg alt="">
+        </div>
+        <div class="body-about-desc-titles">
+            <p class="body-about-desc-titles__p1">
+                FILOZOFIE
+            </p>
+            <p class="body-about-desc-titles__p2">
+                Ve společnosti <span>Verdex Agro</span> pomáháme moderním zemědělcům růst společně s našimi produkty, z nichž každý je vyladěn tak, aby poskytoval žádoucí stimulační a regulační vlastnosti ve vztahu k různým podmínkám a způsobům kultivace půdy, pěstování rostlin a chovu zvířat. 
+                <br>
+                <br>
+                Spokojenost zákazníků je naší prioritou, a proto nabízíme individuální poradenské služby v tandemu s našimi bio stimulanty k určení optimální nákladově efektivního harmonogramu aplikace s cílem dosažení vyššího objemu výnosu a kvality sezónní produkce. 
+                <br>
+                <br>
+                Naším posláním je pomáhat moderním zemědělcům dosáhnout vyšší efektivity a ekonomické životaschopnosti zemědělské výroby, a to udržitelně, po mnoho let.
+            </p>
+        </div>
+    </div>
+    <div class="body-about-desc-container" id="description" *ngIf="current_width <= 1175">
+        <div class="body-about-desc-titles">
+            <p class="body-about-desc-titles__p1">
+                FILOZOFIE
+            </p>
+            <p class="body-about-desc-titles__p2">
+                Ve společnosti <span>Verdex Agro</span> pomáháme moderním zemědělcům růst společně s našimi produkty, z nichž každý je vyladěn tak, aby poskytoval žádoucí stimulační a regulační vlastnosti ve vztahu k různým podmínkám a způsobům kultivace půdy, pěstování rostlin a chovu zvířat. 
+                <br>
+                <br>
+                Spokojenost zákazníků je naší prioritou, a proto nabízíme individuální poradenské služby v tandemu s našimi bio stimulanty k určení optimální nákladově efektivního harmonogramu aplikace s cílem dosažení vyššího objemu výnosu a kvality sezónní produkce. 
+            </p>    
+                <div class="body-about-desc-image">
+                    <img src="../../../../assets/about/body/about_body_man.png" #descImg alt="">
+                </div>
+            <p class="body-about-desc-titles__p2">
+                <br>
+                <br>
+                Naším posláním je pomáhat moderním zemědělcům dosáhnout vyšší efektivity a ekonomické životaschopnosti zemědělské výroby, a to udržitelně, po mnoho let.
+            </p>
+        </div>
+    </div>
+    <div class="body-values-container" id="values">
+        <div class="body-values">
+            <p class="body-values__p1">
+                NAŠE HODNOTY
+            </p>
+            <div class="body-values-items">
+                <div class="body-values-items-item">
+                    <img src="../../../../assets/about/body/icons/landicon1.png" #valueImg alt="">
+                    <p class="body-values-item__p1" #valueText>EFEKTIVITA</p> 
+                    <p class="body-values-item__p2" #valueText>
+                        Díky využití nejmodernějších technologií pro design a následný vývoj našich produktů s cílem maximalizovat biologickou účinnost zemědělské produkce.
+                    </p>
+                </div>
+                <div class="body-values-items-item">
+                    <img src="../../../../assets/about/body/icons/landicon2.png" #valueImg alt="">                           
+                    <p class="body-values-item__p1" #valueText>UDRŽITELNOST</p> 
+                    <p class="body-values-item__p2" #valueText>
+                        Každý z našich přípravků je vyráběn z přirozeně se vyskytujících minerálů ve vědomé snaze udržet prosperující životní prostředí příštím generacím. 
+                    </p>
+                </div>
+                <div class="body-values-items-item">
+                    <img src="../../../../assets/about/body/icons/landicon3.png" #valueImg alt="">                      
+                    <p class="body-values-item__p1" #valueText>VÝHODA</p> 
+                    <p class="body-values-item__p2" #valueText>
+                        Vyšší výnosy pro zemědělce, vyšší zisky pro naše partnery a kvalitnější potraviny pro konečné spotřebitele díky naší inovativní řadě organických bio stimulantů.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-history-container" id="history" #history *ngIf="current_width > 945">
+        <p class="body-history__p">Historie společnosti</p>
+        <div class="body-history-title">
+            <div class="history-title-container1">
+                <p class="history-title-container__p" #history_titleDesctop>
+                    Pokračování v podnikání s trvalým zaměřením na další vývoj exportních aktivit a mezinárodní přítomnost po celém světě.
+                </p>
+                <p class="history-title-container__p" #history_titleDesctop>
+                    Společnost VERDEX AGRO s.r.o. pokračuje v poskytování přidané hodnoty pro zemědělský průmysl s mezinárodní působností po celém světě.
+                </p>
+            </div>
+            <div class="history-title-container2">
+                <div class="vertical-line"></div>
+                <p class="history-title-container2__p" #history_year>2021</p>
+                <p class="history-title-container2__p" #history_year>2022</p>
+                <p class="history-title-container2__p" #history_year>2023</p>               
+                <p class="history-title-container2__p" #history_year>2024</p>
+            </div>
+            <div class="history-title-container3">
+                <p class="history-title-container__p" #history_titleDesctop>
+                    Založení společnosti jako výhradního distributora a sesterské společnosti pod hlavičkou výrobce produktů.
+                </p>
+                <p class="history-title-container__p" #history_titleDesctop>
+                    Spojení se společnosti VERDEX AGRO s.r.o., které v sobě snoubí vědecko-výzkumné zázemí, ekonomickou výkonnost a obchodní efektivitu.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="body-history-container" id="history" #history *ngIf="current_width <= 945">
+        <p class="body-history__p">Historie společnosti</p>
+        <div class="body-history-title">
+            
+            <div class="history-title-container2">
+                <div class="history-title-rect">
+                    <div class="vertical-line"></div>
+                    <p class="history-title-container2__p" #history_year>2021</p>
+
+                    <p class="history-title-container2__p" #history_year>2022</p>
+                    
+                    <p class="history-title-container2__p" #history_year>2023</p>
+                    
+                    <p class="history-title-container2__p" #history_year>2024</p>
+                </div>
+                
+                <div class="history-title-text">
+                    <div class="history-title-container1">
+                        <p class="history-title-container__p" #history_titleMobile>
+                            Založení společnosti jako výhradního distributora a sesterské společnosti pod hlavičkou výrobce produktů.
+                        </p>
+                    </div>
+                    <div class="history-title-container1">
+                        <p class="history-title-container__p" #history_titleMobile>
+                            Pokračování v podnikání s trvalým zaměřením na další vývoj exportních aktivit a mezinárodní přítomnost po celém světě.
+                        </p>
+                    </div>
+                    <div class="history-title-container1">
+                        <p class="history-title-container__p" #history_titleMobile>
+                            Spojení se společnosti VERDEX AGRO s.r.o., které v sobě snoubí vědecko-výzkumné zázemí, ekonomickou výkonnost a obchodní efektivitu.
+                        </p>
+                    </div>
+                    <div class="history-title-container1">
+                        <p class="history-title-container__p" #history_titleMobile>
+                            Společnost VERDEX AGRO s.r.o. pokračuje v poskytování přidané hodnoty pro zemědělský průmysl s mezinárodní působností po celém světě.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-team-container" id="team">
+        <p class="body-team__p">
+            SEZNAMTE SE S TÝMEM
+        </p>
+        <div class="body-team-items">
+            <div class="team-items-item">
+                <div class="item-image"></div>
+                <div class="team-item-contacts">
+                    <p class="team-item-contact__p1">Max Maksjakov</p>
+                    <p class="team-item-contact__p2">VÝKONNÝ ŘEDITEL</p>
+                    <div class="contact-item">
+                        <div>
+                            <a href="https://www.linkedin.com/in/max-maksjakov/" target="_blank">
+                                <img src="../../../../assets/about/body/icons/linkedin_icon.png" alt="" class="contact-item__img">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:max@verderagro.cz">
+                                <img src="../../../../assets/about/body/icons/email_icon.png" alt="" class="contact-item__img">
+                            </a>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+            <div class="team-items-item">
+                <div class="item-image"></div>
+                <div class="team-item-contacts">
+                    <p class="team-item-contact__p1">Roman Kirschner</p>
+                    <p class="team-item-contact__p2">MANAŽER ROZVOJE OBCHODU</p>
+                    <div class="contact-item">
+                        <div>
+                            <a href="mailto:roman@verdexagro.cz">
+                                <img src="../../../../assets/about/body/icons/email_icon.png" alt="" class="contact-item__img">
+                            </a>
+                        </div>    
+                        <div>
+                            <a href="tel:420606810061">
+                                <img src="../../../../assets/about/body/icons/phone_icon.png" alt="" class="contact-item__img">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/rom-kirschner15/" target="_blank">
+                                <img src="../../../../assets/about/body/icons/linkedin_icon.png" alt="" class="contact-item__img">
+                            </a>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <div class="team-items-item">
+                <div class="item-image"></div>
+                <div class="team-item-contacts">
+                    <p class="team-item-contact__p1">Klára Tvarožková</p>
+                    <p class="team-item-contact__p2">MANAŽERKA MARKETINGU</p>
+                    <div class="contact-item">
+                        <div>
+                            <a href="https://www.linkedin.com/in/klára-tvarožková-29852b185/" target="_blank">
+                                <img src="../../../../assets/about/body/icons/linkedin_icon.png" alt="" class="contact-item__img">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:klara@verdexagro.cz">
+                                <img src="../../../../assets/about/body/icons/email_icon.png" alt="" class="contact-item__img">
+                            </a>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+            <div class="team-items-item">
+                <div class="item-image"></div>
+                <div class="team-item-contacts">
+                    <p class="team-item-contact__p1">Dmitry Romin</p>
+                    <p class="team-item-contact__p2">OBCHODNÍ MANAŽER</p>
+                    <div class="contact-item">
+                        <div>
+                            <a href="mailto:dmitry@verdexagro.cz">
+                                <img src="../../../../assets/about/body/icons/email_icon.png" alt="" class="contact-item__img">
+                            </a>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+            <div class="team-items-item">
+                <div class="item-image"></div>
+                <div class="team-item-contacts">
+                    <p class="team-item-contact__p1">Andrej Kahan</p>
+                    <p class="team-item-contact__p2">PRÁVNÍ PORADCE</p>
+                    <div class="contact-item">
+                        <div>
+                            <a href="mailto:andrej@verdexagro.cz">
+                                <img src="../../../../assets/about/body/icons/email_icon.png" alt="" class="contact-item__img">
+                            </a>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="body-sertificate">
+        <div class="body-sertificate-bg">
+            <div class="body-sertificate-items">
+                <div class="body-sertificate-items-item">
+                    <img src="../../../../assets/main-page/verdexagro_omri.svg" alt="">
+                    
+                </div>
+                <div class="body-sertificate-items-item">
+                    <img src="../../../../assets/main-page/verdexagro_fibl.svg" alt="">
+                    
+                </div>
+                <div class="body-sertificate-items-item">
+                    <img src="../../../../assets/main-page/verdexagro_ukzuz.svg" alt="">
+                    
+                </div>
+                <div class="body-sertificate-items-item">
+                    <img src="../../../../assets/main-page/verdexagro_demeter.svg" alt="">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-questions-container" *ngIf="current_width > 1100">
+        <div class="questions-title">
+            <p class="questions-title__p1">CO JE NOVÉHO?</p>
+            <a routerLink="/{{lang}}/blog" class="questions-title__p1">Zjisti více <svg xmlns="http://www.w3.org/2000/svg" width="31" height="24" viewBox="0 0 31 24" fill="none">
+                <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5L2 10.5ZM30.0607 13.0607C30.6464 12.4749 30.6464 11.5251 30.0607 10.9393L20.5147 1.3934C19.9289 0.807613 18.9792 0.807613 18.3934 1.3934C17.8076 1.97919 17.8076 2.92893 18.3934 3.51472L26.8787 12L18.3934 20.4853C17.8076 21.0711 17.8076 22.0208 18.3934 22.6066C18.9792 23.1924 19.9289 23.1924 20.5147 22.6066L30.0607 13.0607ZM2 13.5L29 13.5L29 10.5L2 10.5L2 13.5Z" fill="#0A3600"/>
+              </svg></a>
+        </div>
+        <div class="questions-tables">
+            <div class="questions-tables-container">
+                <div class="table-container-big" #blogContainer>
+                    <p class="table-container-big__p1">ZEOLIT KLINOPTILOLIT – FUNKCE A VYUŽITÍ</p>
+                    <p class="table-container-big__p2">Zeolit je sedimentární hornina, která patří do skupiny mikroporézních krystalických hlinitokřemičitanových minerálů. Objevte s námi, jaký přínos mají unikátní vlastnosti zeolitu v zemědělství.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/zeolite" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-container-mini" #blogContainer>
+                    <p class="table-container-mini__p1">KLÍČOVÁ ROLE VÁPNÍKU</p>
+                    <p class="table-container-mini__p2">Vápník představuje základní stavební živinu nezbytnou pro zdravý růst a vývoj rostlin. Je třeba proto mít neustále na paměti rizika plynoucí z jeho nedostatku.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/calcium" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="questions-tables-container">
+                <div class="table-container-mini" #blogContainer>
+                    <p class="table-container-mini__p1">ZLEPŠENÍ PŮDY S VITALANDEM</p>
+                    <p class="table-container-mini__p2">Hledáte dlouhodobé řešení efektivnější dostupnosti živin a vyšší kvality vaší půdy? Vyzkoušejte VitaLAND – univerzální půdní kondicionér nabízející pestrou škálu výhod.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/soil" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-container-big" #blogContainer>
+                    <p class="table-container-big__p1">PROČ BY MĚLI FARMÁŘI POUŽÍVAT VITACALCITE</p>
+                    <p class="table-container-big__p2">VitaCALCITE rostlinný posilovač představuje účinný nástroj, který vašim rostlinám zajistí spolehlivý přísun minerální výživy pozitivně ovlivňující růst a fyziologii rostlin či plodin.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/vitacalcite" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="questions-tables-container">
+                <div class="table-container-big" #blogContainer>
+                    <p class="table-container-big__p1">PODSTATA MINERÁLNÍ VÝŽIVY V ROSTLINÁCH</p>
+                    <p class="table-container-big__p2">Pochopení úlohy základních minerálních látek v kontextu růstu a vývoje rostlin je klíčové pro využití jejich plného potenciálu. Zjistěte více, jak může naše minerální infuze pomáhat i vám.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/nutrition" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-container-mini" #blogContainer>
+                    <p class="table-container-mini__p1">PROČ EKOLOGICKÉ ZEMĚDĚLSTVÍ?</p>
+                    <p class="table-container-mini__p2">Ekologické zemědělství není jen aktuálním trendem, je to transformace. Prozkoumejte jeho hlavní výhody za pomoci našich minerálních biostimulántů.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/agriculture" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="other-links-items" *ngIf="current_width <= 1100">
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../assets/blog/body-other-links/calcium.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                KLÍČOVÁ ROLE VÁPNÍKU
+            </p>
+            <a routerLink="/{{lang}}/blog/calcium" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../../assets/blog/body-other-links/minerals.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                PODSTATA MINERÁLNÍ VÝŽIVY V ROSTLINÁCH
+            </p>
+            <a routerLink="/{{lang}}/blog/nutrition" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../../assets/blog/body-other-links/calcite.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                PROČ BY MĚLI FARMÁŘI POUŽÍVAT VITACALCITE
+            </p>
+            <a routerLink="/{{lang}}/blog/vitacalcite" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../../assets/blog/body-other-links/zeolit.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                ZEOLIT KLINOPTILOLIT – FUNKCE A VYUŽITÍ
+            </p>
+            <a routerLink="/{{lang}}/blog/zeolite" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <div class="links-image-wrap">
+                <img src="../../../../assets/blog/body-other-links/consider_organic.svg" alt="" class="links-item__img">
+            </div>
+            <p class="links-item__p">
+                PROČ EKOLOGICKÉ ZEMĚDĚLSTVÍ?
+            </p>
+            <a routerLink="/{{lang}}/blog/agriculture" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>

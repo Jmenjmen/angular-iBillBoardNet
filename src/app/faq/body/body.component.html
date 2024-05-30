@@ -1,0 +1,399 @@
+<app-menu style="position: -webkit-sticky; position: sticky; display: block; top: 0; height: 0; z-index: 9999999999;"></app-menu>
+<app-header></app-header>
+<div class="body-questions-container" *ngIf="lang == 'en'">
+    <p class="questions__p">
+        FREQUENTLY ASKED QUESTIONS
+    </p>
+    <div class="questions-items">
+        <div class="questions-items-item" (click)="click($event)">
+            <div class="questions-item-text">
+                <p class="questions-item-text__p">
+                    Why should I employ Verdex Agro products on my farm?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect x="14" width="4" height="32" rx="1" fill="black"/>
+                    <rect x="32" y="14" width="4" height="32" rx="1" transform="rotate(90 32 14)" fill="black"/>
+                </svg>
+                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="4" viewBox="0 0 32 4" fill="none">
+                    <rect x="32" width="4" height="32" rx="1" transform="rotate(90 32 0)" fill="black"/>
+                </svg>
+            </div>
+            <p class="questions-item__p hidden">
+                To increase productivity and economy of your agricultural production while improving quality and palatability of your products. Extensive scientific research, university trials, and field testimonials obtained by our customers corroborate the impact of our organic stimulants.
+            </p>
+        </div>
+        <div class="questions-items-item" (click)="click($event)">
+            <div class="questions-item-text">
+                <p class="questions-item-text__p">
+                    What is the added value of your product?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect x="14" width="4" height="32" rx="1" fill="black"/>
+                    <rect x="32" y="14" width="4" height="32" rx="1" transform="rotate(90 32 14)" fill="black"/>
+                </svg>
+                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="4" viewBox="0 0 32 4" fill="none">
+                    <rect x="32" width="4" height="32" rx="1" transform="rotate(90 32 0)" fill="black"/>
+                </svg>
+            </div>
+            <p class="questions-item__p hidden">
+                Our engineered Enhanced Dynamic Activation (EDA) approach to manufacturing enhances reactive and absorbing properties of our products, which subsequently deliver better ion exchange and optimized field efficiency, sustainably for generations to come.
+            </p>
+        </div>
+        <div class="questions-items-item" (click)="click($event)">
+            <div class="questions-item-text">
+                <p class="questions-item-text__p">
+                    How do I make sure to apply your product correctly?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect x="14" width="4" height="32" rx="1" fill="black"/>
+                    <rect x="32" y="14" width="4" height="32" rx="1" transform="rotate(90 32 14)" fill="black"/>
+                </svg>
+                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="4" viewBox="0 0 32 4" fill="none">
+                    <rect x="32" width="4" height="32" rx="1" transform="rotate(90 32 0)" fill="black"/>
+                </svg>
+            </div>
+            <p class="questions-item__p hidden">
+                With our guidance! We believe effective communication begets long-term success, and such we offer individualized consulting in tandem with our products to identify optimal cost-effective product applications to help you generate maximized returns.
+            </p>
+        </div>
+        <div class="questions-items-item" (click)="click($event)">
+            <div class="questions-item-text">
+                <p class="questions-item-text__p">
+                    Are your stimulants miscible with other products?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect x="14" width="4" height="32" rx="1" fill="black"/>
+                    <rect x="32" y="14" width="4" height="32" rx="1" transform="rotate(90 32 14)" fill="black"/>
+                </svg>
+                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="4" viewBox="0 0 32 4" fill="none">
+                    <rect x="32" width="4" height="32" rx="1" transform="rotate(90 32 0)" fill="black"/>
+                </svg>
+            </div>
+            <p class="questions-item__p hidden">
+                Yes – owing to their purely natural origin, all of our products can be mixed with other agricultural products without diminishing returns. For more details on application and methodology of use, we invite you to peruse each individual product page here on our website.
+            </p>
+        </div>
+        <div class="questions-items-item" (click)="click($event)">
+            <div class="questions-item-text">
+                <p class="questions-item-text__p">
+                    Can I use your products in Hydrophonic systems?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect x="14" width="4" height="32" rx="1" fill="black"/>
+                    <rect x="32" y="14" width="4" height="32" rx="1" transform="rotate(90 32 14)" fill="black"/>
+                </svg>
+                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="4" viewBox="0 0 32 4" fill="none">
+                    <rect x="32" width="4" height="32" rx="1" transform="rotate(90 32 0)" fill="black"/>
+                </svg>
+            </div>
+            <p class="questions-item__p hidden">
+                Yes - the entire line of crop cultivation products (VitaLAND, VitaCALCITE, VitaYIELD) is suitable for implementation in hydroponics.
+            </p>
+        </div>
+        <div class="questions-items-item" (click)="click($event)">
+            <div class="questions-item-text">
+                <p class="questions-item-text__p">
+                    Where can you arrange for delivery?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect x="14" width="4" height="32" rx="1" fill="black"/>
+                    <rect x="32" y="14" width="4" height="32" rx="1" transform="rotate(90 32 14)" fill="black"/>
+                </svg>
+                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="4" viewBox="0 0 32 4" fill="none">
+                    <rect x="32" width="4" height="32" rx="1" transform="rotate(90 32 0)" fill="black"/>
+                </svg>
+            </div>
+            <p class="questions-item__p hidden">
+                Thanks to a reliable network of logistics partners with worldwide coverage, we can ship our fertilizer anywhere in the world. It is never too late to contact us and make a difference.
+            </p>
+        </div>
+        <div class="questions-items-item" (click)="click($event)">
+            <div class="questions-item-text">
+                <p class="questions-item-text__p">
+                    Are Verdex Agro products suitable for use in organic farming?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect x="14" width="4" height="32" rx="1" fill="black"/>
+                    <rect x="32" y="14" width="4" height="32" rx="1" transform="rotate(90 32 14)" fill="black"/>
+                </svg>
+                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="4" viewBox="0 0 32 4" fill="none">
+                    <rect x="32" width="4" height="32" rx="1" transform="rotate(90 32 0)" fill="black"/>
+                </svg>
+            </div>
+            <p class="questions-item__p hidden">
+                Yes - each of our products is derived from naturally occurring minerals without chemicals or synthetic material. OMRI, FiBL and other internationally recognized organic agriculture certifications corroborate our commitment to sustainable agriculture.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="body-products" id="products" *ngIf="lang == 'en'">
+    <p class="body-products__p">
+        EXPLORE OUR PRODUCTS
+    </p>
+    <div class="body-products-items">
+        <div class="body-products-items-item">
+            <img src="../../../../assets/main-page/body/white/product1_white.png" alt="" class="product-item__img">
+            <div class="products-item-centered">
+                <p class="products-item-centered__p1">
+                    VitaCALCITE
+                </p>
+                <p class="products-item-centered__p2">
+                    100% natural plant growth supplement based on foliar application. Provides essential plant support by efficient supply of calcium, silicon, and other trace elements.
+                </p>
+                <div class="link_arrow">
+                    <a routerLink="/{{lang}}/product/vitacalcite" class="link_arrow__a">
+                        ...                      
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="body-products-items-item">
+            <img src="../../../../assets/main-page/body/white/product2_white.png" alt="" class="product-item__img">
+            <div class="products-item-centered">
+                <p class="products-item-centered__p1">
+                    VitaLAND
+                </p>
+                <p class="products-item-centered__p2">
+                    100% natural soil conditioner developed as a long-term solution to improving water management, moisture regulation, nutrient uptake, and overall soil quality.
+                </p>
+                <div class="link_arrow">
+                    <a routerLink="/{{lang}}/product/vitaland" class="link_arrow__a">
+                        ...                        
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="body-products-items-item">
+            <img src="../../../../assets/main-page/body/white/product3_white.png" alt="" class="product-item__img">
+            <div class="products-item-centered">
+                <p class="products-item-centered__p1">
+                    VitaXORB
+                </p>
+                <p class="products-item-centered__p2">
+                    100% natural feed additive optimizes the animal immune system by acting on epithelial cells and probiotic bacteria, leading to higher production efficiency at lower costs.
+                </p>
+                <div class="link_arrow">
+                    <a routerLink="/{{lang}}/product/vitaxorb" class="link_arrow__a">
+                        ...                          
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="body-products-items-item">
+            <img src="../../../../assets/main-page/body/white/product4_white.png" alt="" class="product-item__img">
+            <div class="products-item-centered">
+                <p class="products-item-centered__p1">
+                    VitaYIELD
+                </p>
+                <p class="products-item-centered__p2">
+                    100% natural plant fertilizer that harnesses the power of organic ingredients with stimulating properties to support plant processes in favor of higher yield and quality.
+                </p>
+                <div class="link_arrow">
+                    <a routerLink="/{{lang}}/product/vitayield" class="link_arrow__a">
+                        ...                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="body-questions-container" *ngIf="lang == 'cz'">
+    <p class="questions__p">
+        ČASTO KLADENÉ OTÁZKY
+    </p>
+    <div class="questions-items">
+        <div class="questions-items-item" (click)="click($event)">
+            <div class="questions-item-text">
+                <p class="questions-item-text__p">
+                    Proč bych měl na své farmě používat produkty Verdex Agro?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect x="14" width="4" height="32" rx="1" fill="black"/>
+                    <rect x="32" y="14" width="4" height="32" rx="1" transform="rotate(90 32 14)" fill="black"/>
+                </svg>
+                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="4" viewBox="0 0 32 4" fill="none">
+                    <rect x="32" width="4" height="32" rx="1" transform="rotate(90 32 0)" fill="black"/>
+                </svg>
+            </div>
+            <p class="questions-item__p hidden">
+                Pomůžete tím zvýšit produktivitu a hospodárnost vaší zemědělské výroby a zároveň zlepšit kvalitu a chutnost svých produktů. Rozsáhlý vědecký výzkum, univerzitní testy a terénní posudky získané našimi zákazníky potvrzují příznivé účinky našich organických stimulátorů.
+            </p>
+        </div>
+        <div class="questions-items-item" (click)="click($event)">
+            <div class="questions-item-text">
+                <p class="questions-item-text__p">
+                    V čem spočívá přidaná hodnota vašeho produktu?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect x="14" width="4" height="32" rx="1" fill="black"/>
+                    <rect x="32" y="14" width="4" height="32" rx="1" transform="rotate(90 32 14)" fill="black"/>
+                </svg>
+                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="4" viewBox="0 0 32 4" fill="none">
+                    <rect x="32" width="4" height="32" rx="1" transform="rotate(90 32 0)" fill="black"/>
+                </svg>
+            </div>
+            <p class="questions-item__p hidden">
+                Náš technologický přístup k výrobě „Enhanced Dynamic Activation“ (EDA) zlepšuje reaktivní a absorpční vlastnosti našich produktů, které následně zajišťují lepší výměnu iontů a optimalizovanou účinnost na poli, a to udržitelným způsobem, pro další generace.
+            </p>
+        </div>
+        <div class="questions-items-item" (click)="click($event)">
+            <div class="questions-item-text">
+                <p class="questions-item-text__p">
+                    Jak se mohu ujistit, že váš výrobek aplikuji správně?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect x="14" width="4" height="32" rx="1" fill="black"/>
+                    <rect x="32" y="14" width="4" height="32" rx="1" transform="rotate(90 32 14)" fill="black"/>
+                </svg>
+                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="4" viewBox="0 0 32 4" fill="none">
+                    <rect x="32" width="4" height="32" rx="1" transform="rotate(90 32 0)" fill="black"/>
+                </svg>
+            </div>
+            <p class="questions-item__p hidden">
+                Díky našemu poradenství! Věříme, že efektivní komunikace je klíčem k dlouhodobému úspěchu, a proto k našim produktům poskytujeme individuální poradenství na míru, abychom vybrali optimální nákladově-efektivní aplikace produktů, které vám pomohou dosáhnout maximálních výnosů.
+            </p>
+        </div>
+        <div class="questions-items-item" (click)="click($event)">
+            <div class="questions-item-text">
+                <p class="questions-item-text__p">
+                    Lze vaše stimulanty mísit s jinými produkty?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect x="14" width="4" height="32" rx="1" fill="black"/>
+                    <rect x="32" y="14" width="4" height="32" rx="1" transform="rotate(90 32 14)" fill="black"/>
+                </svg>
+                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="4" viewBox="0 0 32 4" fill="none">
+                    <rect x="32" width="4" height="32" rx="1" transform="rotate(90 32 0)" fill="black"/>
+                </svg>
+            </div>
+            <p class="questions-item__p hidden">
+                Ano – díky čistě přírodnímu původu lze všechny naše produkty kombinovat s jinými zemědělskými produkty, aniž by se snížila jejich návratnost. Pro více informací o aplikaci a její metodice navštivte stránky jednotlivých produktů zde na našem webu.
+            </p>
+        </div>
+        <div class="questions-items-item" (click)="click($event)">
+            <div class="questions-item-text">
+                <p class="questions-item-text__p">
+                    Mohu vaše produkty používat v hydroponických systémech?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect x="14" width="4" height="32" rx="1" fill="black"/>
+                    <rect x="32" y="14" width="4" height="32" rx="1" transform="rotate(90 32 14)" fill="black"/>
+                </svg>
+                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="4" viewBox="0 0 32 4" fill="none">
+                    <rect x="32" width="4" height="32" rx="1" transform="rotate(90 32 0)" fill="black"/>
+                </svg>
+            </div>
+            <p class="questions-item__p hidden">
+                Ano – veškerý sortiment pro pěstování plodin (VitaLAND, VitaCALCITE, VitaYIELD) je vhodný pro použití v hydroponii.
+            </p>
+        </div>
+        <div class="questions-items-item" (click)="click($event)">
+            <div class="questions-item-text">
+                <p class="questions-item-text__p">
+                    Kam a jak si mohu vaše produkty objednat?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect x="14" width="4" height="32" rx="1" fill="black"/>
+                    <rect x="32" y="14" width="4" height="32" rx="1" transform="rotate(90 32 14)" fill="black"/>
+                </svg>
+                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="4" viewBox="0 0 32 4" fill="none">
+                    <rect x="32" width="4" height="32" rx="1" transform="rotate(90 32 0)" fill="black"/>
+                </svg>
+            </div>
+            <p class="questions-item__p hidden">
+                Díky spolehlivé síti logistických partnerů s celosvětovým pokrytím můžeme naše hnojiva doručit kamkoli na světě. Nikdy není pozdě se na nás obrátit a začít se změnou vašeho hospodaření.
+            </p>
+        </div>
+        <div class="questions-items-item" (click)="click($event)">
+            <div class="questions-item-text">
+                <p class="questions-item-text__p">
+                    Jsou produkty Verdex Agro vhodné pro použití v ekologickém zemědělství?
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect x="14" width="4" height="32" rx="1" fill="black"/>
+                    <rect x="32" y="14" width="4" height="32" rx="1" transform="rotate(90 32 14)" fill="black"/>
+                </svg>
+                <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="4" viewBox="0 0 32 4" fill="none">
+                    <rect x="32" width="4" height="32" rx="1" transform="rotate(90 32 0)" fill="black"/>
+                </svg>
+            </div>
+            <p class="questions-item__p hidden">
+                Ano – každý z našich výrobků je získáván z přirozeně se vyskytujících minerálů bez použití chemických látek nebo syntetických materiálů. OMRI, FiBL a další mezinárodně uznávané certifikáty ekologického zemědělství dokládají náš závazek k udržitelnému zemědělství.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="body-products" id="products" *ngIf="lang == 'cz'">
+    <p class="body-products__p">
+        PROZKOUMEJTE NAŠE PRODUKTY
+    </p>
+    <div class="body-products-items">
+        <div class="body-products-items-item">
+            <img src="../../../../assets/main-page/body/white/product1_white.png" alt="" class="product-item__img">
+            <div class="products-item-centered">
+                <p class="products-item-centered__p1">
+                    VitaCALCITE
+                </p>
+                <p class="products-item-centered__p2">
+                    100% přírodní doplněk pro růst rostlin na bázi listové aplikace. Dodává rostlinám nezbytnou podporu skrze efektivní přísun vápníku, křemíku a dalších stopových prvků.
+                </p>
+                <div class="link_arrow">
+                    <a routerLink="/{{lang}}/product/vitacalcite" class="link_arrow__a">
+                        ...                      
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="body-products-items-item">
+            <img src="../../../../assets/main-page/body/white/product2_white.png" alt="" class="product-item__img">
+            <div class="products-item-centered">
+                <p class="products-item-centered__p1">
+                    VitaLAND
+                </p>
+                <p class="products-item-centered__p2">
+                    100% přírodní půdní kondicionér vyvinutý pro dlouhodobézlepšování hospodaření s vodou, regulace vlhkosti, příjmu živin a celkové kvality půdy.
+                </p>
+                <div class="link_arrow">
+                    <a routerLink="/{{lang}}/product/vitaland" class="link_arrow__a">
+                        ...                        
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="body-products-items-item">
+            <img src="../../../../assets/main-page/body/white/product3_white.png" alt="" class="product-item__img">
+            <div class="products-item-centered">
+                <p class="products-item-centered__p1">
+                    VitaXORB
+                </p>
+                <p class="products-item-centered__p2">
+                    100% přírodní krmná přísada optimalizuje imunitní systém zvířat skrze působení na epitelové buňky a probiotické bakterie, což vede k vyšší efektivitě produkce při nižších nákladech.
+                </p>
+                <div class="link_arrow">
+                    <a routerLink="/{{lang}}/product/vitaxorb" class="link_arrow__a">
+                        ...                          
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="body-products-items-item">
+            <img src="../../../../assets/main-page/body/white/product4_white.png" alt="" class="product-item__img">
+            <div class="products-item-centered">
+                <p class="products-item-centered__p1">
+                    VitaYIELD
+                </p>
+                <p class="products-item-centered__p2">
+                    100% přírodní rostlinné hnojivo, které využívá sílu organických složek se stimulačními vlastnostmi k podpoře rostlinných procesů ve prospěch vyššího výnosu a kvality.
+                </p>
+                <div class="link_arrow">
+                    <a routerLink="/{{lang}}/product/vitayield" class="link_arrow__a">
+                        ...                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

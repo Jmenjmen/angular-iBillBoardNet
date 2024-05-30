@@ -1,0 +1,24 @@
+<div class="banner" [ngClass]="{'close': close}" *ngIf="lang">
+    <div class="banner-text-container">
+        <p class="text__p1">
+            Tyto webové stránky používají soubory cookie ke zlepšení komfortu uživatele. Používáním našich webových stránek souhlasíte s používáním všech souborů cookie v souladu s našimi <a *ngIf="lang" routerLink="/cz/rules/terms" fragment="cookie">Zásadami užití webového rozhraní.</a><a *ngIf="!lang" routerLink="/en/rules/terms" fragment="cookie">Zásadami užití webového rozhraní.</a>
+        </p>
+    </div>
+    <div class="banner-buttons-container">
+        <button (click)="accept()" class="cookie__btn">
+            Zavřít
+        </button>
+    </div>
+</div>
+<div class="banner" [ngClass]="{'close': close}" *ngIf="!lang">
+    <div class="banner-text-container">
+        <p class="text__p1">
+            This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our <a *ngIf="lang" routerLink="/cz/rules/terms" fragment="cookie">Cookie Policy.</a><a *ngIf="!lang" routerLink="/en/rules/terms" fragment="cookie">Cookie Policy.</a>
+        </p>
+    </div>
+    <div class="banner-buttons-container">
+        <button (click)="accept()" class="cookie__btn">
+            Close
+        </button>
+    </div>
+</div>

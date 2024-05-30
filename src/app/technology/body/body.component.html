@@ -1,0 +1,793 @@
+<app-menu style="position: -webkit-sticky; position: sticky; display: block; top: 0; height: 0; z-index: 9999999999;"></app-menu>
+<app-header (id)="scrollFN($event)"></app-header>
+<div class="body" *ngIf="lang == 'en'">
+    <div class="body-technology" *ngIf="current_width > 1175" id="description">
+        <div class="body-technology-image" #descImg>
+            <img class="body-technology-image__lamp" src="../../../../assets/main-page/body/lamp.png" alt="">
+            <img class="body-technology-image_bg" src="../../../../assets/main-page/verdexmainpagetriangles.svg" alt="">
+        </div>
+        <div class="body-technology-desc">
+            <img src="../../../assets/technology/technology-technology.png" alt="">
+            <p class="body-technology-desc__p2">
+                <span>Enhanced Dynamic Activation</span> (EDA) is an innovative technology based on biophysics, chemistry, and natural science. 
+                <br>
+                <br>
+                Under special dynamic conditions, the EDA approach alters particle size, energy status, and ion exchange capacity of our products. Subjecting each exit material to rigorous field study validated increase in solubility, amorphous to crystalline ratio, and difference in biological activity. 
+                <br>
+                <br>
+                The enhanced nature of our dynamically activated products is manifest in higher quality and nutrient uptake in the soil, accelerated plant development and protection in the face of environmental stress, and optimized immune system function and well-being of animals.
+            </p>
+        </div>
+    </div>
+    <div class="body-technology" *ngIf="current_width <= 1175" id="description">
+        <div class="body-technology-desc">
+            <div class="body-technology-image" #descImg *ngIf="current_width <= 1175 && current_width > 767">
+                <img class="body-technology-image__lamp" src="../../../../assets/main-page/body/lamp.png" alt="">
+                <img class="body-technology-image_bg" src="../../../../assets/main-page/verdexmainpagetriangles.svg" alt="">
+            </div>
+            <div class="body-techology-text">
+                    <img src="../../../assets/technology/technology-technology.png" alt="">
+                <p class="body-technology-desc__p2">
+                    <span>Enhanced Dynamic Activation</span> (EDA) is an innovative technology based on biophysics, chemistry, and natural science. 
+                    <br>
+                </p>    
+                <div class="body-technology-image" #descImg *ngIf="current_width <= 767">
+                    <img class="body-technology-image__lamp" src="../../../../assets/main-page/body/lamp.png" alt="">
+                    <img class="body-technology-image_bg" src="../../../../assets/main-page/verdexmainpagetriangles.svg" alt="">
+                </div>
+                <div class="order2">
+                    <p class="body-technology-desc__p2">    
+                        <br>
+                        Under special dynamic conditions, the EDA approach alters particle size, energy status, and ion exchange capacity of our products. Subjecting each exit material to rigorous field study validated increase in solubility, amorphous to crystalline ratio, and difference in biological activity. 
+                    </p>
+                </div>
+                <p class="body-technology-desc__p2">    
+                    <br>
+                    <br>
+                    The enhanced nature of our dynamically activated products is manifest in higher quality and nutrient uptake in the soil, accelerated plant development and protection in the face of environmental stress, and optimized immune system function and well-being of animals.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="benefits-container" id="benefits">
+        <p class="benefits-title__p">
+            BENEFITS
+        </p>
+        <div class="benefit-items">
+            <div class="benefit-item" #benefit>
+                <p class="benefit-item-title__p">
+                    Increased Reactivity
+                </p>
+                <p class="benefit-item-description__p">
+                    The degree of interaction a medium has with the outside environment is contingent upon its particle size and specific surface area. In general, increased specific surface usual for microbial particles is synonymous with higher reactivity.
+                </p>
+            </div>
+            <div class="benefit-item" #benefit>
+                <p class="benefit-item-title__p">
+                    Maximized Efficiency
+                </p>
+                <p class="benefit-item-description__p">
+                    In years of extensive research, the effectiveness of our dynamic activation approach to manufacturing has been fine tuned to achieve improved solubility and maximized on-field interaction of each exit product.
+                </p>
+            </div>
+            <div class="benefit-item" #benefit>
+                <p class="benefit-item-title__p">
+                    Sustainability
+                </p>
+                <p class="benefit-item-description__p">
+                    Environmentally friendly technology enabling significant substance improvement exclusively operating on entry material derived from naturally occurring minerals, reducing the use of artificial fertilizers and chemicals.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="body-util-container" id="util">
+        <div class="body-util-bg">
+            <div class="util-description-container">
+                <p class="util-desc-title__p">
+                    Vita<span>CALCITE</span> & Vita<span>YIELD</span>
+                </p>
+                <p class="util-desc-h__h1">
+                    HIGH UTILITY CALCIUM
+                </p>
+                <div class="util-desc-image-container">
+                    <ul class="util-list" *ngIf="current_width > 892">
+                        <li class="util-item">
+                            <p class="util-item__p right-text">
+                                Indispensable to the plant development and viability
+                            </p>
+                            <p class="util-item__p right-text">
+                                Increases resistance against biotic & abiotic stresses
+                            </p>
+                        </li>
+                        <li class="util-item">
+                            <img src="../../../assets/technology/util/technology-util-item1.png" alt="" class="util-item__img" #utilImg>
+                            <p class="util-item__p">
+                                Plays integral role in the preservation of the structural & functional integrity of the membrane
+                            </p>
+                        </li>
+                        <li class="util-item">
+                            <p class="util-item__p left-text">
+                                Supports stabilization & proper function of the cellular wall
+                            </p>
+                            <p class="util-item__p left-text">
+                                Regulates transport & control of ion exchange
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="util-list-mobile" *ngIf="current_width <= 892">
+                            <p class="util-item__p mgl-92">
+                                Indispensable to the plant development and viability
+                            </p>
+                            <p class="util-item__p right-text">
+                                Increases resistance against biotic & abiotic stresses
+                            </p>
+                            
+                            <img src="../../../assets/technology/util/technology-util-item1.png" alt="" class="util-item__img" #utilImg>
+                            <p class="util-item__p mgl-b">
+                                Plays integral role in the preservation of the structural & functional integrity of the membrane
+                            </p>
+                            
+                            <p class="util-item__p left-text">
+                                Supports stabilization & proper function of the cellular wall
+                            </p>
+                            <p class="util-item__p mgl-92">
+                                Regulates transport & control of ion exchange
+                            </p>
+                            
+                    </ul>
+                </div>
+            </div>
+            <div class="util-description-container" id="zeolit">
+                <p class="util-desc-title__p">
+                    Vita<span>LAND</span> & Vita<span>XORB</span>
+                </p>
+                <p class="util-desc-h__h1">
+                    ZEOLITE CLINOPTILOLITE
+                </p>
+                <div class="util-desc-image-container">
+                    <ul class="util-list" *ngIf="current_width > 892">
+                        <li class="util-item">
+                            <p class="util-item__p right-text">
+                                Promotes healthy pH level balance thanks to its alkalizing properties
+                            </p>
+                            <p class="util-item__p right-text">
+                                Accelerates nutrient uptake by the target medium
+                            </p>
+                        </li>
+                        <li class="util-item">
+                            <img src="../../../assets/technology/util/technology-util-item2.png" alt="" class="util-item__img" #utilImg>
+                            <p class="util-item__p">
+                                Strengthens the support system by removing pollutants that compromise immunity
+                            </p>
+                        </li>
+                        <li class="util-item">
+                            <p class="util-item__p left-text">
+                                Binds toxins and heavy metals in its crystalline matrix and neutralizes them.
+                            </p>
+                            <p class="util-item__p left-text">
+                                Provides a reliable supply of essential minerals and trace elements
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="util-list-mobile" *ngIf="current_width <= 892">
+
+                            <p class="util-item__p mgl92">
+                                Promotes healthy pH level balance thanks to its alkalizing properties
+                            </p>
+                            <p class="util-item__p right-text">
+                                Accelerates nutrient uptake by the target medium
+                            </p>
+
+
+                            <img src="../../../assets/technology/util/technology-util-item2.png" alt="" class="util-item__img" #utilImg>
+                            <p class="util-item__p">
+                                Strengthens the support system by removing pollutants that compromise immunity
+                            </p>
+
+
+                            <p class="util-item__p left-text">
+                                Binds toxins and heavy metals in its crystalline matrix and neutralizes them.
+                            </p>
+                            <p class="util-item__p mgl92">
+                                Provides a reliable supply of essential minerals and trace elements
+                            </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-value-container" id="added">
+        <div class="body-value-desc" *ngIf="current_width > 1024">
+            <div class="value-desc-text">
+                <h1>
+                    YOUR ADDED VALUE
+                </h1>
+                <p class="value-desc__p">
+                    We are unyielding in our pursuit of higher efficiency to deliver <span>more opportunities</span> for you!
+                </p>
+                <p class="value-desc__p1">
+                    Operating on naturally occurring entry material, the innovative EDA approach to manufacturing enhances natural reactive and absorbing properties of minerals, thus enabling improved ion exchange and bio efficacy of our products. 
+                    <br>
+                    <br>
+                    Notwithstanding the benefits for agricultural production, it also presents an environmentally friendly solution by reducing the use of artificial fertilizers and chemicals, thus allowing production of healthier food with lower rates of residues and heavy metals detrimental to human body.
+                </p>
+            </div>
+            <div class="value-desc-image" #valueImg>
+                <div class="desc-image-flex">
+                    <h2>SUSTAINABILITY</h2>
+                    <div class="image-flex-item">
+                        <img src="../../../../assets/blog/agriculture/agriculture_main.png" alt="" class="value-desc-image__img">
+                        <h2 class="mgt-15">AGRICULTURE</h2>
+                    </div>
+                    <h2>TECHNOLOGY</h2>
+                </div>
+            </div>
+        </div>
+        <div class="body-value-desc" *ngIf="current_width <= 1024">
+            <div class="value-desc-text">
+                <h1>
+                    YOUR ADDED VALUE
+                </h1>
+                <p class="value-desc__p">
+                    We are unyielding in our pursuit of higher efficiency to deliver <span>more opportunities</span> for you!
+                </p>
+                <p class="value-desc__p1">
+                    Operating on naturally occurring entry material, the innovative EDA approach to manufacturing enhances natural reactive and absorbing properties of minerals, thus enabling improved ion exchange and bio efficacy of our products. 
+                    <br>
+                </p>    
+                    <div class="value-desc-image" #valueImg>
+                        <div class="desc-image-flex">
+                            <h2>SUSTAINABILITY</h2>
+                            <div class="image-flex-item">
+                                <img src="../../../../assets/blog/agriculture/agriculture_main.png" alt="" class="value-desc-image__img">
+                                <h2>AGRICULTURE</h2>
+                            </div>
+                            <h2>TECHNOLOGY</h2>
+                        </div>
+                    </div>
+                <p class="value-desc__p1">
+                    <br>
+                    Notwithstanding the benefits for agricultural production, it also presents an environmentally friendly solution by reducing the use of artificial fertilizers and chemicals, thus allowing production of healthier food with lower rates of residues and heavy metals detrimental to human body.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="body-questions-container" *ngIf="current_width > 1100">
+        <div class="questions-title">
+            <p class="questions-title__p1">WHAT IS NEW?</p>
+            <a routerLink="/{{lang}}/blog" class="questions-title__p1">FIND OUT MORE <svg xmlns="http://www.w3.org/2000/svg" width="31" height="24" viewBox="0 0 31 24" fill="none">
+                <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5L2 10.5ZM30.0607 13.0607C30.6464 12.4749 30.6464 11.5251 30.0607 10.9393L20.5147 1.3934C19.9289 0.807613 18.9792 0.807613 18.3934 1.3934C17.8076 1.97919 17.8076 2.92893 18.3934 3.51472L26.8787 12L18.3934 20.4853C17.8076 21.0711 17.8076 22.0208 18.3934 22.6066C18.9792 23.1924 19.9289 23.1924 20.5147 22.6066L30.0607 13.0607ZM2 13.5L29 13.5L29 10.5L2 10.5L2 13.5Z" fill="#0A3600"/>
+            </svg></a>
+        </div>
+        <div class="questions-tables">
+            <div class="questions-tables-container">
+                <div class="table-container-big" #blogContainer>
+                    <p class="table-container-big__p1">ZEOLITE CLINOPTILOLITE MODUS OPERANDI</p>
+                    <p class="table-container-big__p2">Zeolite clinoptilolite sedimentary rock comes from a family of microporous, crystalline aluminosilicate minerals. Find out about how zeolite’s attributes yield positive impact on agriculture.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/zeolite" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-container-mini" #blogContainer>
+                    <p class="table-container-mini__p1">MINERAL NUTRITION IN PLANTS</p>
+                    <p class="table-container-mini__p2">Understanding the role of essential minerals in the growth and development of plants is pivotal to unlocking their full potential.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/nutrition" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="questions-tables-container">
+                <div class="table-container-mini" #blogContainer>
+                    <p class="table-container-mini__p1">IMPROVE SOIL QUALITY WITH VITALAND </p>
+                    <p class="table-container-mini__p2">Are you seeking a long-term solution to improving nutrient availability and the quality of your soil?</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/soil" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-container-big" #blogContainer>
+                    <p class="table-container-big__p1">WHY SHOULD FARMERS USE VITACALCITE</p>
+                    <p class="table-container-big__p2">With an effective solution in the form of VitaCALCITE plant booster at hand, you have all of your plants’ micronutrient needs covered. Discover how VitaCALCITE helps stimulate your plant production.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/vitacalcite" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="questions-tables-container">
+                <div class="table-container-big" #blogContainer>
+                    <p class="table-container-big__p1">THE IMPORTANCE OF CALCIUM</p>
+                    <p class="table-container-big__p2">Calcium is an essential nutrient that is indispensable for healthy plant growth and development. It is therefore imperative to be mindful of the risks posed by its deficiency.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/calcium" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-container-mini" #blogContainer>
+                    <p class="table-container-mini__p1">WHY ORGANIC AGRICULTURE?</p>
+                    <p class="table-container-mini__p2">Organic agriculture isn't just a trend; it's a transformation. Explore the key reasons behind this shift.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/agriculture" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="other-links-items" *ngIf="current_width <= 1100">
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../assets/blog/body-other-links/calcium.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                The importance of high utility calcium
+            </p>
+            <a routerLink="/{{lang}}/blog/calcium" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../../assets/blog/body-other-links/minerals.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                The importance of mineral nutrition in plants
+            </p>
+            <a routerLink="/{{lang}}/blog/nutrition" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../../assets/blog/body-other-links/calcite.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                Why should farmers use VitaCALCITE plant booster
+            </p>
+            <a routerLink="/{{lang}}/blog/vitacalcite" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../../assets/blog/body-other-links/zeolit.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                Zeolite clinoptilolite - Modus Operandi
+            </p>
+            <a routerLink="/{{lang}}/blog/zeolite" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <div class="links-image-wrap">
+                <img src="../../../../assets/blog/body-other-links/consider_organic.svg" alt="" class="links-item__img">
+            </div>
+            <p class="links-item__p">
+                Why should you consider organic agriculture
+            </p>
+            <a routerLink="/{{lang}}/blog/agriculture" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>    
+<div class="body" *ngIf="lang == 'cz'">
+    <div class="body-technology" *ngIf="current_width > 1175" id="description">
+        <div class="body-technology-image" #descImg>
+            <img class="body-technology-image__lamp" src="../../../../assets/main-page/body/lamp.png" alt="">
+            <img class="body-technology-image_bg" src="../../../../assets/main-page/verdexmainpagetriangles.svg" alt="">
+        </div>
+        <div class="body-technology-desc">
+            <img src="../../../assets/technology/technology-technology.png" alt="">
+            <p class="body-technology-desc__p2">
+                <span>Enhanced Dynamic Activation</span> (EDA) je inovativní technologie založená na akademických poznatcích z oblastí biofyziky, chemie a přírodních věd.  
+                <br>
+                <br>
+                Za speciálních dynamických podmínek mění technologie EDA velikost částic, energetický stav a iontovou výměnnou kapacitu našich výrobků. Podrobení každého výstupního materiálu terénní studii potvrdilo rozdíl v rozpustnosti, poměru amorfního a krystalického podílu materiálu a vyšší biologickou aktivitu. 
+                <br>
+                <br>
+                Unikátní povaha našich dynamicky aktivovaných produktů se projevuje vyšší kvalitou a dostupností živin v půdě, urychleným vývojem rostlin a jejich ochranou před stresory prostředí a optimalizovanou funkcí imunitního systému a dobrým zdravím chovných zvířat.
+            </p>
+        </div>
+    </div>
+    <div class="body-technology" *ngIf="current_width <= 1175" id="description">
+        <div class="body-technology-desc">
+            <div class="body-technology-image" #descImg *ngIf="current_width <= 1175 && current_width > 767">
+                <img class="body-technology-image__lamp" src="../../../../assets/main-page/body/lamp.png" alt="">
+                <img class="body-technology-image_bg" src="../../../../assets/main-page/verdexmainpagetriangles.svg" alt="">
+            </div>
+            <div class="body-techology-text">
+                    <img src="../../../assets/technology/technology-technology.png" alt="">
+                <p class="body-technology-desc__p2">
+                    <span>Enhanced Dynamic Activation</span> (EDA) je inovativní technologie založená na akademických poznatcích z oblastí biofyziky, chemie a přírodních věd.  
+                    <br>
+                </p>    
+                <div class="body-technology-image" #descImg *ngIf="current_width <= 767">
+                    <img class="body-technology-image__lamp" src="../../../../assets/main-page/body/lamp.png" alt="">
+                    <img class="body-technology-image_bg" src="../../../../assets/main-page/verdexmainpagetriangles.svg" alt="">
+                </div>
+                <div class="order2">
+                    <p class="body-technology-desc__p2">    
+                        <br>
+                       Za speciálních dynamických podmínek mění technologie EDA velikost částic, energetický stav a iontovou výměnnou kapacitu našich výrobků. Podrobení každého výstupního materiálu terénní studii potvrdilo rozdíl v rozpustnosti, poměru amorfního a krystalického podílu materiálu a vyšší biologickou aktivitu. 
+                    </p>
+                </div>
+                <p class="body-technology-desc__p2">    
+                    <br>
+                    <br>
+                    Unikátní povaha našich dynamicky aktivovaných produktů se projevuje vyšší kvalitou a dostupností živin v půdě, urychleným vývojem rostlin a jejich ochranou před stresory prostředí a optimalizovanou funkcí imunitního systému a dobrým zdravím chovných zvířat.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="benefits-container" id="benefits">
+        <p class="benefits-title__p">
+            VÝHODY
+        </p>
+        <div class="benefit-items">
+            <div class="benefit-item" #benefit>
+                <p class="benefit-item-title__p">
+                    Zvýšená reaktivita
+                </p>
+                <p class="benefit-item-description__p">
+                    Míra interakce daného činitele s vnějším prostředím závisí na velikosti částic a specifickém charakteru povrchu. Obecně platí, že čím větší specifický povrch typický pro mikrobiální částice, tím vyšší reaktivita.
+                </p>
+            </div>
+            <div class="benefit-item" #benefit>
+                <p class="benefit-item-title__p">
+                    Maximální účinnost
+                </p>
+                <p class="benefit-item-description__p">
+                    Technologie šetrná k životnímu prostředí umožňující výrazné zlepšení vlastností látek a pracující výhradně se vstupním materiálem získaným z přirozeně se vyskytujících minerálů, což snižuje spotřebu umělých hnojiv a chemikálií.
+                </p>
+            </div>
+            <div class="benefit-item" #benefit>
+                <p class="benefit-item-title__p">
+                    Udržitelnost
+                </p>
+                <p class="benefit-item-description__p">
+                    Během let rozsáhlého výzkumu byla účinnost našeho přístupu k výrobě dynamické aktivace vyladěna takovým způsobem, aby bylo dosaženo lepší rozpustnosti a maximální terénní interakce každého výstupního produktu.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="body-util-container" id="util">
+        <div class="body-util-bg">
+            <div class="util-description-container">
+                <p class="util-desc-title__p">
+                    Vita<span>CALCITE</span> & Vita<span>YIELD</span>
+                </p>
+                <p class="util-desc-h__h1">
+                    VÁPNÍK S VYSOKOU UŽITNOU HODNOTOU
+                </p>
+                <div class="util-desc-image-container">
+                    <ul class="util-list" *ngIf="current_width > 892">
+                        <li class="util-item">
+                            <p class="util-item__p right-text">
+                                Nepostradatelný pro vývoj a životaschopnost rostlin.
+                            </p>
+                            <p class="util-item__p right-text">
+                                Zvyšuje odolnost proti biotickým a abiotickým stresům
+                            </p>
+                        </li>
+                        <li class="util-item">
+                            <img src="../../../assets/technology/util/technology-util-item1.png" alt="" class="util-item__img" #utilImg>
+                            <p class="util-item__p">
+                                Hraje zásadní roli při zachování strukturální a funkční integrity membrány.
+                            </p>
+                        </li>
+                        <li class="util-item">
+                            <p class="util-item__p left-text">
+                                Podporuje stabilizaci a správnou funkci buněčné stěny.
+                            </p>
+                            <p class="util-item__p left-text">
+                                Reguluje transport a kontrolu iontové výměny.
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="util-list-mobile" *ngIf="current_width <= 892">
+                            <p class="util-item__p mgl-92">
+                                Nepostradatelný pro vývoj a životaschopnost rostlin.
+                            </p>
+                            <p class="util-item__p right-text">
+                                Zvyšuje odolnost proti biotickým a abiotickým stresům
+                            </p>
+                            
+                            <img src="../../../assets/technology/util/technology-util-item1.png" alt="" class="util-item__img" #utilImg>
+                            <p class="util-item__p mgl-b">
+                                Hraje zásadní roli při zachování strukturální a funkční integrity membrány.
+                            </p>
+                            
+                            <p class="util-item__p left-text">
+                                Podporuje stabilizaci a správnou funkci buněčné stěny.
+                            </p>
+                            <p class="util-item__p mgl-92">
+                                Reguluje transport a kontrolu iontové výměny.
+                            </p>
+                            
+                    </ul>
+                </div>
+            </div>
+            <div class="util-description-container" id="zeolit">
+                <p class="util-desc-title__p">
+                    Vita<span>LAND</span> & Vita<span>XORB</span>
+                </p>
+                <p class="util-desc-h__h1">
+                    ZEOLIT KLINOPTILOLIT
+                </p>
+                <div class="util-desc-image-container">
+                    <ul class="util-list" *ngIf="current_width > 892">
+                        <li class="util-item">
+                            <p class="util-item__p right-text">
+                                Podporuje zdravou rovnováhu hladiny pH díky svým alkalizačním vlastnostem.
+                            </p>
+                            <p class="util-item__p right-text">
+                                Umožňuje efektivnější příjem živin cílovým činitelem.
+                            </p>
+                        </li>
+                        <li class="util-item">
+                            <img src="../../../assets/technology/util/technology-util-item2.png" alt="" class="util-item__img" #utilImg>
+                            <p class="util-item__p">
+                                Posiluje obranyschopnost díky eliminaci škodlivin, které ohrožují imunitní systém.
+                            </p>
+                        </li>
+                        <li class="util-item">
+                            <p class="util-item__p left-text">
+                                Váže toxiny a těžké kovy ve své krystalické matrici a neutralizuje je.
+                            </p>
+                            <p class="util-item__p left-text">
+                                Zajišťuje spolehlivý přísun základních minerálů a stopových prvků.
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="util-list-mobile" *ngIf="current_width <= 892">
+
+                            <p class="util-item__p mgl92">
+                                Podporuje zdravou rovnováhu hladiny pH díky svým alkalizačním vlastnostem.
+                            </p>
+                            <p class="util-item__p right-text">
+                                Umožňuje efektivnější příjem živin cílovým činitelem.
+                            </p>
+
+
+                            <img src="../../../assets/technology/util/technology-util-item2.png" alt="" class="util-item__img" #utilImg>
+                            <p class="util-item__p">
+                                Posiluje obranyschopnost díky eliminaci škodlivin, které ohrožují imunitní systém.
+                            </p>
+
+
+                            <p class="util-item__p left-text">
+                                Váže toxiny a těžké kovy ve své krystalické matrici a neutralizuje je.
+                            </p>
+                            <p class="util-item__p mgl92">
+                                Zajišťuje spolehlivý přísun základních minerálů a stopových prvků.
+                            </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-value-container" id="added">
+        <div class="body-value-desc" *ngIf="current_width > 1024">
+            <div class="value-desc-text">
+                <h1>
+                    VAŠE PŘIDANÁ HODNOTA
+                </h1>
+                <p class="value-desc__p">
+                    Vytrvale usilujeme o vyšší efektivitu, abychom vám mohli nabídnout více <span>příležitostí!</span>
+                </p>
+                <p class="value-desc__p1">
+                    Inovativní přístup k výrobě EDA, který pracuje s přirozeně se vyskytujícím vstupním materiálem, zvyšuje přirozené reaktivní a absorpční vlastnosti minerálů, což má za následek dynamičtější iontovou výměnu a vyšší celkovou účinnost našich výrobků.
+                    <br>
+                    <br>
+                    Nehledě na výhody pro zemědělskou výrobu představuje EDA řešení šetrné k životnímu prostředí, neboť snižuje používání umělých hnojiv a chemikálií, a umožňuje tak produkci zdravějších potravin s nižší mírou reziduí a těžkých kovů škodlivých pro lidské zdraví.
+                </p>
+            </div>
+            <div class="value-desc-image" #valueImg>
+                <div class="desc-image-flex">
+                    <h2>UDRŽITELNOST</h2>
+                    <div class="image-flex-item">
+                        <img src="../../../../assets/blog/agriculture/agriculture_main.png" alt="" class="value-desc-image__img">
+                        <h2 class="mgt-15">ZEMĚDĚLSTVÍ</h2>
+                    </div>
+                    <h2>TECHNOLOGIE</h2>
+                </div>
+            </div>
+        </div>
+        <div class="body-value-desc" *ngIf="current_width <= 1024">
+            <div class="value-desc-text">
+                <h1>
+                    VAŠE PŘIDANÁ HODNOTA
+                </h1>
+                <p class="value-desc__p">
+                    Vytrvale usilujeme o vyšší efektivitu, abychom vám mohli nabídnout více <span>příležitostí!</span>
+                </p>
+                <p class="value-desc__p1">
+                    Inovativní přístup k výrobě EDA, který pracuje s přirozeně se vyskytujícím vstupním materiálem, zvyšuje přirozené reaktivní a absorpční vlastnosti minerálů, což má za následek dynamičtější iontovou výměnu a vyšší celkovou účinnost našich výrobků.
+                    <br>
+                </p>    
+                    <div class="value-desc-image" #valueImg>
+                        <div class="desc-image-flex">
+                            <h2>UDRŽITELNOST</h2>
+                            <div class="image-flex-item">
+                                <img src="../../../../assets/blog/agriculture/agriculture_main.png" alt="" class="value-desc-image__img">
+                                <h2>ZEMĚDĚLSTVÍ</h2>
+                            </div>
+                            <h2>TECHNOLOGIE</h2>
+                        </div>
+                    </div>
+                <p class="value-desc__p1">
+                    <br>
+                    Nehledě na výhody pro zemědělskou výrobu představuje EDA řešení šetrné k životnímu prostředí, neboť snižuje používání umělých hnojiv a chemikálií, a umožňuje tak produkci zdravějších potravin s nižší mírou reziduí a těžkých kovů škodlivých pro lidské zdraví.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="body-questions-container" *ngIf="current_width > 1100">
+        <div class="questions-title">
+            <p class="questions-title__p1">CO JE NOVÉHO?</p>
+            <a routerLink="/{{lang}}/blog" class="questions-title__p1">Zjisti více <svg xmlns="http://www.w3.org/2000/svg" width="31" height="24" viewBox="0 0 31 24" fill="none">
+                <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5L2 10.5ZM30.0607 13.0607C30.6464 12.4749 30.6464 11.5251 30.0607 10.9393L20.5147 1.3934C19.9289 0.807613 18.9792 0.807613 18.3934 1.3934C17.8076 1.97919 17.8076 2.92893 18.3934 3.51472L26.8787 12L18.3934 20.4853C17.8076 21.0711 17.8076 22.0208 18.3934 22.6066C18.9792 23.1924 19.9289 23.1924 20.5147 22.6066L30.0607 13.0607ZM2 13.5L29 13.5L29 10.5L2 10.5L2 13.5Z" fill="#0A3600"/>
+              </svg></a>
+        </div>
+        <div class="questions-tables">
+            <div class="questions-tables-container">
+                <div class="table-container-big" #blogContainer>
+                    <p class="table-container-big__p1">ZEOLIT KLINOPTILOLIT – FUNKCE A VYUŽITÍ</p>
+                    <p class="table-container-big__p2">Zeolit je sedimentární hornina, která patří do skupiny mikroporézních krystalických hlinitokřemičitanových minerálů. Objevte s námi, jaký přínos mají unikátní vlastnosti zeolitu v zemědělství.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/zeolite" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-container-mini" #blogContainer>
+                    <p class="table-container-mini__p1">KLÍČOVÁ ROLE VÁPNÍKU</p>
+                    <p class="table-container-mini__p2">Vápník představuje základní stavební živinu nezbytnou pro zdravý růst a vývoj rostlin. Je třeba proto mít neustále na paměti rizika plynoucí z jeho nedostatku.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/calcium" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="questions-tables-container">
+                <div class="table-container-mini" #blogContainer>
+                    <p class="table-container-mini__p1">ZLEPŠENÍ PŮDY S VITALANDEM</p>
+                    <p class="table-container-mini__p2">Hledáte dlouhodobé řešení efektivnější dostupnosti živin a vyšší kvality vaší půdy? Vyzkoušejte VitaLAND – univerzální půdní kondicionér nabízející pestrou škálu výhod.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/soil" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-container-big" #blogContainer>
+                    <p class="table-container-big__p1">PROČ BY MĚLI FARMÁŘI POUŽÍVAT VITACALCITE</p>
+                    <p class="table-container-big__p2">VitaCALCITE rostlinný posilovač představuje účinný nástroj, který vašim rostlinám zajistí spolehlivý přísun minerální výživy pozitivně ovlivňující růst a fyziologii rostlin či plodin.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/vitacalcite" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="questions-tables-container">
+                <div class="table-container-big" #blogContainer>
+                    <p class="table-container-big__p1">PODSTATA MINERÁLNÍ VÝŽIVY V ROSTLINÁCH</p>
+                    <p class="table-container-big__p2">Pochopení úlohy základních minerálních látek v kontextu růstu a vývoje rostlin je klíčové pro využití jejich plného potenciálu. Zjistěte více, jak může naše minerální infuze pomáhat i vám.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/nutrition" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-container-mini" #blogContainer>
+                    <p class="table-container-mini__p1">PROČ EKOLOGICKÉ ZEMĚDĚLSTVÍ?</p>
+                    <p class="table-container-mini__p2">Ekologické zemědělství není jen aktuálním trendem, je to transformace. Prozkoumejte jeho hlavní výhody za pomoci našich minerálních biostimulántů.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/agriculture" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="other-links-items" *ngIf="current_width <= 1100">
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../assets/blog/body-other-links/calcium.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                KLÍČOVÁ ROLE VÁPNÍKU
+            </p>
+            <a routerLink="/{{lang}}/blog/calcium" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../../assets/blog/body-other-links/minerals.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                PODSTATA MINERÁLNÍ VÝŽIVY V ROSTLINÁCH
+            </p>
+            <a routerLink="/{{lang}}/blog/nutrition" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../../assets/blog/body-other-links/calcite.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                PROČ BY MĚLI FARMÁŘI POUŽÍVAT VITACALCITE
+            </p>
+            <a routerLink="/{{lang}}/blog/vitacalcite" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../../assets/blog/body-other-links/zeolit.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                ZEOLIT KLINOPTILOLIT – FUNKCE A VYUŽITÍ
+            </p>
+            <a routerLink="/{{lang}}/blog/zeolite" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <div class="links-image-wrap">
+                <img src="../../../../assets/blog/body-other-links/consider_organic.svg" alt="" class="links-item__img">
+            </div>
+            <p class="links-item__p">
+                PROČ EKOLOGICKÉ ZEMĚDĚLSTVÍ?
+            </p>
+            <a routerLink="/{{lang}}/blog/agriculture" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>    
+<app-footer></app-footer>

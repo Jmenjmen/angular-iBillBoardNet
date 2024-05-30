@@ -1,0 +1,126 @@
+<header *ngIf="lang == 'en'">
+    <div class="header-container">
+        <div class="header-container-nav">
+            <a routerLink="/{{lang}}/" class="hcnl__a"><img src="../../../../assets/main-page/verdexagrologoweb 1.png" alt=""></a>
+    </div>
+        <div class="header-container-title">
+            <div class="header-container-title-desc">
+                <p class="header-container-title-desc__p1 font_color" *ngIf="product === 'yield'">Harnessing the power of natural ingredients to support plant growth performance</p>
+                <p class="header-container-title-desc__p2 font_color" *ngIf="product === 'yield'">Generate higher yields and better quality of produce with our natural plant and crop activator. </p>
+                <p class="header-container-title-desc__p1 font_color" *ngIf="product === 'xorb'">Understanding animal processes as the key to improving livestock performance</p>
+                <p class="header-container-title-desc__p2 font_color" *ngIf="product === 'xorb'">Learn how scientific discovery drives better production output with our feed additive for animals</p>
+                <p class="header-container-title-desc__p1 font_color" *ngIf="product === 'calcite'">Innovative approach to dynamic plant growth and reinforced plant health</p>
+                <p class="header-container-title-desc__p2 font_color" *ngIf="product === 'calcite'">Stimulate your plant and crop production sustainably with our high-utility foliar plant aid</p>
+                <p class="header-container-title-desc__p1 font_color" *ngIf="product === 'vitaland'">Long-term solution to improving nutrient availability and overall soil quality</p>
+                <p class="header-container-title-desc__p2 font_color" *ngIf="product === 'vitaland'">Modulate soil health in the long run with our universal soil conditioner mineral complex granulate</p>
+            </div>
+            <div class="header-container-title-image">
+                <img src="../../../assets/main-page/body/white/product4_white.png" alt="" *ngIf="product === 'yield'">
+                <img src="../../../assets/main-page/body/white/product3_white.png" alt="" *ngIf="product === 'xorb'">
+                <img src="../../../assets/main-page/body/white/product1_white.png" alt="" *ngIf="product === 'calcite'">
+                <img src="../../../assets/main-page/body/white/product2_white.png" alt="" *ngIf="product === 'vitaland'">
+            </div>
+        </div>
+        <div class="header-container-description">
+            <div class="header-container-description-items" *ngIf="product === 'xorb'">
+                <button (click)="sendId('description')">Description</button>
+                <button (click)="sendId('properties')">Properties</button>
+                <button (click)="sendId('benefits')">Benefits</button>
+                <button (click)="sendId('composition')">Composition</button>
+                <button (click)="sendId('history')">Success Stories</button>
+                <button (click)="sendId('app')">Application</button>
+                <button (click)="sendId('documents')">Documents</button>
+            </div>
+            <div class="header-container-description-items" *ngIf="product === 'calcite'">
+                <button (click)="sendId('description')">Description</button>
+                <button (click)="sendId('properties')">Properties</button>
+                <button (click)="sendId('benefits')">Benefits</button>
+                <button (click)="sendId('composition')">Composition</button>
+                <button (click)="sendId('history')">Success Stories</button>
+                <button (click)="sendId('app')">Application</button>
+                <button (click)="sendId('documents')">Documents</button>
+            </div>
+            <div class="header-container-description-items" *ngIf="product === 'vitaland'">
+                <button (click)="sendId('description')">Description</button>
+                <button (click)="sendId('properties')">Properties</button>
+                <button (click)="sendId('benefits')">Benefits</button>
+                <button (click)="sendId('composition')">Composition</button>
+                <button (click)="sendId('history')">Added value</button>
+                <button (click)="sendId('app')">Application</button>
+                <button (click)="sendId('documents')">Documents</button>
+            </div>
+            <div class="header-container-description-items" *ngIf="product === 'yield'">
+                <button (click)="sendId('description')">Description</button>
+                <button (click)="sendId('properties')">Properties</button>
+                <button (click)="sendId('composition')">Composition</button>
+                <button (click)="sendId('benefits')">Benefits</button>
+                <button (click)="sendId('app')">Application</button>
+                <button (click)="sendId('crops')">Crops</button>
+                <button (click)="sendId('documents')">Documents</button>
+            </div>
+        </div>
+    </div>
+</header>
+<header *ngIf="lang == 'cz'">
+    <div class="header-container">
+        <div class="header-container-nav">
+            <a routerLink="/{{lang}}/" class="hcnl__a"><img src="../../../../assets/main-page/verdexagrologoweb 1.png" alt=""></a>
+    </div>
+        <div class="header-container-title">
+            <div class="header-container-title-desc">
+                <p class="header-container-title-desc__p1 font_color" *ngIf="product === 'yield'">Využijte sílu přírodních složek a podpořte růst vašich plodin</p>
+                <p class="header-container-title-desc__p2 font_color" *ngIf="product === 'yield'">Dosáhněte lepší a kvalitnější sklizně díky našemu přírodnímu aktivátoru růstu rostlin a plodin</p>
+                <p class="header-container-title-desc__p1 font_color" *ngIf="product === 'xorb'">Lepší porozumění biologickým procesům u hospodářských zvířat vede k lepším výsledkům farmaření</p>
+                <p class="header-container-title-desc__p2 font_color" *ngIf="product === 'xorb'">Zjistěte, jak nejnovější vědecké objevy a poznatky přispívají k lepším výrobním výsledkům s našimi krmnými doplňky pro zvířata</p>
+                <p class="header-container-title-desc__p1 font_color" *ngIf="product === 'calcite'">Inovativní přístup k posílení dynamiky růstu a obranyschopnosti rostlin</p>
+                <p class="header-container-title-desc__p2 font_color" *ngIf="product === 'calcite'">Stimulujte vaší rostlinnou produkci udržitelně pomocí naší vysoce účinné listové podpory</p>
+                <p class="header-container-title-desc__p1 font_color" *ngIf="product === 'vitaland'">Dlouhodobé řešení pro lepší dostupnost živin a kvalitnější půdu</p>
+                <p class="header-container-title-desc__p2 font_color" *ngIf="product === 'vitaland'">Hýčkejte svou půdu s pomocí našeho univerzálního půdního kondicionéru ve formě minerálního granulátu</p>
+            </div>
+            <div class="header-container-title-image">
+                <img src="../../../assets/main-page/body/white/product4_white.png" alt="" *ngIf="product === 'yield'">
+                <img src="../../../assets/main-page/body/white/product3_white.png" alt="" *ngIf="product === 'xorb'">
+                <img src="../../../assets/main-page/body/white/product1_white.png" alt="" *ngIf="product === 'calcite'">
+                <img src="../../../assets/main-page/body/white/product2_white.png" alt="" *ngIf="product === 'vitaland'">
+            </div>
+        </div>
+        <div class="header-container-description">
+            <div class="header-container-description-items" *ngIf="product === 'xorb'">
+                <button (click)="sendId('description')">O PRODUKTU</button>
+                <button (click)="sendId('properties')">VLASTNOSTI</button>
+                <button (click)="sendId('benefits')">VÝHODY</button>
+                <button (click)="sendId('composition')">SLOŽENÍ</button>
+                <button (click)="sendId('history')">PŘÍKLADY APLIKACE</button>
+                <button (click)="sendId('app')">POUŽITÍ</button>
+                <button (click)="sendId('documents')">DOKUMENTY</button>
+            </div>
+            <div class="header-container-description-items" *ngIf="product === 'calcite'">
+                <button (click)="sendId('description')">O PRODUKTU</button>
+                <button (click)="sendId('properties')">VLASTNOSTI</button>
+                <button (click)="sendId('benefits')">VÝHODY</button>
+                <button (click)="sendId('composition')">SLOŽENÍ</button>
+                <button (click)="sendId('history')">PŘÍKLADY APLIKACE</button>
+                <button (click)="sendId('app')">POUŽITÍ</button>
+                <button (click)="sendId('documents')">DOKUMENTY</button>
+            </div>
+            <div class="header-container-description-items" *ngIf="product === 'vitaland'">
+                <button (click)="sendId('description')">O PRODUKTU</button>
+                <button (click)="sendId('properties')">VLASTNOSTI</button>
+                <button (click)="sendId('benefits')">VÝHODY</button>
+                <button (click)="sendId('composition')">SLOŽENÍ</button>
+                <button (click)="sendId('history')">PŘIDANÁ HODNOTA</button>
+                <button (click)="sendId('app')">POUŽITÍ</button>
+                <button (click)="sendId('documents')">DOKUMENTY</button>
+            </div>
+            <div class="header-container-description-items" *ngIf="product === 'yield'">
+                <button (click)="sendId('description')">O PRODUKTU</button>
+                <button (click)="sendId('properties')">VLASTNOSTI</button>
+                <button (click)="sendId('composition')">SLOŽENÍ</button>
+                <button (click)="sendId('benefits')">VÝHODY</button>
+                <button (click)="sendId('app')">POUŽITÍ</button>
+                <button (click)="sendId('crops')">PLODINY</button>
+                <button (click)="sendId('documents')">DOKUMENTY</button>
+            </div>
+        </div>
+    </div>
+</header>

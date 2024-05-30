@@ -1,0 +1,1324 @@
+<app-header (id)="scrollFN($event)"></app-header>
+<div class="body" *ngIf="lang == 'en'">
+    <div class="body-products" id="products">
+        <p class="body-products__p">
+            OUR PRODUCTS
+        </p>
+        <div class="body-products-items">
+            <div class="body-products-items-item" #product>
+                <img src="../../../../assets/main-page/body/white/product1_white.png" alt="" class="product-item__img">
+                <div class="products-item-centered">
+                    <p class="products-item-centered__p1">
+                        VitaCALCITE
+                    </p>
+                    <p class="products-item-centered__p2">
+                        100% natural plant growth supplement based on foliar application. Provides essential plant support by efficient supply of calcium, silicon, and other trace elements.
+                    </p>
+                    <div class="link_arrow">
+                        <a routerLink="/{{lang}}/product/vitacalcite" class="link_arrow__a">
+                            ...                      
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="body-products-items-item" #product>
+                <img src="../../../../assets/main-page/body/white/product2_white.png" alt="" class="product-item__img">
+                <div class="products-item-centered">
+                    <p class="products-item-centered__p1">
+                        VitaLAND
+                    </p>
+                    <p class="products-item-centered__p2">
+                        100% natural soil conditioner developed as a long-term solution to improving water management, moisture regulation, nutrient uptake, and overall soil quality.
+                    </p>
+                    <div class="link_arrow">
+                        <a routerLink="/{{lang}}/product/vitaland" class="link_arrow__a">
+                            ...                        
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="body-products-items-item" #product>
+                <img src="../../../../assets/main-page/body/white/product3_white.png" alt="" class="product-item__img">
+                <div class="products-item-centered">
+                    <p class="products-item-centered__p1">
+                        VitaXORB
+                    </p>
+                    <p class="products-item-centered__p2">
+                        100% natural feed additive optimizes the animal immune system by acting on epithelial cells and probiotic bacteria, leading to higher production efficiency at lower costs.
+                    </p>
+                    <div class="link_arrow">
+                        <a routerLink="/{{lang}}/product/vitaxorb" class="link_arrow__a">
+                            ...                          
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="body-products-items-item" #product>
+                <img src="../../../../assets/main-page/body/white/product4_white.png" alt="" class="product-item__img">
+                <div class="products-item-centered">
+                    <p class="products-item-centered__p1">
+                        VitaYIELD
+                    </p>
+                    <p class="products-item-centered__p2">
+                        100% natural plant fertilizer that harnesses the power of organic ingredients with stimulating properties to support plant processes in favor of higher yield and quality.
+                    </p>
+                    <div class="link_arrow">
+                        <a routerLink="/{{lang}}/product/vitayield" class="link_arrow__a">
+                            ...                        
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-technology" *ngIf="current_width > 1175" id="tech">
+        <div class="body-technology-image" #techImage>
+            <img class="body-technology-image__lamp" src="../../../../assets/main-page/body/lamp.png" alt="" #lamp>
+            <img class="body-technology-image_bg" src="../../../../assets/main-page/verdexmainpagetriangles.svg" alt="">
+        </div>
+        <div class="body-technology-desc" #technology>
+            <div class="tech-wrap">
+                <img src="../../../../assets/main-page/body/techDesc.png" alt="">
+                <span class="sp1">EDA TECHNOLOGY</span>
+            </div>
+            <p class="body-technology-desc__p2">
+                Modern farmer is bound to contend with adversity; the soil is soaked with heavy metals from conventional agriculture; plants are struggling from nutrient deficiency and other human-induced diseases; the fauna and flora are suffering from climate change, accompanied by severe weather such as drought and flooding. 
+                <br>
+                <br>
+                Our Enhanced Dynamic Activation (EDA) technology offers an intelligent solution for lasting future away from the environmental decline back towards sustainable progress.
+            </p>
+            <a routerLink="/{{lang}}/technology" class="body-technology-desc__a">FIND OUT MORE</a>
+        </div>
+    </div>
+    <div class="body-technology" *ngIf="current_width <= 1175" id="tech">
+        <div class="body-technology-desc" #technology>
+            <div class="tech-wrap">
+                <img src="../../../../assets/main-page/body/techDesc.png" alt="">
+                <span class="sp1">EDA TECHNOLOGY</span>
+            </div>
+            <p class="body-technology-desc__p2">
+                <span>Enhanced Dynamic Activation</span> (EDA) is an innovative technology based on biophysics, chemistry, and natural science. 
+                <br>
+                <br>
+                Modern farmer is bound to contend with adversity; the soil is soaked with heavy metals from conventional agriculture; plants are struggling from nutrient deficiency and other human-induced diseases; the fauna and flora are suffering from climate change, accompanied by severe weather such as drought and flooding.
+                </p>
+                <div class="body-technology-image" #techImage>
+                    <img class="body-technology-image__lamp" src="../../../../assets/main-page/body/lamp.png" alt="" #lamp>
+                    <img class="body-technology-image_bg" src="../../../../assets/main-page/verdexmainpagetriangles.svg" alt="">
+                </div>
+            <p class="body-technology-desc__p2">    
+                <br>
+                <br>
+                Our Enhanced Dynamic Activation (EDA) technology offers an intelligent solution for lasting future away from the environmental decline back towards sustainable progress.
+            </p>
+            <a routerLink="/{{lang}}/technology" class="body-technology-desc__a">FIND OUT MORE</a>
+        </div>
+    </div>
+    <div class="body-sertificate" #sertificate>
+        <div class="body-sertificate-items">
+            <div class="body-sertificate-items-item">
+                <img src="../../../../assets/main-page/verdexagro_omri.svg" alt="" #certificateLogo>
+                <p class="sertificate-item__p" #certificateTitle>Organic Materials Review Institute (OMRi) is the only independent organization that specializes solely in input review across North America with more than 10,000 products listed.</p>
+            </div>
+            <div class="body-sertificate-items-item">
+                <img src="../../../../assets/main-page/verdexagro_fibl.svg" alt="" #certificateLogo>
+                <p class="sertificate-item__p" #certificateTitle>Research Institute of Organic Agriculture (FiBL) is the world’s leading institute in the field of organic agriculture with international presence stretching across all of Europe.</p>
+            </div>
+            <div class="body-sertificate-items-item">
+                <img src="../../../../assets/main-page/verdexagro_ukzuz.svg" alt="" #certificateLogo>
+                <p class="sertificate-item__p" #certificateTitle>Central Institute for Supervising and Testing of the Czech Ministry of Agriculture responsible for inspection and food safety without compromising the environment.</p>
+            </div>
+            <div class="body-sertificate-items-item">
+                <img src="../../../../assets/main-page/verdexagro_demeter.svg" alt="" #certificateLogo>
+                <p class="sertificate-item__p" #certificateTitle>Demeter is the oldest organic growers’ association curating a database of organic inputs supporting over 7.000 farmers with about 250.000 ha in 63 countries on all continents.</p>
+            </div>
+        </div>
+    </div>
+    <div class="body-testimonials-container" id="testimonials">
+        <p class="testimonials__p">TESTIMONIALS</p>
+        <div class="testimonials-swiper-container">
+            <swiper-container style="--swiper-pagination-color: #97C06B;" class="mySwiper" loop="true" space-between="0" slides-per-view="2" *ngIf="current_width > 816">
+                <swiper-slide>
+                    <div class="slide-container grozny">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment1.png"  alt="">  
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Tokajská Pivnica Mathias</p>
+                                <p class="identity-info__p2">Winery, Slovakia</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">VitaCALCITE foliar spraying had apositive impact on our vineyard thanks to the way it effects vine physiology. It is compatible with fungicides and pesticides, both conventional and sustainable fertilizers, and therefore is easy to implement. Following a regular application schedule, we noticed all the key constituents of the vine begin to optimize, which was manifest in significantly increased weight of the berries and improved quality parameters. VitaCALCITE also assisted in keeping the leaf canopy strong and healthy by reducing and removing disease pressure, putting the vineyard in the ideal condition for strong finish in the final growth stages.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-container avocado">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment2.png"  alt=""> 
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Controlled Trial, Australia</p>
+                                <p class="identity-info__p2">Avocado Orchard</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">Our orchard is a property of about 3000 trees on 10 acres. We had previously used about 1000 tons of calcium nitrate through fertigation annually, yet the orchard had low fruit set and the trees displayed signs of calcium deficiency. A month following two VitaCALCITE foliar spray applications, all large trees had a new flush of growth, looked sturdy with additional lateral growth on the tips and reduced sodium burn. The VitaCALCITE application allows the harvested fruit in our orchard to be firmer in touch and assists the canopy of the tree to remain healthy while maintaining ripening fruit.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-container golf">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment3.png"  alt=""> 
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Jezera Golf Resort</p>
+                                <p class="identity-info__p2">Czech Republic</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">We found that the application of VitaLAND and VitaCALCITE had a positive effect on the golf turf and the operation costs. There was an increase in turf density, which contributed to greater resistance to damage and improved playing characteristics. Particularly significant was the reduction in water consumption attributed to the water-absorbing properties of VitaLAND, which helped retain moisture in the soil and reduce water loss. These improvements occurred in tandem with over 20% savings on the use of conventional NPK-type fertilizers thanks to the products’ ability to regulate soil pH and increase efficiency in the uptake of nutrients and trace minerals.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-container farm">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment4.png"  alt=""> 
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Farm Trials Study, Jordan</p>
+                                <p class="identity-info__p2">Tomato, Cucumber, Pepper</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">We used one to two applications depending on the health of the plant. The result after using VitaCALCITE was amazing compared with the control trial for the quality and quantity of leaves, fruits, roots, and resistance to powdery mildew. The most important point in this trial was the quantity of water consumption from the plants; the plants sprayed with VitaCALCITE only watered one time compared with the control that watered three times per day, saving 70% of water resources.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-container grozny">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment5.png"  alt=""> 
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Controlled Trial, Australia</p>
+                                <p class="identity-info__p2">Vineyard</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">Last Summer, our region experienced a heatwave of 43°C across 3 days over Christmas. This led to many vineyards receiving leaf and fruit burn on their vines. After deploying VitaCALCITE foliar aid in our vineyard, no signs of leaf burn were detected, and the vineyard looked healthy showing no signs of disease with all indicators for an increased yield. VitaCALCITE was one of the main contributing factors in assisting this vineyard to achieve the highest yield. According to our findings, the field results corroborate significant improvement in plant crop productivity.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <div class="swiper-pagination"></div>
+            </swiper-container>
+            <swiper-container class="mySwiper" style="--swiper-pagination-color: #97C06B;
+            --swiper-pagination-bullet-size: 10px;
+            --swiper-pagination-bullet-width: 10px;
+            --swiper-pagination-bullet-height: 10px;
+            --swiper-pagination-bullet-inactive-color: #000;
+            --swiper-pagination-bullet-inactive-opacity: 0.2;
+            --swiper-pagination-bullet-opacity: 1;
+            --swiper-pagination-bullet-horizontal-gap: 4px;
+            --swiper-pagination-bullet-vertical-gap: 6px;" loop="true" space-between="0" slides-per-view="1" *ngIf="current_width <= 816">
+                <swiper-slide>
+                    <div class="slide-container grozny">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment1.png"  alt="">  
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Tokajská Pivnica Mathias</p>
+                                <p class="identity-info__p2">Winery, Slovakia</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">VitaCALCITE foliar spraying had apositive impact on our vineyard thanks to the way it effects vine physiology. It is compatible with fungicides and pesticides, both conventional and sustainable fertilizers, and therefore is easy to implement. Following a regular application schedule, we noticed all the key constituents of the vine begin to optimize, which was manifest in significantly increased weight of the berries and improved quality parameters. VitaCALCITE also assisted in keeping the leaf canopy strong and healthy by reducing and removing disease pressure, putting the vineyard in the ideal condition for strong finish in the final growth stages.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-container avocado">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment2.png"  alt=""> 
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Controlled Trial, Australia</p>
+                                <p class="identity-info__p2">Avocado Orchard</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">Our orchard is a property of about 3000 trees on 10 acres. We had previously used about 1000 tons of calcium nitrate through fertigation annually, yet the orchard had low fruit set and the trees displayed signs of calcium deficiency. A month following two VitaCALCITE foliar spray applications, all large trees had a new flush of growth, looked sturdy with additional lateral growth on the tips and reduced sodium burn. The VitaCALCITE application allows the harvested fruit in our orchard to be firmer in touch and assists the canopy of the tree to remain healthy while maintaining ripening fruit.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-container golf">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment3.png"  alt=""> 
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Jezera Golf Resort</p>
+                                <p class="identity-info__p2">Czech Republic</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">We found that the application of VitaLAND and VitaCALCITE had a positive effect on the golf turf and the operation costs. There was an increase in turf density, which contributed to greater resistance to damage and improved playing characteristics. Particularly significant was the reduction in water consumption attributed to the water-absorbing properties of VitaLAND, which helped retain moisture in the soil and reduce water loss. These improvements occurred in tandem with over 20% savings on the use of conventional NPK-type fertilizers thanks to the products’ ability to regulate soil pH and increase efficiency in the uptake of nutrients and trace minerals.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-container farm">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment4.png"  alt=""> 
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Farm Trials Study, Jordan</p>
+                                <p class="identity-info__p2">Tomato, Cucumber, Pepper</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">We used one to two applications depending on the health of the plant. The result after using VitaCALCITE was amazing compared with the control trial for the quality and quantity of leaves, fruits, roots, and resistance to powdery mildew. The most important point in this trial was the quantity of water consumption from the plants; the plants sprayed with VitaCALCITE only watered one time compared with the control that watered three times per day, saving 70% of water resources.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-container grozny">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment5.png"  alt=""> 
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Controlled Trial, Australia</p>
+                                <p class="identity-info__p2">Vineyard</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">Last Summer, our region experienced a heatwave of 43°C across 3 days over Christmas. This led to many vineyards receiving leaf and fruit burn on their vines. After deploying VitaCALCITE foliar aid in our vineyard, no signs of leaf burn were detected, and the vineyard looked healthy showing no signs of disease with all indicators for an increased yield. VitaCALCITE was one of the main contributing factors in assisting this vineyard to achieve the highest yield. According to our findings, the field results corroborate significant improvement in plant crop productivity.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+    </div>
+    <div class="body-values-container" id="values">
+        <swiper-container class="mySwiper2" style="--swiper-pagination-color: #97C06B; --swiper-pagination-bullet-inactive-color: white;"  loop="true" autoplay-delay="12500" autoplay-disable-on-interaction="false">
+            <swiper-slide>
+                <div class="values-slide-container">
+                    <div class="values-flex-container" *ngIf="current_width > 816">
+                        <div class="values-slide-container-title">
+                            <p class="values-slide-container-title__p1">OUR VALUES</p>
+                            <div class="values-list">
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p"><span class="num">01</span>SUSTAINABILITY</span>
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p"><span class="num">02</span>EFFICIENCY</span> 
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p"><span class="num">03</span>ADVANTAGE</span>
+                                </div>  
+                                <a routerLink="/{{lang}}/about" class="values-slide__btn">DISCOVER MORE ABOUT US</a>   
+                            </div>
+                        </div>
+                        <div class="values-slide-container-desc">
+                            <p class="values-slide-container-desc__p1">SUSTAINABILITY</p>
+                            <p class="values-slide-container-desc__p2">The way we produce food has an enormous impact on our health, because everything that is used in soil preparation, planting, and animal husbandry eventually ends up in what we eat. At Verdex Agro, the understanding of food safety is manifest in our <span>sustainable</span> line of organic bio stimulants exclusively produced from naturally occurring minerals. By eliminating the use of artificial fertilizers & chemicals, we enable production of healthier food with significantly lower rates of residues and heavy metals that are carriers of negative information on human health.</p>
+                        </div>
+                    </div>
+                        <div class="values-flex-container" *ngIf="current_width <= 816">
+                            <div class="values-slide-container-title">
+                                <p class="values-slide-container-title__p1">OUR VALUES</p>
+                                <div class="values-list">
+                                    <div class="values-list-test-container">
+                                        <span class="values-list__p white">SUSTAINABILITY</span>
+                                    </div>
+                                    <div class="values-list-test-container">
+                                        <span class="values-list__p">EFFICIENCY</span> 
+                                    </div>
+                                    <div class="values-list-test-container">
+                                        <span class="values-list__p">ADVANTAGE</span>
+                                    </div>     
+                                </div>
+                            </div>
+                            <div class="values-slide-container-desc">
+                                <p class="values-slide-container-desc__p2">The way we produce food has an enormous impact on our health, because everything that is used in soil preparation, planting, and animal husbandry eventually ends up in what we eat. At Verdex Agro, the understanding of food safety is manifest in our <span>sustainable</span> line of organic bio stimulants exclusively produced from naturally occurring minerals. By eliminating the use of artificial fertilizers & chemicals, we enable production of healthier food with significantly lower rates of residues and heavy metals that are carriers of negative information on human health.</p>
+                                <a routerLink="/{{lang}}/about" class="values-slide__btn">DISCOVER MORE ABOUT US</a>
+                            </div>
+                        </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="values-slide-container">
+                    <div class="values-flex-container" *ngIf="current_width > 816">
+                        <div class="values-slide-container-title">
+                            <p class="values-slide-container-title__p1">OUR VALUES</p>
+                            <div class="values-list">
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p"><span class="num">01</span>SUSTAINABILITY</span>
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p"><span class="num">02</span>EFFICIENCY</span> 
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p"><span class="num">03</span>ADVANTAGE</span>
+                                </div>    
+                                <a routerLink="/{{lang}}/about" class="values-slide__btn">DISCOVER MORE ABOUT US</a> 
+                            </div>
+                        </div>
+                        <div class="values-slide-container-desc">
+                            <p class="values-slide-container-desc__p1">EFFICIENCY</p>
+                            <p class="values-slide-container-desc__p2">Higher production <span>efficiency</span> and better health through the Enhanced Dynamic Activation (EDA) technology in agriculture. Imagine you can provide living organisms with exactly the type of food they need to convert it into life energy. No more hypotheticals - enter the Verdex Agro reality! EDA converts minerals into a specific form recognized as best for utilization by the target agent (animals, plants, soil). With this unique approach, we enhance the exchange of ions in the mineral structure, improving the bio efficiency of the entire production process.</p>
+                        </div>
+                    </div>
+                    <div class="values-flex-container" *ngIf="current_width <= 816">
+                        <div class="values-slide-container-title">
+                            <p class="values-slide-container-title__p1">OUR VALUES</p>
+                            <div class="values-list">
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p">SUSTAINABILITY</span>
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p white">EFFICIENCY</span> 
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p">ADVANTAGE</span>
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="values-slide-container-desc">
+                            <p class="values-slide-container-desc__p2">Higher production <span>efficiency</span> and better health through the Enhanced Dynamic Activation (EDA) technology in agriculture. Imagine you can provide living organisms with exactly the type of food they need to convert it into life energy. No more hypotheticals - enter the Verdex Agro reality! EDA converts minerals into a specific form recognized as best for utilization by the target agent (animals, plants, soil). With this unique approach, we enhance the exchange of ions in the mineral structure, improving the bio efficiency of the entire production process.</p>
+                            <a routerLink="/{{lang}}/about" class="values-slide__btn">DISCOVER MORE ABOUT US</a>
+                        </div>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="values-slide-container">
+                    <div class="values-flex-container" *ngIf="current_width > 816">
+                        <div class="values-slide-container-title">
+                            <p class="values-slide-container-title__p1">OUR VALUES</p>
+                            <div class="values-list">
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p"><span class="num">01</span>SUSTAINABILITY</span>
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p"><span class="num">02</span>EFFICIENCY</span> 
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p"><span class="num">03</span>ADVANTAGE</span>
+                                </div>
+                                <a routerLink="/{{lang}}/about" class="values-slide__btn">DISCOVER MORE ABOUT US</a>     
+                            </div>
+                        </div>
+                        <div class="values-slide-container-desc">
+                            <p class="values-slide-container-desc__p1">ADVANTAGE</p>
+                            <p class="values-slide-container-desc__p2">Verdex Agro is your supplier committed to positively influencing the global agricultural industry by offering a wide range of advanced green solutions – organic fertilizers including plant stimulants, soil conditioners, and animal feed additives – for agriculture. Our products, meticulously developed in relation to different farm conditions and varieties, present an <span>advantage</span> not only by increasing yield volume and quality for the farmer, but also by delivering healthier food for the consumers, all while consciously striving to sustain a thriving environment for years on end.</p>
+                        </div>
+                    </div>
+                    <div class="values-flex-container" *ngIf="current_width <= 816">
+                        <div class="values-slide-container-title">
+                            <p class="values-slide-container-title__p1">OUR VALUES</p>
+                            <div class="values-list">
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p">SUSTAINABILITY</span>
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p">EFFICIENCY</span> 
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p white">ADVANTAGE</span>
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="values-slide-container-desc">
+                            <p class="values-slide-container-desc__p2">Verdex Agro is your supplier committed to positively influencing the global agricultural industry by offering a wide range of advanced green solutions – organic fertilizers including plant stimulants, soil conditioners, and animal feed additives – for agriculture. Our products, meticulously developed in relation to different farm conditions and varieties, present an <span>advantage</span> not only by increasing yield volume and quality for the farmer, but also by delivering healthier food for the consumers, all while consciously striving to sustain a thriving environment for years on end.</p>
+                            <a routerLink="/{{lang}}/about" class="values-slide__btn">DISCOVER MORE ABOUT US</a>
+                        </div>
+                    </div>
+                </div>
+            </swiper-slide>
+            <div class="swiper-pagination"></div>
+        </swiper-container>
+    </div>
+    <div class="map-container mgt-0" id="map">
+        <div class="map-image-container">
+            <img src="../../../../assets/main-page/body/map_png.png" alt="" class="map__img" #map>
+            <div class="map-text-container">
+                <h1>
+                    WORLDWIDE
+                    COVERAGE
+                </h1>
+                <p class="map-text__p">
+                    Company HQ & European logistics hub: <span>Opava, Czechia</span>
+                    <br>
+                    <br>
+                    Overseas logistics hub: <span>Rijeka, Croatia</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="body-questions-container" *ngIf="current_width > 1100">
+        <div class="questions-title">
+            <p class="questions-title__p1">WHAT IS NEW?</p>
+            <a routerLink="/{{lang}}/blog" class="questions-title__p1">FIND OUT MORE <svg xmlns="http://www.w3.org/2000/svg" width="31" height="24" viewBox="0 0 31 24" fill="none">
+                <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5L2 10.5ZM30.0607 13.0607C30.6464 12.4749 30.6464 11.5251 30.0607 10.9393L20.5147 1.3934C19.9289 0.807613 18.9792 0.807613 18.3934 1.3934C17.8076 1.97919 17.8076 2.92893 18.3934 3.51472L26.8787 12L18.3934 20.4853C17.8076 21.0711 17.8076 22.0208 18.3934 22.6066C18.9792 23.1924 19.9289 23.1924 20.5147 22.6066L30.0607 13.0607ZM2 13.5L29 13.5L29 10.5L2 10.5L2 13.5Z" fill="#0A3600"/>
+              </svg></a>
+        </div>
+        <div class="questions-tables">
+            <div class="questions-tables-container">
+                <div class="table-container-big" #blogContainer>
+                    <p class="table-container-big__p1">ZEOLITE CLINOPTILOLITE MODUS OPERANDI</p>
+                    <p class="table-container-big__p2">Zeolite clinoptilolite sedimentary rock comes from a family of microporous, crystalline aluminosilicate minerals. Find out about how zeolite’s attributes yield positive impact on agriculture.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/zeolite" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-container-mini" #blogContainer>
+                    <p class="table-container-mini__p1">MINERAL NUTRITION IN PLANTS</p>
+                    <p class="table-container-mini__p2">Understanding the role of essential minerals in the growth and development of plants is pivotal to unlocking their full potential.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/nutrition" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="questions-tables-container">
+                <div class="table-container-mini" #blogContainer>
+                    <p class="table-container-mini__p1">IMPROVE SOIL QUALITY WITH VITALAND </p>
+                    <p class="table-container-mini__p2">Are you seeking a long-term solution to improving nutrient availability and the quality of your soil?</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/soil" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-container-big" #blogContainer>
+                    <p class="table-container-big__p1">WHY SHOULD FARMERS USE VITACALCITE</p>
+                    <p class="table-container-big__p2">With an effective solution in the form of VitaCALCITE plant booster at hand, you have all of your plants’ micronutrient needs covered. Discover how VitaCALCITE helps stimulate your plant production.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/vitacalcite" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="questions-tables-container">
+                <div class="table-container-big" #blogContainer>
+                    <p class="table-container-big__p1">THE IMPORTANCE OF CALCIUM</p>
+                    <p class="table-container-big__p2">Calcium is an essential nutrient that is indispensable for healthy plant growth and development. It is therefore imperative to be mindful of the risks posed by its deficiency.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/calcium" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-container-mini" #blogContainer>
+                    <p class="table-container-mini__p1">WHY ORGANIC AGRICULTURE?</p>
+                    <p class="table-container-mini__p2">Organic agriculture isn't just a trend; it's a transformation. Explore the key reasons behind this shift.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/agriculture" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="other-links-items" *ngIf="current_width <= 1100">
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../assets/blog/body-other-links/calcium.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                The importance of high utility calcium
+            </p>
+            <a routerLink="/{{lang}}/blog/calcium" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../../assets/blog/body-other-links/minerals.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                The importance of mineral nutrition in plants
+            </p>
+            <a routerLink="/{{lang}}/blog/nutrition" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../../assets/blog/body-other-links/calcite.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                Why should farmers use VitaCALCITE plant booster
+            </p>
+            <a routerLink="/{{lang}}/blog/vitacalcite" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../../assets/blog/body-other-links/zeolit.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                Zeolite clinoptilolite - Modus Operandi
+            </p>
+            <a routerLink="/{{lang}}/blog/zeolite" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <div class="links-image-wrap">
+                <img src="../../../../assets/blog/body-other-links/consider_organic.svg" alt="" class="links-item__img">
+            </div>
+            <p class="links-item__p">
+                Why should you consider organic agriculture
+            </p>
+            <a routerLink="/{{lang}}/blog/agriculture" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="body" *ngIf="lang == 'cz'">
+    <div class="body-products" id="products">
+        <p class="body-products__p">
+            NAŠE PRODUKTY
+        </p>
+        <div class="body-products-items">
+            <div class="body-products-items-item" #product>
+                <img src="../../../../assets/main-page/body/white/product1_white.png" alt="" class="product-item__img">
+                <div class="products-item-centered">
+                    <p class="products-item-centered__p1">
+                        VitaCALCITE
+                    </p>
+                    <p class="products-item-centered__p2">
+                        100% přírodní posilovač růstu rostlin na bázi foliární aplikace. Poskytuje nezbytnou podporu ošetřeným rostlinám skrze účinný přísun vápníku, křemíku a dalších stopových prvků.
+                    </p>
+                    <div class="link_arrow">
+                        <a routerLink="/{{lang}}/product/vitacalcite" class="link_arrow__a">
+                            ...                      
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="body-products-items-item" #product>
+                <img src="../../../../assets/main-page/body/white/product2_white.png" alt="" class="product-item__img">
+                <div class="products-item-centered">
+                    <p class="products-item-centered__p1">
+                        VitaLAND
+                    </p>
+                    <p class="products-item-centered__p2">
+                        100% přírodní půdní kondicionér speciálně vyvinutý za účelem dlouhodobého zlepšování hospodaření s vodou, regulace vlhkosti, příjmu živin a celkové kvality půdy.
+                    </p>
+                    <div class="link_arrow">
+                        <a routerLink="/{{lang}}/product/vitaland" class="link_arrow__a">
+                            ...                        
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="body-products-items-item" #product>
+                <img src="../../../../assets/main-page/body/white/product3_white.png" alt="" class="product-item__img">
+                <div class="products-item-centered">
+                    <p class="products-item-centered__p1">
+                        VitaXORB
+                    </p>
+                    <p class="products-item-centered__p2">
+                        100% přírodní krmná přísada optimalizuje imunitní systém zvířat působením na epitelové buňky a probiotické bakterie, což vede k vyšší efektivitě produkce při nižších nákladech.
+                    </p>
+                    <div class="link_arrow">
+                        <a routerLink="/{{lang}}/product/vitaxorb" class="link_arrow__a">
+                            ...                          
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="body-products-items-item" #product>
+                <img src="../../../../assets/main-page/body/white/product4_white.png" alt="" class="product-item__img">
+                <div class="products-item-centered">
+                    <p class="products-item-centered__p1">
+                        VitaYIELD
+                    </p>
+                    <p class="products-item-centered__p2">
+                        100% přírodní aktivátor výnosu, který využívá sílu přírodních složek se stimulačními vlastnostmi k podpoře rostlinných procesů ve prospěch vyššího objemu a kvality sklizně.
+                    </p>
+                    <div class="link_arrow">
+                        <a routerLink="/{{lang}}/product/vitayield" class="link_arrow__a">
+                            ...                        
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-technology" *ngIf="current_width > 1175" id="tech">
+        <div class="body-technology-image" #techImage>
+            <img class="body-technology-image__lamp" src="../../../../assets/main-page/body/lamp.png" alt="" #lamp>
+            <img class="body-technology-image_bg" src="../../../../assets/main-page/verdexmainpagetriangles.svg" alt="">
+        </div>
+        <div class="body-technology-desc" #technology>
+            <div class="tech-wrap">
+                <img src="../../../../assets/main-page/body/techDesc.png" alt="">
+                <span class="sp1">EDA TECHNOLOGIE</span>
+            </div>
+            <p class="body-technology-desc__p2">
+                Moderní zemědělec stojí tváří v tvář celé řadě výzev – půda je nasáklá těžkými kovy následkem konvenčního zemědělství; rostliny se potýkají s nedostatkem živin a dalšími chorobami způsobenými člověkem; fauna a flóra trpí změnami klimatu doprovázené extrémními jevy jako jsou sucha a povodně.
+                <br>
+                <br>
+                Naše technologie Enhanced Dynamic Activation (EDA) představuje inteligentní řešení pro cestu pryč od úpadku životního prostředí zpátky k udržitelné budoucnosti.
+            </p>
+            <a routerLink="/{{lang}}/technology" class="body-technology-desc__a">Zjisti více</a>
+        </div>
+    </div>
+    <div class="body-technology" *ngIf="current_width <= 1175" id="tech">
+        <div class="body-technology-desc" #technology>
+            <div class="tech-wrap">
+                <img src="../../../../assets/main-page/body/techDesc.png" alt="">
+                <span class="sp1">EDA TECHNOLOGIE</span>
+            </div>
+            <p class="body-technology-desc__p2">
+                Moderní zemědělec stojí tváří v tvář celé řadě výzev – půda je nasáklá těžkými kovy následkem konvenčního zemědělství; rostliny se potýkají s nedostatkem živin a dalšími chorobami způsobenými člověkem; fauna a flóra trpí změnami klimatu doprovázené extrémními jevy jako jsou sucha a povodně.
+                <br>
+                <br>
+            </p>
+                <div class="body-technology-image" #techImage>
+                    <img class="body-technology-image__lamp" src="../../../../assets/main-page/body/lamp.png" alt="" #lamp>
+                    <img class="body-technology-image_bg" src="../../../../assets/main-page/verdexmainpagetriangles.svg" alt="">
+                </div>
+            <p class="body-technology-desc__p2">    
+                <br>
+                <br>
+                Naše technologie Enhanced Dynamic Activation (EDA) představuje inteligentní řešení pro cestu pryč od úpadku životního prostředí zpátky k udržitelné budoucnosti.
+            </p>
+            <a routerLink="/{{lang}}/technology" class="body-technology-desc__a">Zjisti více</a>
+        </div>
+    </div>
+    <div class="body-sertificate" #sertificate>
+        <div class="body-sertificate-items">
+            <div class="body-sertificate-items-item">
+                <img src="../../../../assets/main-page/verdexagro_omri.svg" alt="" #certificateLogo>
+                <p class="sertificate-item__p" #certificateTitle>Organic Materials Review Institute (OMRI) je jedinou nezávislou organizací specializující se výhradně na inspekci a kontrolu surovin napříč celým Americkým kontinentem.</p>
+            </div>
+            <div class="body-sertificate-items-item">
+                <img src="../../../../assets/main-page/verdexagro_fibl.svg" alt="" #certificateLogo>
+                <p class="sertificate-item__p" #certificateTitle>Výzkumný ústav ekologického zemědělství (FiBL) je jednou z předních světových institucí zaměřených na oblast ekologického zemědělství s mezinárodní působností po celé Evropě.</p>
+            </div>
+            <div class="body-sertificate-items-item">
+                <img src="../../../../assets/main-page/verdexagro_ukzuz.svg" alt="" #certificateLogo>
+                <p class="sertificate-item__p" #certificateTitle>Ústřední kontrolní a zkušební ústav zemědělský Ministerstva zemědělství ČR zodpovídá za kontrolu a testování s cílem zajistit bezpečnost potravin bez rizika ohrožení životního prostředí.</p>
+            </div>
+            <div class="body-sertificate-items-item">
+                <img src="../../../../assets/main-page/verdexagro_demeter.svg" alt="" #certificateLogo>
+                <p class="sertificate-item__p" #certificateTitle>Demeter je nejstarší svaz ekologických pěstitelů, který spravuje databázi ekologických hnojiv a podporuje více než 7 000 zemědělců s přibližně 250 000 ha v 63 zemích na všech kontinentech.</p>
+            </div>
+        </div>
+    </div>
+    <div class="body-testimonials-container" id="testimonials">
+        <p class="testimonials__p">REFERENCE</p>
+        <div class="testimonials-swiper-container">
+            <swiper-container style="--swiper-pagination-color: #97C06B;" class="mySwiper" loop="true" space-between="0" slides-per-view="2" *ngIf="current_width > 816">
+                <swiper-slide>
+                    <div class="slide-container grozny">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment1.png"  alt="">  
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Tokajská Pivnica Mathias</p>
+                                <p class="identity-info__p2">Vinařství, Slovensko</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">Foliární postřik VitaCALCITE měl na naši vinici pozitivní vliv díky svému působení na fyziologii vinné révy. Je kompatibilní s fungicidy a pesticidy, konvenčními i udržitelnými hnojivy, a proto se snadno používá. Při pravidelné aplikaci jsme zaznamenali, že se všechny klíčové složky révy začaly optimalizovat, což se projevilo výrazným zvýšením hmotnosti bobulí a zlepšením kvalitativních parametrů. VitaCALCITE nám také pomohl udržet listové koruny zdravé a silné tím, že snižoval a odstraňoval zátěž chorob, čímž vinice získala ideální podmínky pro kvalitní výsledek v závěrečných fázích růstu.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-container avocado">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment2.png"  alt=""> 
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Kontrolovaná studie, Austrálie</p>
+                                <p class="identity-info__p2">Avokádový sad</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">Náš sad čítá přibližně 3000 stromů na 10 akrech. Dříve jsme metodou fertigace ročně aplikovali asi 1000 tun dusičnanu vápenatého, přesto sad málo plodil a stromy vykazovaly známky nedostatku vápníku. Již za měsíc po dvou aplikacích listového postřiku VitaCALCITE měly všechny velké stromy nový přírůstek, zmohutněly a posílily o další boční růst na špičkách a zároveň se snížilo popálení sodíkem. Díky přípravku VitaCALCITE jsou sklizené plody v našem sadu pevnější na dotek, koruna stromu zůstává zdravá a schopná udržet dozrávající plody.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-container golf">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment3.png"  alt=""> 
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Golfový resort Jezera</p>
+                                <p class="identity-info__p2">Česká republika</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">Zjistili jsme, že aplikace přípravků VitaLAND a VitaCALCITE má pozitivní vliv na golfový trávník a provozní náklady. Došlo ke zvýšení hustoty trávníku, což přispělo k větší odolnosti proti poškození a zlepšení jeho kvalit pro hráče. Zvláště významné bylo snížení spotřeby vody, což přisuzujeme absorpčním vlastnostem přípravku VitaLAND, který pomohl udržet vlhkost v půdě a snížit ztráty vody. Vedle těchto zlepšení jsme paralelně dosáhli více než 20% úspory při používání konvenčních hnojiv typu NPK, a to díky schopnosti produktů regulovat pH půdy a zvyšovat účinnost příjmu živin a stopových minerálů.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-container farm">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment4.png"  alt=""> 
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Studie faremních pokusů, Jordánsko</p>
+                                <p class="identity-info__p2">Rajčata, okurky, paprika</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">Aplikovali jsme jednu až dvě dávky v závislosti na zdravotním stavu rostliny. Výsledek po použití přípravku VitaCALCITE byl v porovnání s kontrolním pokusem ohromující v kvalitě a množství listů, plodů, kořenů a odolnosti vůči chorobě padlí révovému. Nejdůležitějším faktorem v tomto pokusu bylo množství spotřeby vody rostlinami – rostliny postříkané přípravkem VitaCALCITE se zalévaly pouze jednou denně ve srovnání s kontrolní skupinou, již jsme zalévali třikrát denně, čímž jsme ušetřili téměř 70 % vodních zdrojů.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-container grozny">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment5.png"  alt=""> 
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Kontrolovaná studie, Austrálie</p>
+                                <p class="identity-info__p2">Vinice</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">Loni v létě o Vánocích postihla náš region třídenní vlna veder s teplotami 43 °C. To vedlo na mnoha vinicích k popálení listů a plodů. Po nasazení přípravku pro podporu listů VitaCALCITE jsme na naší vinici nenašli žádné známky popálení listů, vinice vypadala zdravě, beze známek chorob a se všemi ukazateli pro zvýšení výnosu ze sklizně. Produkt VitaCALCITE byl jedním z hlavních faktorů, které přispěly k tomu, že tato vinice dosáhla nejvyššího výnosu. Podle našich zjištění potvrzují výsledky průzkumu výrazné zlepšení produktivity rostlinných plodin.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <div class="swiper-pagination"></div>
+            </swiper-container>
+            <swiper-container class="mySwiper" style="--swiper-pagination-color: #97C06B;
+            --swiper-pagination-bullet-size: 10px;
+            --swiper-pagination-bullet-width: 10px;
+            --swiper-pagination-bullet-height: 10px;
+            --swiper-pagination-bullet-inactive-color: #000;
+            --swiper-pagination-bullet-inactive-opacity: 0.2;
+            --swiper-pagination-bullet-opacity: 1;
+            --swiper-pagination-bullet-horizontal-gap: 4px;
+            --swiper-pagination-bullet-vertical-gap: 6px;" loop="true" space-between="0" slides-per-view="1" *ngIf="current_width <= 816">
+                <swiper-slide>
+                    <div class="slide-container grozny">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment1.png"  alt="">  
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Tokajská Pivnica Mathias</p>
+                                <p class="identity-info__p2">Vinařství, Slovensko</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">Foliární postřik VitaCALCITE měl na naši vinici pozitivní vliv díky svému působení na fyziologii vinné révy. Je kompatibilní s fungicidy a pesticidy, konvenčními i udržitelnými hnojivy, a proto se snadno používá. Při pravidelné aplikaci jsme zaznamenali, že se všechny klíčové složky révy začaly optimalizovat, což se projevilo výrazným zvýšením hmotnosti bobulí a zlepšením kvalitativních parametrů. VitaCALCITE nám také pomohl udržet listové koruny zdravé a silné tím, že snižoval a odstraňoval zátěž chorob, čímž vinice získala ideální podmínky pro kvalitní výsledek v závěrečných fázích růstu.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-container avocado">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment2.png"  alt=""> 
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Kontrolovaná studie, Austrálie</p>
+                                <p class="identity-info__p2">Avokádový sad</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">Náš sad čítá přibližně 3000 stromů na 10 akrech. Dříve jsme metodou fertigace ročně aplikovali asi 1000 tun dusičnanu vápenatého, přesto sad málo plodil a stromy vykazovaly známky nedostatku vápníku. Již za měsíc po dvou aplikacích listového postřiku VitaCALCITE měly všechny velké stromy nový přírůstek, zmohutněly a posílily o další boční růst na špičkách a zároveň se snížilo popálení sodíkem. Díky přípravku VitaCALCITE jsou sklizené plody v našem sadu pevnější na dotek, koruna stromu zůstává zdravá a schopná udržet dozrávající plody.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-container golf">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment3.png"  alt=""> 
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Golfový resort Jezera</p>
+                                <p class="identity-info__p2">Česká republika</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">Zjistili jsme, že aplikace přípravků VitaLAND a VitaCALCITE má pozitivní vliv na golfový trávník a provozní náklady. Došlo ke zvýšení hustoty trávníku, což přispělo k větší odolnosti proti poškození a zlepšení jeho kvalit pro hráče. Zvláště významné bylo snížení spotřeby vody, což přisuzujeme absorpčním vlastnostem přípravku VitaLAND, který pomohl udržet vlhkost v půdě a snížit ztráty vody. Vedle těchto zlepšení jsme paralelně dosáhli více než 20% úspory při používání konvenčních hnojiv typu NPK, a to díky schopnosti produktů regulovat pH půdy a zvyšovat účinnost příjmu živin a stopových minerálů.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-container farm">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment4.png"  alt=""> 
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Studie faremních pokusů, Jordánsko</p>
+                                <p class="identity-info__p2">Rajčata, okurky, paprika</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">Aplikovali jsme jednu až dvě dávky v závislosti na zdravotním stavu rostliny. Výsledek po použití přípravku VitaCALCITE byl v porovnání s kontrolním pokusem ohromující v kvalitě a množství listů, plodů, kořenů a odolnosti vůči chorobě padlí révovému. Nejdůležitějším faktorem v tomto pokusu bylo množství spotřeby vody rostlinami – rostliny postříkané přípravkem VitaCALCITE se zalévaly pouze jednou denně ve srovnání s kontrolní skupinou, již jsme zalévali třikrát denně, čímž jsme ušetřili téměř 70 % vodních zdrojů.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-container grozny">
+                        <div class="slide-identity-container">
+                            <img src="../../../../assets/main-page/body/comment5.png"  alt=""> 
+                            <div class="identity-info">
+                                <p class="identity-info__p1">Kontrolovaná studie, Austrálie</p>
+                                <p class="identity-info__p2">Vinice</p>
+                                <svg width="62" height="12" viewBox="0 0 62 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.34708 4.49139H11.7063L8.17963 7.26722L9.52671 11.7586L6 8.98278L2.47329 11.7586L3.82037 7.26722L0.293661 4.49139H4.65292L6 0Z" fill="#1C351C"/>
+                                    <path d="M19 0L20.3471 4.49139H24.7063L21.1796 7.26722L22.5267 11.7586L19 8.98278L15.4733 11.7586L16.8204 7.26722L13.2937 4.49139H17.6529L19 0Z" fill="#1C351C"/>
+                                    <path d="M32 0L33.3471 4.49139H37.7063L34.1796 7.26722L35.5267 11.7586L32 8.98278L28.4733 11.7586L29.8204 7.26722L26.2937 4.49139H30.6529L32 0Z" fill="#1C351C"/>
+                                    <path d="M44 0L45.3471 4.49139H49.7063L46.1796 7.26722L47.5267 11.7586L44 8.98278L40.4733 11.7586L41.8204 7.26722L38.2937 4.49139H42.6529L44 0Z" fill="#1C351C"/>
+                                    <path d="M56 0L57.3471 4.49139H61.7063L58.1796 7.26722L59.5267 11.7586L56 8.98278L52.4733 11.7586L53.8204 7.26722L50.2937 4.49139H54.6529L56 0Z" fill="#1C351C"/>
+                                </svg>    
+                            </div>
+                        </div>
+                        <div class="slide-comment">
+                            <p class="slide-comment__p">Loni v létě o Vánocích postihla náš region třídenní vlna veder s teplotami 43 °C. To vedlo na mnoha vinicích k popálení listů a plodů. Po nasazení přípravku pro podporu listů VitaCALCITE jsme na naší vinici nenašli žádné známky popálení listů, vinice vypadala zdravě, beze známek chorob a se všemi ukazateli pro zvýšení výnosu ze sklizně. Produkt VitaCALCITE byl jedním z hlavních faktorů, které přispěly k tomu, že tato vinice dosáhla nejvyššího výnosu. Podle našich zjištění potvrzují výsledky průzkumu výrazné zlepšení produktivity rostlinných plodin.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+    </div>
+    <div class="body-values-container" id="values">
+        <swiper-container class="mySwiper2" style="--swiper-pagination-color: #97C06B; --swiper-pagination-bullet-inactive-color: white;"  loop="true" autoplay-delay="12500" autoplay-disable-on-interaction="false">
+            <swiper-slide>
+                <div class="values-slide-container">
+                    <div class="values-flex-container" *ngIf="current_width > 816">
+                        <div class="values-slide-container-title">
+                            <p class="values-slide-container-title__p1">NAŠE HODNOTY</p>
+                            <div class="values-list">
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p"><span class="num">01</span>UDRŽITELNOST</span>
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p"><span class="num">02</span>EFEKTIVITA</span> 
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p"><span class="num">03</span>VÝHODA</span>
+                                </div>  
+                                <a routerLink="/{{lang}}/about" class="values-slide__btn">Zjisti více</a>   
+                            </div>
+                        </div>
+                        <div class="values-slide-container-desc">
+                            <p class="values-slide-container-desc__p1">UDRŽITELNOST</p>
+                            <p class="values-slide-container-desc__p2">Jaký vliv má způsob výroby potravin na naše zdraví? Obrovský, protože vše, co běžně používáme při kultivaci půdy, výsadbě rostlin a chovu zvířat se nakonec objeví v potravinách, které jíme. Závazek naší společnosti k bezpečnosti potravin se nejvíce odráží v naší <span>udržitelné</span> řadě organických bio stimulantů vyráběných výhradně z přirozeně se vyskytujících minerálů. Díky toho, že nepoužíváme umělá hnojiva a chemikálie, umožňujeme produkci zdravějších potravin s výrazně nižší mírou reziduí a těžkých kovů, které mají negativní dopad na lidské zdraví.</p>
+                        </div>
+                    </div>
+                        <div class="values-flex-container" *ngIf="current_width <= 816">
+                            <div class="values-slide-container-title">
+                                <p class="values-slide-container-title__p1">NAŠE HODNOTY</p>
+                                <div class="values-list">
+                                    <div class="values-list-test-container">
+                                        <span class="values-list__p white">UDRŽITELNOST</span>
+                                    </div>
+                                    <div class="values-list-test-container">
+                                        <span class="values-list__p">EFEKTIVITA</span> 
+                                    </div>
+                                    <div class="values-list-test-container">
+                                        <span class="values-list__p">VÝHODA</span>
+                                    </div>     
+                                </div>
+                            </div>
+                            <div class="values-slide-container-desc">
+                                <p class="values-slide-container-desc__p2">Jaký vliv má způsob výroby potravin na naše zdraví? Obrovský, protože vše, co běžně používáme při kultivaci půdy, výsadbě rostlin a chovu zvířat se nakonec objeví v potravinách, které jíme. Závazek naší společnosti k bezpečnosti potravin se nejvíce odráží v naší <span>udržitelné</span> řadě organických bio stimulantů vyráběných výhradně z přirozeně se vyskytujících minerálů. Díky toho, že nepoužíváme umělá hnojiva a chemikálie, umožňujeme produkci zdravějších potravin s výrazně nižší mírou reziduí a těžkých kovů, které mají negativní dopad na lidské zdraví.</p>
+                                <a routerLink="/{{lang}}/about" class="values-slide__btn">Zjisti více</a>
+                            </div>
+                        </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="values-slide-container">
+                    <div class="values-flex-container" *ngIf="current_width > 816">
+                        <div class="values-slide-container-title">
+                            <p class="values-slide-container-title__p1">NAŠE HODNOTY</p>
+                            <div class="values-list">
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p"><span class="num">01</span>UDRŽITELNOST</span>
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p"><span class="num">02</span>EFEKTIVITA</span> 
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p"><span class="num">03</span>VÝHODA</span>
+                                </div>    
+                                <a routerLink="/{{lang}}/about" class="values-slide__btn">Zjisti více</a> 
+                            </div>
+                        </div>
+                        <div class="values-slide-container-desc">
+                            <p class="values-slide-container-desc__p1">EFEKTIVITA</p>
+                            <p class="values-slide-container-desc__p2">Vyšší <span>efektivita</span> produkce a lepší zdraví díky technologii Enhanced Dynamic Activation (EDA) v zemědělství. Představte si, že můžete živým organismům dopřát přesně takový typ potravy, který potřebují k přeměně na životní energii. Dost bylo hypotéz – vítejte do reality Verdex Agro! EDA převadí minerální látky do specifické formy, která je následně rozpoznána jako nejlepší pro využití cílovým činitelem (zvířaty, rostlinami, půdou). Díky tomuto unikátnímu přístupu ke zpracování vstupního materiálu při výrobě zlepšujeme výměnu iontů ve struktuře minerálů, čímž zvyšujeme biologickou účinnost našich produktů.</p>
+                        </div>
+                    </div>
+                    <div class="values-flex-container" *ngIf="current_width <= 816">
+                        <div class="values-slide-container-title">
+                            <p class="values-slide-container-title__p1">NAŠE HODNOTY</p>
+                            <div class="values-list">
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p">UDRŽITELNOST</span>
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p white">EFEKTIVITA</span> 
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p">VÝHODA</span>
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="values-slide-container-desc">
+                            <p class="values-slide-container-desc__p2">Vyšší <span>efektivita</span> produkce a lepší zdraví díky technologii Enhanced Dynamic Activation (EDA) v zemědělství. Představte si, že můžete živým organismům dopřát přesně takový typ potravy, který potřebují k přeměně na životní energii. Dost bylo hypotéz – vítejte do reality Verdex Agro! EDA převadí minerální látky do specifické formy, která je následně rozpoznána jako nejlepší pro využití cílovým činitelem (zvířaty, rostlinami, půdou). Díky tomuto unikátnímu přístupu ke zpracování vstupního materiálu při výrobě zlepšujeme výměnu iontů ve struktuře minerálů, čímž zvyšujeme biologickou účinnost našich produktů.</p>
+                            <a routerLink="/{{lang}}/about" class="values-slide__btn">Zjisti více</a>
+                        </div>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="values-slide-container">
+                    <div class="values-flex-container" *ngIf="current_width > 816">
+                        <div class="values-slide-container-title">
+                            <p class="values-slide-container-title__p1">NAŠE HODNOTY</p>
+                            <div class="values-list">
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p"><span class="num">01</span>UDRŽITELNOST</span>
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p"><span class="num">02</span>EFEKTIVITA</span> 
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p"><span class="num">03</span>VÝHODA</span>
+                                </div>
+                                <a routerLink="/{{lang}}/about" class="values-slide__btn">Zjisti více</a>     
+                            </div>
+                        </div>
+                        <div class="values-slide-container-desc">
+                            <p class="values-slide-container-desc__p1">VÝHODA</p>
+                            <p class="values-slide-container-desc__p2">Společnost Verdex Agro je Váš dodavatel s cílem pozitivně ovlivňovat globální zemědělský průmysl prostřednictvím široké škály pokročilých ekologických řešení pro moderní zemědělce – organická hnojiva zahrnující rostlinné stimulanty, půdní kondicionéry a přísady do krmiv pro zvířata. Naše produkty, pečlivě vyvinuté s ohledem na různé zemědělské podmínky a způsoby, nabízí <span>konkurenční výhodu</span> nejen svou schopností navýšit objem a kvalitu sklizně pro zemědělce, ale také dopřáním zdravějších potravin pro koncové spotřebitele, vše za vědomé snahy o dlouhodobě prosperující životní prostředí.</p>
+                        </div>
+                    </div>
+                    <div class="values-flex-container" *ngIf="current_width <= 816">
+                        <div class="values-slide-container-title">
+                            <p class="values-slide-container-title__p1">NAŠE HODNOTY</p>
+                            <div class="values-list">
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p">UDRŽITELNOST</span>
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p">EFEKTIVITA</span> 
+                                </div>
+                                <div class="values-list-test-container">
+                                    <span class="values-list__p white">VÝHODA</span>
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="values-slide-container-desc">
+                            <p class="values-slide-container-desc__p2">Společnost Verdex Agro je Váš dodavatel s cílem pozitivně ovlivňovat globální zemědělský průmysl prostřednictvím široké škály pokročilých ekologických řešení pro moderní zemědělce – organická hnojiva zahrnující rostlinné stimulanty, půdní kondicionéry a přísady do krmiv pro zvířata. Naše produkty, pečlivě vyvinuté s ohledem na různé zemědělské podmínky a způsoby, nabízí <span>konkurenční výhodu</span> nejen svou schopností navýšit objem a kvalitu sklizně pro zemědělce, ale také dopřáním zdravějších potravin pro koncové spotřebitele, vše za vědomé snahy o dlouhodobě prosperující životní prostředí.</p>
+                            <a routerLink="/{{lang}}/about" class="values-slide__btn">Zjisti více</a>
+                        </div>
+                    </div>
+                </div>
+            </swiper-slide>
+            <div class="swiper-pagination"></div>
+        </swiper-container>
+    </div>
+    <div class="map-container mgt-0" id="map">
+        <div class="map-image-container">
+            <img src="../../../../assets/main-page/body/map_png.png" alt="" class="map__img" #map>
+            <div class="map-text-container">
+                <h1>
+                    CELOSVĚTOVÉ POKRYTÍ
+                </h1>
+                <p class="map-text__p">
+                    Sídlo společnosti a evropské logistické centrum: <span>Opava, Česká republika</span>
+                    <br>
+                    <br>
+                    Logistické centrum pro námořní dopravu: <span>Rijeka, Chorvatsko</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="body-questions-container" *ngIf="current_width > 1100">
+        <div class="questions-title">
+            <p class="questions-title__p1">CO JE NOVÉHO?</p>
+            <a routerLink="/{{lang}}/blog" class="questions-title__p1">Zjisti více <svg xmlns="http://www.w3.org/2000/svg" width="31" height="24" viewBox="0 0 31 24" fill="none">
+                <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5L2 10.5ZM30.0607 13.0607C30.6464 12.4749 30.6464 11.5251 30.0607 10.9393L20.5147 1.3934C19.9289 0.807613 18.9792 0.807613 18.3934 1.3934C17.8076 1.97919 17.8076 2.92893 18.3934 3.51472L26.8787 12L18.3934 20.4853C17.8076 21.0711 17.8076 22.0208 18.3934 22.6066C18.9792 23.1924 19.9289 23.1924 20.5147 22.6066L30.0607 13.0607ZM2 13.5L29 13.5L29 10.5L2 10.5L2 13.5Z" fill="#0A3600"/>
+              </svg></a>
+        </div>
+        <div class="questions-tables">
+            <div class="questions-tables-container">
+                <div class="table-container-big" #blogContainer>
+                    <p class="table-container-big__p1">ZEOLIT KLINOPTILOLIT – FUNKCE A VYUŽITÍ</p>
+                    <p class="table-container-big__p2">Zeolit je sedimentární hornina, která patří do skupiny mikroporézních krystalických hlinitokřemičitanových minerálů. Objevte s námi, jaký přínos mají unikátní vlastnosti zeolitu v zemědělství.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/zeolite" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-container-mini" #blogContainer>
+                    <p class="table-container-mini__p1">KLÍČOVÁ ROLE VÁPNÍKU</p>
+                    <p class="table-container-mini__p2">Vápník představuje základní stavební živinu nezbytnou pro zdravý růst a vývoj rostlin. Je třeba proto mít neustále na paměti rizika plynoucí z jeho nedostatku.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/calcium" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="questions-tables-container">
+                <div class="table-container-mini" #blogContainer>
+                    <p class="table-container-mini__p1">ZLEPŠENÍ PŮDY S VITALANDEM</p>
+                    <p class="table-container-mini__p2">Hledáte dlouhodobé řešení efektivnější dostupnosti živin a vyšší kvality vaší půdy? Vyzkoušejte VitaLAND – univerzální půdní kondicionér nabízející pestrou škálu výhod.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/soil" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-container-big" #blogContainer>
+                    <p class="table-container-big__p1">PROČ BY MĚLI FARMÁŘI POUŽÍVAT VITACALCITE</p>
+                    <p class="table-container-big__p2">VitaCALCITE rostlinný posilovač představuje účinný nástroj, který vašim rostlinám zajistí spolehlivý přísun minerální výživy pozitivně ovlivňující růst a fyziologii rostlin či plodin.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/vitacalcite" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="questions-tables-container">
+                <div class="table-container-big" #blogContainer>
+                    <p class="table-container-big__p1">PODSTATA MINERÁLNÍ VÝŽIVY V ROSTLINÁCH</p>
+                    <p class="table-container-big__p2">Pochopení úlohy základních minerálních látek v kontextu růstu a vývoje rostlin je klíčové pro využití jejich plného potenciálu. Zjistěte více, jak může naše minerální infuze pomáhat i vám.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/nutrition" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-container-mini" #blogContainer>
+                    <p class="table-container-mini__p1">PROČ EKOLOGICKÉ ZEMĚDĚLSTVÍ?</p>
+                    <p class="table-container-mini__p2">Ekologické zemědělství není jen aktuálním trendem, je to transformace. Prozkoumejte jeho hlavní výhody za pomoci našich minerálních biostimulántů.</p>
+                    <div class="table-big-link">
+                        <a routerLink="/{{lang}}/blog/agriculture" class="table-container-big__a">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0L0 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="other-links-items" *ngIf="current_width <= 1100">
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../assets/blog/body-other-links/calcium.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                KLÍČOVÁ ROLE VÁPNÍKU
+            </p>
+            <a routerLink="/{{lang}}/blog/calcium" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../../assets/blog/body-other-links/minerals.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                PODSTATA MINERÁLNÍ VÝŽIVY V ROSTLINÁCH
+            </p>
+            <a routerLink="/{{lang}}/blog/nutrition" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../../assets/blog/body-other-links/calcite.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                PROČ BY MĚLI FARMÁŘI POUŽÍVAT VITACALCITE
+            </p>
+            <a routerLink="/{{lang}}/blog/vitacalcite" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <img src="../../../../assets/blog/body-other-links/zeolit.svg" alt="" class="links-item__img">
+            <p class="links-item__p">
+                ZEOLIT KLINOPTILOLIT – FUNKCE A VYUŽITÍ
+            </p>
+            <a routerLink="/{{lang}}/blog/zeolite" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+        <div class="links-items-item" #blogContainer>
+            <div class="links-image-wrap">
+                <img src="../../../../assets/blog/body-other-links/consider_organic.svg" alt="" class="links-item__img">
+            </div>
+            <p class="links-item__p">
+                PROČ EKOLOGICKÉ ZEMĚDĚLSTVÍ?
+            </p>
+            <a routerLink="/{{lang}}/blog/agriculture" class="links-item__a">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24" fill="none">
+                    <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM34.0607 13.0607C34.6464 12.4749 34.6464 11.5251 34.0607 10.9393L24.5147 1.3934C23.9289 0.807611 22.9792 0.807611 22.3934 1.3934C21.8076 1.97919 21.8076 2.92893 22.3934 3.51472L30.8787 12L22.3934 20.4853C21.8076 21.0711 21.8076 22.0208 22.3934 22.6066C22.9792 23.1924 23.9289 23.1924 24.5147 22.6066L34.0607 13.0607ZM2 13.5L33 13.5V10.5L2 10.5V13.5Z" fill="#0A3600"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>

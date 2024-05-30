@@ -1,0 +1,195 @@
+header {
+    width: 100vw;
+    min-height: 300px;
+    background: url('../../../assets/technology/header/technology-header-bg.png');
+    background-size: cover;
+}
+
+.header-container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(84deg, #0A3600 63.8%, rgba(10, 54, 0, 0.00) 99.99%);
+}
+
+.header-container-nav {
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: start;
+    padding-top: calc(30px - clamp(17px, 1.89vw, 36px) / 2);
+    justify-content: space-between;
+}
+
+
+.hcnl__a img {
+    width: clamp(124px, 15.24vw, 289px);
+    max-height: 42px;
+}
+
+.header-container-nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: clamp(15px, 2.10vw, 40px);
+}
+
+.header-container-nav-urls {
+    width: 250px;
+    height: 100%;
+    font-size: 20px;
+}
+
+.header-container-title {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 300px;
+    gap: 20px;
+    display: flex;
+}
+
+.header-container-title-desc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.font_color {
+    color: white;
+}
+
+.header-container-title-desc__p1 {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Comfortaa;
+    font-size: clamp(20px, 1.77vw, 35px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 116.5%; /* 58.25px */
+    letter-spacing: 1.5px;
+}
+
+.header-container-title-desc__p2 {
+    width: 80%;
+    margin-top: 15px;
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: clamp(15px, 1.2vw, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: 0.96px;
+}
+
+.header-container-title-desc__a {
+    text-decoration: none;
+    margin-top: 28px;
+    width: 187px;
+    height: 39px;
+    border-radius: 4px;
+    background: #97C06B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    -webkit-text-stroke-width: 0.20000000298023224;
+    -webkit-text-stroke-color: #FFF;
+    font-family: Comfortaa;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header-container-title-desc__a:hover {
+    background-color: #0A3600;
+}
+
+.header-container-description {
+    width: 90%;
+    min-height: 50px;
+    margin: 40px auto;
+    margin-top: 75px;
+}
+
+.header-container-description-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.header-container-description-items > button {
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: clamp(10px, 0.94vw, 18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 33.6px */
+    border: none;
+    background: inherit;
+    cursor: pointer;
+    letter-spacing: 0.96px;
+    text-decoration: none;
+    transition: .3s;
+    position: relative;
+}
+
+.header-container-description-items a:hover, .header-container-description-items button:hover {
+    color: #97C06B;
+}
+
+.header-container-description-items > button:hover::before {
+    content: "|";
+    position: absolute;
+    left: -10px;
+    pointer-events: none;
+}
+
+.header-container-description-items > button:hover::after {
+    content: "|";
+    position: absolute;
+    right: -10px;
+    pointer-events: none;
+}
+
+@media (min-width: 1423px) {
+    .header-container-nav {
+        max-width: 1280px;
+    }
+
+    .header-container-title {
+        max-width: 1280px;
+    }
+
+    .header-container-description {
+        max-width: 1280px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-container {
+        padding-bottom: 30px;
+    }
+
+    .header-container-title-desc {
+        width: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        min-height: unset;
+        height: 430px;
+    }
+
+    .header-container-nav {
+        height: 95px;
+    }
+}

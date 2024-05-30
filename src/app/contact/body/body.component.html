@@ -1,0 +1,66 @@
+<app-menu style="position: -webkit-sticky; position: sticky; display: block; top: 0; height: 0; z-index: 9999999999;"></app-menu>
+<app-header></app-header>
+<div class="body-container" *ngIf="lang == 'en'">
+    <p class="body-title__p">
+        CONTACT
+    </p>
+    <p class="body-title__p1">
+        Let us know how we can help
+    </p>
+    <div class="body-contact-info">
+        <div class="contact-info-form">
+            <form [formGroup]="form" (ngSubmit)="sendFormData()">
+                <input formControlName="company_name" placeholder="Company name">
+                <span *ngIf="form.get('company_name')?.hasError('required') && form.get('company_name')?.touched">Required error</span>
+                <input formControlName="name_surname" placeholder="First & Last name">
+                <span *ngIf="form.get('name_surname')?.hasError('required') && form.get('name_surname')?.touched">Required error</span>
+                <span *ngIf="form.get('name_surname')?.hasError('minlength') && form.get('name_surname')?.touched">MinLenght error</span>
+                <input formControlName="email" placeholder="Email">
+                <span *ngIf="form.get('email')?.hasError('required') && form.get('email')?.touched">Required error</span>
+                <span *ngIf="form.get('email')?.hasError('email') && form.get('email')?.touched">Email is not valid</span>
+                <input formControlName="phone" placeholder="Phone">
+                <span *ngIf="form.get('phone')?.hasError('required') && form.get('phone')?.touched">Required error</span>
+                <span *ngIf="form.get('phone')?.hasError('pattern') && form.get('phone')?.touched">Phone is not valid</span>
+                <textarea formControlName="note" cols="50" rows="10" placeholder="Note"></textarea>
+                <span *ngIf="form.get('note')?.hasError('required') && form.get('note')?.touched">Required error</span>
+                <button [disabled]="form.invalid" type="submit">Send</button>
+            </form>
+        </div>
+        <div class="body-contact-info-map" (click)="redirect_map()">
+            <img src="../../../assets/conctact/contact-map.png" alt="" class="info-map__img">
+        </div>
+    </div>
+</div>
+
+<div class="body-container" *ngIf="lang == 'cz'">
+    <p class="body-title__p">
+        KONTAKT
+    </p>
+    <p class="body-title__p1">
+        S čím vám můžeme pomoci?
+    </p>
+    <div class="body-contact-info">
+        <div class="contact-info-form">
+            <form [formGroup]="form" (ngSubmit)="sendFormData()">
+                <input formControlName="company_name" placeholder="Název firmy">
+                <span *ngIf="form.get('company_name')?.hasError('required') && form.get('company_name')?.touched">Required error</span>
+                <input formControlName="name_surname" placeholder="Jméno & Příjmení">
+                <span *ngIf="form.get('name_surname')?.hasError('required') && form.get('name_surname')?.touched">Required error</span>
+                <span *ngIf="form.get('name_surname')?.hasError('minlength') && form.get('name_surname')?.touched">MinLenght error</span>
+                <input formControlName="email" placeholder="Email">
+                <span *ngIf="form.get('email')?.hasError('required') && form.get('email')?.touched">Required error</span>
+                <span *ngIf="form.get('email')?.hasError('email') && form.get('email')?.touched">Email is not valid</span>
+                <input formControlName="phone" placeholder="Telefon">
+                <span *ngIf="form.get('phone')?.hasError('required') && form.get('phone')?.touched">Required error</span>
+                <span *ngIf="form.get('phone')?.hasError('pattern') && form.get('phone')?.touched">Phone is not valid</span>
+                <textarea formControlName="note" cols="50" rows="10" placeholder="Vaše zpráva"></textarea>
+                <span *ngIf="form.get('note')?.hasError('required') && form.get('note')?.touched">Required error</span>
+                <button [disabled]="form.valid" type="submit">Odeslat</button>
+            </form>
+        </div>
+        <div class="body-contact-info-map" (click)="redirect_map()">
+            <img src="../../../assets/conctact/contact-map.png" alt="" class="info-map__img">
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

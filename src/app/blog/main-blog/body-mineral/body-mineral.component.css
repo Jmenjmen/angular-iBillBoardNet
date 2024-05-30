@@ -1,0 +1,247 @@
+.body-container {
+    width: 100vw;
+    min-height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.body-mineral-container {
+    width: 90%;
+    min-height: 500px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.mineral-desc-flex__p {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.mineral-desc-flex__p span {
+    color: #057309;
+}
+
+.mineral-title__p {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: clamp(25px, 1.85vw, 35px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.mineral-title__p span {
+    color: #057309;
+}
+
+.body-mineral-desc {
+    margin-top: 50px;
+    width: 100%;
+    min-height: 100px;
+    position: relative;
+}
+
+.mineral-body__img {
+    width: 100%;
+    height: clamp(150px, 22.15vw, 420px);
+    border-radius: 22px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mineral-desc-text {
+    margin-right: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.mineral-desc-text p {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.78px;
+}
+
+.mineral-desc-text span {
+    color: #057309;
+    font-family: Comfortaa;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.78px;
+}
+
+.mineral-desc-text ul {
+    display: grid;
+    gap: 15px;
+}
+
+.mineral-desc-text-flex {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.desc-text-flex-col {
+    width: 42%;
+}
+
+.li-numeric {
+    list-style-type: disc;
+}
+
+.mgt-15 {
+    margin-top: 15px;
+}
+
+.mgt-35 {
+    margin-top: 35px;
+}
+
+.mgt-40 {
+    margin-top: 40px;
+}
+
+.mgt-50 {
+    margin-top: 50px;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.vertical-line {
+    width: 500vw;
+    height: 3px;
+    background: #0A3600;
+    margin-left: -100%;
+    margin-top: clamp(50px, 6.32vw, 120px);
+    margin-bottom: 75px;
+}
+
+.blog-other-links {
+    width: 100%;
+    min-height: 200px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.other-links__p {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.other-links-items {
+    width: 100%;
+    height: 230px;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-items: center;
+    grid-gap: 45px;
+}
+
+.links-items-item {
+    width: 100%;
+    height: 90px;
+    background: #97C06B40;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.links-item__img {
+    width: 55px;
+    height: 55px;
+    padding: 4px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links-item__img:nth-last-child(1) {
+    width: 51px;
+    height: 51px;
+    background: unset;
+    border-radius: 0;
+    display: block;
+}
+
+.links-image-wrap {
+    width: 55px;
+    height: 55px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+
+.links-item__p {
+    width: 55%;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: clamp(13px, 0.89vw, 17px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 23.8px */
+    letter-spacing: 1.02px;
+}
+
+@media (min-width: 1423px) {
+    .body-mineral-container {
+        max-width: 1155px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .links-item__p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 777px) {
+    .body-container {
+        width: 95vw;
+    }
+
+    .body-mineral-container {
+        width: 100%;
+    }
+
+    .other-links-items {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        row-gap: 25px;
+        height: unset;
+        min-height: 200px;
+        margin-bottom: 100px;
+    }
+
+    .links-items-item {
+        height: 115px;
+    }
+
+    .links-item__p {
+        text-align: start;
+    }
+}

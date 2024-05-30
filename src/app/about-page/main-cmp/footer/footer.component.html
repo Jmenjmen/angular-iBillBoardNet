@@ -1,0 +1,99 @@
+<div class="footer-container" *ngIf="lang == 'en'">
+    <div class="footer-container-divs">
+        <div class="footer-divs-links">
+            <p class="footer-divs-links__p">USEFUL LINKS</p>
+            <div class="footer-divs-links-items">
+                <a routerLink="/{{lang}}/technology" class="footer-divs-links-items-item">TECHNOLOGY</a>
+                <a routerLink="/{{lang}}/about" class="footer-divs-links-items-item">ABOUT US</a>
+                <a routerLink="/{{lang}}/blog" class="footer-divs-links-items-item">BLOG</a>
+                <a routerLink="/{{lang}}/FAQ" class="footer-divs-links-items-item">FAQ</a>
+            </div>
+        </div>
+        <div class="footer-divs-form">
+            <p class="footer-divs-form__p">SUBSCRIBE TO OUR NEWSLETTER</p>
+            <form class="footer-divs-form__form" [formGroup]="form" (ngSubmit)="sendData()">
+                <input type="text" class="footer-divs-form__form__inp" placeholder="Your e-mail" formControlNamemail>
+                <div class="form-checkbox">
+                    <input type="checkbox" class="footer-divs-form__form__checkbox" name="terms" (change)="checkValue($event)">
+                    <label for="terms">By entering your email address and clicking submit you accept our Terms of Use.</label>
+                </div>
+                <button type="submit" disabled *ngIf="!checked || !form.valid">SUBMIT</button>
+                <button type="submit" *ngIf="checked && form.valid">SUBMIT</button>
+            </form>
+        </div>
+        <div class="footer-divs-contacts">
+            <div class="footer-divs-contacts-icons">
+                <a href="mailto:roman@verdexagro.com" class="icon-container">
+                    <img src="../../../../assets/about/body/icons/email_icon.png" alt="">
+                </a>
+                <a href="https://wa.me/420606810061" target="_blank" class="icon-container">
+                   <img src="../../../../assets/about/body/icons/whatup_icon.png" alt=""> 
+                </a>
+                <a href="https://t.me/+420606810061" target="_blank" class="icon-container">
+                    <img src="../../../../assets/about/body/icons/telegram_icon.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/company/verdex-agro" target="_blank" class="icon-container">
+                    <img src="../../../../assets/about/body/icons/linkedin_icon.png" alt="">
+                </a>            
+            </div>
+            <a routerLink="/{{lang}}/" class="footer-divs-contacts-icons-main_icon__a">
+                <img src="../../../../assets/main-page/verdexagrologoweb 1.png" alt="">
+            </a>
+            <a routerLink="/{{this.lang}}/rules/terms" class="terms_info-links__a">Terms and Conditions</a>
+            <a routerLink="/{{this.lang}}/rules/privacy" class="terms_info-links__a">Privacy Policy</a>
+        </div>
+    </div>
+    <div class="footer-container-terms_info">
+        <p class="footer-container-terms_info__p">© 2024 VERDEX AGRO s.r.o.</p>
+    </div>
+</div>
+
+<div class="footer-container" *ngIf="lang == 'cz'">
+    <div class="footer-container-divs">
+        <div class="footer-divs-links">
+            <p class="footer-divs-links__p">UŽITEČNÉ ODKAZY</p>
+            <div class="footer-divs-links-items">
+                <a routerLink="/{{lang}}/technology" class="footer-divs-links-items-item">TECHNOLOGIE</a>
+                <a routerLink="/{{lang}}/about" class="footer-divs-links-items-item">O NÁS</a>
+                <a routerLink="/{{lang}}/blog" class="footer-divs-links-items-item">BLOG</a>
+                <a routerLink="/{{lang}}/FAQ" class="footer-divs-links-items-item">FAQ</a>
+            </div>
+        </div>
+        <div class="footer-divs-form">
+            <p class="footer-divs-form__p">PŘIHLÁSIT K ODBĚRU NOVINEK</p>
+            <form class="footer-divs-form__form" [formGroup]="form" (ngSubmit)="sendData()">
+                <input type="text" class="footer-divs-form__form__inp" placeholder="Váš email" formControlName="mail">
+                <div class="form-checkbox">
+                    <input type="checkbox" class="footer-divs-form__form__checkbox" name="terms" (change)="checkValue($event)">
+                    <label for="terms">Zadáním e-mailové adresy a kliknutím na tlačítko odeslat souhlasíte s našimi podmínkami používání.</label>
+                </div>
+                <button type="submit" disabled *ngIf="!checked || !form.valid">ODESLAT</button>
+                <button type="submit" *ngIf="checked && form.valid">ODESLAT</button>
+            </form>
+        </div>
+        <div class="footer-divs-contacts">
+            <div class="footer-divs-contacts-icons">
+                <a href="mailto:roman@verdexagro.com" class="icon-container">
+                    <img src="../../../../assets/about/body/icons/email_icon.png" alt="">
+                </a>
+                <a href="https://wa.me/420606810061" target="_blank" class="icon-container">
+                   <img src="../../../../assets/about/body/icons/whatup_icon.png" alt=""> 
+                </a>
+                <a href="https://t.me/+420606810061" target="_blank" class="icon-container">
+                    <img src="../../../../assets/about/body/icons/telegram_icon.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/company/verdex-agro" target="_blank" class="icon-container">
+                    <img src="../../../../assets/about/body/icons/linkedin_icon.png" alt="">
+                </a>            
+            </div>
+            <a routerLink="/{{lang}}/" class="footer-divs-contacts-icons-main_icon__a">
+                <img src="../../../../assets/main-page/verdexagrologoweb 1.png" alt="">
+            </a>
+            <a routerLink="/{{this.lang}}/rules/terms" class="terms_info-links__a">Podmínky užití webového rozhraní</a>
+            <a routerLink="/{{this.lang}}/rules/privacy" class="terms_info-links__a">Ochrana osobních údajů</a>
+        </div>
+    </div>
+    <div class="footer-container-terms_info">
+        <p class="footer-container-terms_info__p">© 2024 VERDEX AGRO s.r.o.</p>
+    </div>
+</div>

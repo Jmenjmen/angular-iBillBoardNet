@@ -18,7 +18,13 @@
     "@angular/platform-browser": "^17.0.0",
     "@angular/platform-browser-dynamic": "^17.0.0",
     "@angular/router": "^17.0.0",
+    "@fancyapps/ui": "^5.0.36",
+    "@types/gsap": "^3.0.0",
+    "gsap": "^3.12.5",
+    "gsap-trial": "^3.12.5",
+    "ngx-cookie-service": "^17.1.0",
     "rxjs": "~7.8.0",
+    "swiper": "^11.0.7",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
   },

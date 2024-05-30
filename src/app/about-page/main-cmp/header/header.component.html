@@ -1,0 +1,61 @@
+<header *ngIf="lang == 'en'">
+    <div class="header-container">
+        <div class="header-container-nav">
+            <a href="/en" class="hcnl__a"><img src="../../../../assets/main-page/verdexagrologoweb 1.png" alt=""></a>
+    </div>
+        <div class="header-container-title">
+            <div class="header-container-title-desc">
+                <p class="header-container-title-desc__p1 font_color">Unlocking the agricultural performance potential one season at a time</p>
+                <p class="header-container-title-desc__p2 font_color">We are dedicated to supporting modern farmers by a broad range of advanced green solutions for agriculture</p>
+            </div>
+        </div>
+        <div class="header-container-description" *ngIf="current_width > 767">
+            <div class="header-container-description-items">
+                <button (click)="sendId('description')">Philosophy</button>
+            </div>
+            <div class="header-container-description-items">
+                <button (click)="sendId('values')">Our Values</button>
+            </div>
+            <div class="header-container-description-items">
+                <button (click)="sendId('history')">Company History</button>
+            </div>
+            <div class="header-container-description-items">
+                <button (click)="sendId('team')">Team</button>
+            </div>
+            <div class="header-container-description-items">
+                <a routerLink="/{{lang}}/contact">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<header *ngIf="lang == 'cz'">
+    <div class="header-container">
+        <div class="header-container-nav">
+            <a routerLink="/cz" class="hcnl__a"><img src="../../../../assets/main-page/verdexagrologoweb 1.png" alt=""></a>
+    </div>
+        <div class="header-container-title">
+            <div class="header-container-title-desc">
+                <p class="header-container-title-desc__p1 font_color">Otevíráme nové možnosti pro efektivnější zemědělskou výrobu napříč ročními cykly</p>
+                <p class="header-container-title-desc__p2 font_color">Naše mise je podporovat moderní zemědělce širokou škálou pokročilých ekologických řešení pro zemědělství.</p>
+            </div>
+        </div>
+        <div class="header-container-description" *ngIf="current_width > 767">
+            <div class="header-container-description-items">
+                <button (click)="sendId('description')">FILOZOFIE</button>
+            </div>
+            <div class="header-container-description-items">
+                <button (click)="sendId('values')">NAŠE HODNOTY</button>
+            </div>
+            <div class="header-container-description-items">
+                <button (click)="sendId('history')">HISTORIE SPOLEČNOSTI</button>
+            </div>
+            <div class="header-container-description-items">
+                <button (click)="sendId('team')">TÝM</button>
+            </div>
+            <div class="header-container-description-items">
+                <a routerLink="/{{lang}}/contact">CONTACT</a>
+            </div>
+        </div>
+    </div>
+</header>

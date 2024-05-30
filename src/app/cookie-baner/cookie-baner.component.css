@@ -1,0 +1,63 @@
+.banner {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    min-height: 80px;
+    background: white;
+    z-index: 9999999999999999999999999999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 25px;
+}
+
+.close {
+    height: 0;
+    width: 0;
+    display: none;
+}
+
+.banner-text-container {
+    text-align: start;
+}
+
+.text__p1, .text__p1 a {
+    font-family: Comfortaa;
+    font-size: clamp(9px, 0.79vw, 15px);
+    color: black;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1.5px;
+}
+
+.banner-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cookie__btn {
+    height: 35px;
+    width: 100px;
+    font-family: Comfortaa;
+    font-size: 13px;
+    color: white;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    background: #97C06B;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.cookie__btn:hover {
+    color: black;
+    background: white;
+}

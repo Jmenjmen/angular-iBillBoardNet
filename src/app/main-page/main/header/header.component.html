@@ -1,0 +1,106 @@
+<header *ngIf="lang == 'en'">
+    <div class="header-container">
+        <div class="header-bg">
+            <video autoplay playsinline loop muted class="verdex-header-bg">
+                <source src="../../../../assets/main-page/header/final.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="header-container-nav">
+                <a routerLink="/{{lang}}/" class="hcnl__a"><img src="../../../../assets/main-page/verdexagrologoweb 1.png" alt=""></a>
+        </div>
+        <div class="header-container-title">
+            <div class="header-container-title-desc">
+                <p class="header-container-title-desc__p1 font_color">Where innovation, technology & agriculture come together</p>
+                <p class="header-container-title-desc__p2 font_color">100% natural bio stimulants for use in livestock and crop production dedicated to supporting modern farmers. Because your success is important to us. </p>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="description_bg" *ngIf="lang == 'en'">
+    <div class="header-container-description">
+        <div class="header-container-description-items" (click)="sendId('products')">
+            <img src="../../../../assets/main-page/verdexweb_iconmainpage2.svg" alt="">
+            <p>CERTIFIED<br>PRODUCTS</p>
+        </div>
+        <div class="header-container-description-items" (click)="sendId('tech')">
+            <img src="../../../../assets/main-page/verdexweb_iconmainpage3.svg" alt="">
+            <p>INNOVATIVE<br>TECHNOLOGY</p>
+        </div>
+        <div class="header-container-description-items" (click)="sendId('testimonials')">
+            <img src="../../../../assets/main-page/verdexweb_iconmainpage4.svg" alt="">
+            <p>IMMEDIATE<br>RESULTS</p>
+        </div>
+        <div class="header-container-description-items" (click)="sendId('values')" *ngIf="current_width > 650">
+            <img src="../../../../assets/main-page/verdexweb_iconmainpage1.svg" alt="">
+            <p>RELIABLE<br>PARTNER</p>
+        </div>
+        <div class="header-container-description-items" (click)="sendId('map')" *ngIf="current_width > 650">
+            <img src="../../../../assets/main-page/verdexweb_iconmainpage5.svg" alt="">
+            <p>WORLDWIDE<br>COVERAGE</p>
+        </div>
+        <div class="header-row2" *ngIf="current_width <= 650">
+            <div class="header-container-description-items" (click)="sendId('values')">
+                <img src="../../../../assets/main-page/verdexweb_iconmainpage1.svg" alt="">
+                <p>RELIABLE<br>PARTNER</p>
+            </div>
+            <div class="header-container-description-items" (click)="sendId('map')">
+                <img src="../../../../assets/main-page/verdexweb_iconmainpage5.svg" alt="">
+                <p>WORLDWIDE<br>COVERAGE</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<header *ngIf="lang == 'cz'">
+    <div class="header-container">
+        <div class="header-bg">
+            <video autoplay muted playsinline loop class="verdex-header-bg">
+                <source src="../../../../assets/main-page/header/final.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="header-container-nav">
+                <a routerLink="/{{lang}}/" class="hcnl__a"><img src="../../../../assets/main-page/verdexagrologoweb 1.png" alt=""></a>
+        </div>
+        <div class="header-container-title">
+            <div class="header-container-title-desc">
+                <p class="header-container-title-desc__p1 font_color">Spojujeme inovace a technologie pro efektivnější zemědělství</p>
+                <p class="header-container-title-desc__p2 font_color">100% přírodní řada bio stimulantů rostlinné a živočišné výroby vyvynutá pro podporu moderního zemědělce. Protože váš úspěch je pro nás důležitý.</p>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="description_bg" *ngIf="lang == 'cz'">
+    <div class="header-container-description">
+        <div class="header-container-description-items" (click)="sendId('products')">
+            <img src="../../../../assets/main-page/verdexweb_iconmainpage2.svg" alt="">
+            <p class="cz-size">CERTIFIKOVANÉ<br>PRODUKTY</p>
+        </div>
+        <div class="header-container-description-items" (click)="sendId('tech')">
+            <img src="../../../../assets/main-page/verdexweb_iconmainpage3.svg" alt="">
+            <p class="cz-size">INOVATIVNÍ<br>TECHNOLOGIE</p>
+        </div>
+        <div class="header-container-description-items" (click)="sendId('testimonials')">
+            <img src="../../../../assets/main-page/verdexweb_iconmainpage4.svg" alt="">
+            <p class="cz-size">OKAMŽITÉ<br>VÝSLEDKY</p>
+        </div>
+        <div class="header-container-description-items" (click)="sendId('values')" *ngIf="current_width > 650">
+            <img src="../../../../assets/main-page/verdexweb_iconmainpage1.svg" alt="">
+            <p class="cz-size">SPOLEHLIVÝ<br>PARTNER</p>
+        </div>
+        <div class="header-container-description-items" (click)="sendId('map')" *ngIf="current_width > 650">
+            <img src="../../../../assets/main-page/verdexweb_iconmainpage5.svg" alt="">
+            <p class="cz-size">CELOSVĚTOVÉ<br>POKRYTÍ</p>
+        </div>
+        <div class="header-row2" *ngIf="current_width <= 650">
+            <div class="header-container-description-items" (click)="sendId('values')">
+                <img src="../../../../assets/main-page/verdexweb_iconmainpage1.svg" alt="">
+                <p class="cz-size">SPOLEHLIVÝ<br>PARTNER</p>
+            </div>
+            <div class="header-container-description-items" (click)="sendId('map')">
+                <img src="../../../../assets/main-page/verdexweb_iconmainpage5.svg" alt="">
+                <p class="cz-size">CELOSVĚTOVÉ<br>POKRYTÍ</p>
+            </div>
+        </div>
+    </div>
+</div>
