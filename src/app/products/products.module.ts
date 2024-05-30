@@ -10,6 +10,7 @@ import { ProductVitalandComponent } from './product-vitaland/product-vitaland.co
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProdutsRouteComponent } from './produts-route/produts-route.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProductXorbComponent,
     ProductCalciteComponent,
     ProductVitalandComponent,
-    MenuComponent
+    MenuComponent,
+    ProdutsRouteComponent
   ],
   imports: [
     CommonModule,
